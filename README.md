@@ -4,7 +4,7 @@ This is a Swift version of original iGoat https://github.com/OWASP/igoat project
 
 Using OWASP iGoat, you can learn exploiting and defending vulnerabilities in iOS Swift applications. 
 
-### Vulnerabities Covered (version 1.0): ###
+### Vulnerabilities Covered (version 1.0): ###
 * __OWASP TOP 10 Mobile__
 * __Reverse Engineering__
 * __Data Protection (Rest)__
