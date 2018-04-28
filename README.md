@@ -1,4 +1,5 @@
-## OWASP iGoat (Swift) - A Damn Vulnerable Swift Application for iOS ([@OWASPiGoat](https://twitter.com/owaspigoat?lang=en))##
+## OWASP iGoat (Swift) - A Damn Vulnerable Swift Application for iOS ([@OWASPiGoat](https://twitter.com/owaspigoat?lang=en))
+##
 
 This is a Swift version of original iGoat https://github.com/OWASP/igoat project. Using OWASP iGoat, you can learn exploiting and defending vulnerabilities in iOS Swift applications. 
 
