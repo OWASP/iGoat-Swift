@@ -12,7 +12,8 @@ __OWASP TOP 10 Mobile__ </br><p align="left">* __Reverse Engineering__</br>* __R
 
 __iGoat Installation__ `git clone https://github.com/OWASP/iGoat-Swift.git`and open iGoat-Swift.xcodeproj with xcode.
 
-__Project Lead__ - Swaroop Yermalkar ([@swaroopsy](https://twitter.com/swaroopsy?lang=en))
+__Project Lead__ - Swaroop Yermalkar [![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](https://twitter.com/swaroopsy)
+
 
 __Lead Developer__ - Anthony Gonsalves
 
