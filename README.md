@@ -19,7 +19,7 @@ __Lead Developer__ - Anthony Gonsalves
 ## Architecture
 ![Architecture](https://github.com/swaroopsy/test/blob/master/Architecture.png?raw=true)
 
-### How to countribute? ###
+### How to Contribute? ###
 * You can add new exercises
 * Testing iGoat and checking if any issues
 * Suggest us new attacks
