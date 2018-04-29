@@ -14,8 +14,10 @@ __iGoat Installation__ `git clone https://github.com/OWASP/iGoat-Swift.git`and o
 
 __Project Lead__ - Swaroop Yermalkar [![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](https://twitter.com/swaroopsy)
 
-
 __Lead Developer__ - Anthony Gonsalves
+
+## Architecture
+![Architecture](https://github.com/swaroopsy/test/blob/master/Architecture.png?raw=true)
 
 ### How to countribute? ###
 * You can add new exercises
