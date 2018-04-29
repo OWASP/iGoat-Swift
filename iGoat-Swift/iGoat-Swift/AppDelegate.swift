@@ -12,6 +12,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         configureRootController()
         return true
     }
+    
+    func application(_ app: UIApplication, open url: URL,
+                     options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        if url.scheme?.caseInsensitiveCompare("igoat") == .orderedSame,
+            let queryInfo = url.parmetersInfo
+            {
+                let mobileNo = queryInfo["contactNumber"] ?? ""
+            let message = queryInfo["message"] ?? ""
+            UIAlertController.showAlertWith(title: "iGoat", message: "Message \"\(message)\" sent to \(mobileNo)")
+                return true
+        }
+        return false
+    }
 }
 
 extension AppDelegate {

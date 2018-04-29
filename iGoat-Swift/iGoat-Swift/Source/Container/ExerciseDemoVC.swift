@@ -19,7 +19,7 @@ extension ExerciseDemoVC {
             let exercise = exercise,
             let ViewController = NSClassFromString("iGoat_Swift." + exercise.viewControllerIdentifier) as? UIViewController.Type
         else { return }
-        
+        self.title = exercise.name
         let viewController = ViewController.init(nibName: exercise.viewControllerIdentifier, bundle: nil)
         let view = viewController.view
         view?.translatesAutoresizingMaskIntoConstraints = false

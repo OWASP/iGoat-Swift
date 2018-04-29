@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CryptoChallengeVC" customModule="iGoat_Swift" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WgV-17-B3I">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCy-p0-dYa">
+                            <rect key="frame" x="27.5" y="113" width="320" height="320"/>
+                            <subviews>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Price $1000" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="PSt-hz-TLn">
+                                    <rect key="frame" x="114" y="2" width="93" height="50"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjQ-Tp-cJg">
+                                    <rect key="frame" x="122" y="268" width="76" height="41"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="76" id="fqY-DH-Rdx"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <state key="normal" title="Buy">
+                                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buyItemPressed" destination="-1" eventType="touchUpInside" id="pa8-Ni-xqS"/>
+                                    </connections>
+                                </button>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone" translatesAutoresizingMaskIntoConstraints="NO" id="lx0-Zm-TJl">
+                                    <rect key="frame" x="40" y="60" width="240" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="yoN-vW-qK2"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="lx0-Zm-TJl" firstAttribute="leading" secondItem="oCy-p0-dYa" secondAttribute="leading" constant="40" id="Kf1-do-ocK"/>
+                                <constraint firstItem="HjQ-Tp-cJg" firstAttribute="centerX" secondItem="oCy-p0-dYa" secondAttribute="centerX" id="L27-Ni-a1L"/>
+                                <constraint firstItem="lx0-Zm-TJl" firstAttribute="centerY" secondItem="oCy-p0-dYa" secondAttribute="centerY" id="Mh1-QO-4SC"/>
+                                <constraint firstAttribute="height" constant="320" id="VPN-Ph-Oh6"/>
+                                <constraint firstAttribute="trailing" secondItem="lx0-Zm-TJl" secondAttribute="trailing" constant="40" id="Vns-dC-2St"/>
+                                <constraint firstItem="PSt-hz-TLn" firstAttribute="centerX" secondItem="oCy-p0-dYa" secondAttribute="centerX" id="Zct-jB-hHK"/>
+                                <constraint firstItem="HjQ-Tp-cJg" firstAttribute="top" secondItem="lx0-Zm-TJl" secondAttribute="bottom" constant="8" id="ghF-J9-JDr"/>
+                                <constraint firstItem="PSt-hz-TLn" firstAttribute="top" secondItem="oCy-p0-dYa" secondAttribute="top" constant="2" id="h6B-ch-xCd"/>
+                                <constraint firstItem="lx0-Zm-TJl" firstAttribute="top" secondItem="PSt-hz-TLn" secondAttribute="bottom" constant="8" id="hsr-Z2-otN"/>
+                                <constraint firstAttribute="width" constant="320" id="u69-Ox-w6B"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Crypto Challenge" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="ArL-IL-eMM">
+                            <rect key="frame" x="89.5" y="80" width="196.5" height="29"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ArL-IL-eMM" firstAttribute="centerX" secondItem="WgV-17-B3I" secondAttribute="centerX" id="C4y-4y-5j0"/>
+                        <constraint firstItem="oCy-p0-dYa" firstAttribute="centerX" secondItem="WgV-17-B3I" secondAttribute="centerX" id="Y4Y-JD-27M"/>
+                        <constraint firstItem="oCy-p0-dYa" firstAttribute="top" secondItem="ArL-IL-eMM" secondAttribute="bottom" constant="4" id="aea-tW-CxX"/>
+                        <constraint firstItem="ArL-IL-eMM" firstAttribute="top" secondItem="WgV-17-B3I" secondAttribute="top" constant="80" id="hxb-G2-NCJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="WgV-17-B3I" secondAttribute="bottom" id="aKl-jt-hC3"/>
+                <constraint firstItem="WgV-17-B3I" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-20" id="bZu-Si-Q88"/>
+                <constraint firstItem="WgV-17-B3I" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ci2-Iy-frl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WgV-17-B3I" secondAttribute="trailing" id="rNK-ql-WL4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-191" y="-109"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iphone" width="430" height="430"/>
+    </resources>
+</document>

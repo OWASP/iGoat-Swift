@@ -21,6 +21,8 @@ class ExerciseIntroductionVC: HTMLViewController {
                                                             style: .plain, target: self,
                                                             action: #selector(startExerciseItemTapped))
         navigationItem.title = "Introduction"
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain,
+                                                           target: nil, action: nil)
     }
 }
 

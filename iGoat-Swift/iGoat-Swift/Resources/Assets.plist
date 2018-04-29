@@ -692,7 +692,7 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 					<string>When done entering data, close iGoat and see if you can retrieve the data that was supposedly stored on the simulator.</string>
 				</array>
 				<key>initialViewController</key>
-				<string>KeystrokeLoggingExerciseController</string>
+				<string>KeystrokeLoggingExerciseVC</string>
 				<key>name</key>
 				<string>Keystroke Logging</string>
 				<key>solution</key>
@@ -730,7 +730,7 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
                         device.</string>
 				</array>
 				<key>initialViewController</key>
-				<string>BackgroundingExerciseController</string>
+				<string>BackgroundingExerciseVC</string>
 				<key>name</key>
 				<string>Backgrounding</string>
 				<key>solution</key>
@@ -776,7 +776,7 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 					<string>If it successfully pasted outside of iGoat, then you&apos;ve leaked sensitive data.</string>
 				</array>
 				<key>initialViewController</key>
-				<string>CutAndPasteExerciseController</string>
+				<string>CutAndPasteExerciseVC</string>
 				<key>name</key>
 				<string>Cut-and-Paste</string>
 				<key>solution</key>
@@ -808,7 +808,7 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 					<string>Can you find how to check device logs?</string>
 				</array>
 				<key>initialViewController</key>
-				<string>DeviceLogsExerciseViewController</string>
+				<string>DeviceLogsExerciseVC</string>
 				<key>name</key>
 				<string>Device Logs</string>
 				<key>solution</key>
@@ -833,7 +833,7 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 					<string>xyz = hash(sha256, key, msg)</string>
 				</array>
 				<key>initialViewController</key>
-				<string>CyrptoChallengeVC</string>
+				<string>CryptoChallengeVC</string>
 				<key>name</key>
 				<string>Crypto Challenge</string>
 				<key>solution</key>
@@ -1137,7 +1137,7 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 					<string>A very common password. </string>
 				</array>
 				<key>initialViewController</key>
-				<string>CloudMisconfigurationVC</string>
+				<string>CloudMisconfigurationExerciseVC</string>
 				<key>name</key>
 				<string>Cloud Misconfiguration</string>
 				<key>solution</key>

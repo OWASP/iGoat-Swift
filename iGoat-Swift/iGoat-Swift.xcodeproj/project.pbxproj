@@ -20,8 +20,6 @@
 		A238AA492079A6A3006C042F /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A238AA222079A6A3006C042F /* MenuTableViewController.swift */; };
 		A238AA4A2079A6A3006C042F /* ExercisesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A238AA232079A6A3006C042F /* ExercisesVC.swift */; };
 		A238AA4B2079A6A3006C042F /* ExerciseFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A238AA242079A6A3006C042F /* ExerciseFlowController.swift */; };
-		A238AA4C2079A6A3006C042F /* SampleDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A238AA262079A6A3006C042F /* SampleDemoVC.swift */; };
-		A238AA4D2079A6A3006C042F /* SampleDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A238AA272079A6A3006C042F /* SampleDemoVC.xib */; };
 		A238AA4E2079A6A3006C042F /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A238AA292079A6A3006C042F /* Exercise.swift */; };
 		A238AA4F2079A6A3006C042F /* CenterContainmentSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A238AA2C2079A6A3006C042F /* CenterContainmentSegue.swift */; };
 		A238AA502079A6A3006C042F /* SideContainmentSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A238AA2E2079A6A3006C042F /* SideContainmentSegue.swift */; };
@@ -47,12 +45,38 @@
 		A238AA682079B137006C042F /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = A238AA672079B137006C042F /* Asset.swift */; };
 		A238AA6D2079DE66006C042F /* NSUserDefaultsStorageExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A238AA6B2079DE66006C042F /* NSUserDefaultsStorageExerciseVC.swift */; };
 		A238AA6E2079DE66006C042F /* NSUserDefaultsStorageExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A238AA6C2079DE66006C042F /* NSUserDefaultsStorageExerciseVC.xib */; };
+		A25B4F522094AC4C0065171C /* CloudMisconfigurationExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B4F502094AC4C0065171C /* CloudMisconfigurationExerciseVC.swift */; };
+		A25B4F532094AC4C0065171C /* CloudMisconfigurationExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A25B4F512094AC4C0065171C /* CloudMisconfigurationExerciseVC.xib */; };
+		A25B4F622094ACE00065171C /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A25B4F552094ACE00065171C /* SVRadialGradientLayer.m */; };
+		A25B4F632094ACE00065171C /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = A25B4F582094ACE00065171C /* SVProgressAnimatedView.m */; };
+		A25B4F642094ACE00065171C /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A25B4F5B2094ACE00065171C /* SVProgressHUD.m */; };
+		A25B4F652094ACE00065171C /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = A25B4F5C2094ACE00065171C /* SVIndefiniteAnimatedView.m */; };
+		A25B4F662094ACE00065171C /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A25B4F5D2094ACE00065171C /* SVProgressHUD.bundle */; };
+		A25B4F672094ACE00065171C /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = A25B4F612094ACE00065171C /* UIImage+animatedGIF.m */; };
+		A25B4F6B2094B5620065171C /* NSString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B4F6A2094B5620065171C /* NSString+Extension.swift */; };
+		A25B4F6F2094B7A50065171C /* CryptoChallengeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A25B4F6D2094B7A50065171C /* CryptoChallengeVC.xib */; };
+		A25B4F702094C23A0065171C /* CryptoChallengeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B4F6C2094B7A50065171C /* CryptoChallengeVC.swift */; };
+		A25B4F73209557020065171C /* URLSchemeAttackExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B4F71209557020065171C /* URLSchemeAttackExerciseVC.swift */; };
+		A25B4F74209557020065171C /* URLSchemeAttackExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A25B4F72209557020065171C /* URLSchemeAttackExerciseVC.xib */; };
+		A25B4F7620955CD50065171C /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B4F7520955CD50065171C /* URL+Extension.swift */; };
+		A25B4F79209580E70065171C /* SocialEngineeringVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B4F77209580E70065171C /* SocialEngineeringVC.swift */; };
+		A25B4F7A209580E70065171C /* SocialEngineeringVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A25B4F78209580E70065171C /* SocialEngineeringVC.xib */; };
+		A25B4F7D2095A3CC0065171C /* StringAnalysisExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B4F7B2095A3CC0065171C /* StringAnalysisExerciseVC.swift */; };
+		A25B4F7E2095A3CC0065171C /* StringAnalysisExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A25B4F7C2095A3CC0065171C /* StringAnalysisExerciseVC.xib */; };
 		A26CEAB7207A0A3A00A7E415 /* AboutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A26CEAB6207A0A3A00A7E415 /* AboutCell.xib */; };
 		A26CEABA207A0C4A00A7E415 /* AboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CEAB9207A0C4A00A7E415 /* AboutCell.swift */; };
 		A26CEABC207A0DF300A7E415 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CEABB207A0DF200A7E415 /* UIView+Extension.swift */; };
 		A26CEABF207A0FAF00A7E415 /* HTMLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CEABD207A0FAF00A7E415 /* HTMLViewController.swift */; };
 		A26CEAC0207A0FAF00A7E415 /* HTMLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A26CEABE207A0FAF00A7E415 /* HTMLViewController.xib */; };
 		A26CEAC4207A34C900A7E415 /* HintVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CEAC3207A34C900A7E415 /* HintVC.swift */; };
+		A2AFC92B2094A5C6002EAEF7 /* DeviceLogsExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AFC9202094A5C6002EAEF7 /* DeviceLogsExerciseVC.xib */; };
+		A2AFC92C2094A5C6002EAEF7 /* DeviceLogsExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFC9212094A5C6002EAEF7 /* DeviceLogsExerciseVC.swift */; };
+		A2AFC92D2094A5C6002EAEF7 /* BackgroundingExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFC9232094A5C6002EAEF7 /* BackgroundingExerciseVC.swift */; };
+		A2AFC92E2094A5C6002EAEF7 /* BackgroundingExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AFC9242094A5C6002EAEF7 /* BackgroundingExerciseVC.xib */; };
+		A2AFC92F2094A5C6002EAEF7 /* KeystrokeLoggingExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFC9262094A5C6002EAEF7 /* KeystrokeLoggingExerciseVC.swift */; };
+		A2AFC9302094A5C6002EAEF7 /* KeystrokeLoggingExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AFC9272094A5C6002EAEF7 /* KeystrokeLoggingExerciseVC.xib */; };
+		A2AFC9312094A5C6002EAEF7 /* CutAndPasteExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFC9292094A5C6002EAEF7 /* CutAndPasteExerciseVC.swift */; };
+		A2AFC9322094A5C6002EAEF7 /* CutAndPasteExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AFC92A2094A5C6002EAEF7 /* CutAndPasteExerciseVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,8 +107,6 @@
 		A238AA222079A6A3006C042F /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		A238AA232079A6A3006C042F /* ExercisesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercisesVC.swift; sourceTree = "<group>"; };
 		A238AA242079A6A3006C042F /* ExerciseFlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseFlowController.swift; sourceTree = "<group>"; };
-		A238AA262079A6A3006C042F /* SampleDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleDemoVC.swift; sourceTree = "<group>"; };
-		A238AA272079A6A3006C042F /* SampleDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleDemoVC.xib; sourceTree = "<group>"; };
 		A238AA292079A6A3006C042F /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		A238AA2C2079A6A3006C042F /* CenterContainmentSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterContainmentSegue.swift; sourceTree = "<group>"; };
 		A238AA2D2079A6A3006C042F /* SideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuController.h; sourceTree = "<group>"; };
@@ -111,12 +133,45 @@
 		A238AA672079B137006C042F /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		A238AA6B2079DE66006C042F /* NSUserDefaultsStorageExerciseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSUserDefaultsStorageExerciseVC.swift; sourceTree = "<group>"; };
 		A238AA6C2079DE66006C042F /* NSUserDefaultsStorageExerciseVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSUserDefaultsStorageExerciseVC.xib; sourceTree = "<group>"; };
+		A25B4F502094AC4C0065171C /* CloudMisconfigurationExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudMisconfigurationExerciseVC.swift; sourceTree = "<group>"; };
+		A25B4F512094AC4C0065171C /* CloudMisconfigurationExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CloudMisconfigurationExerciseVC.xib; sourceTree = "<group>"; };
+		A25B4F552094ACE00065171C /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		A25B4F562094ACE00065171C /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		A25B4F572094ACE00065171C /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		A25B4F582094ACE00065171C /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		A25B4F592094ACE00065171C /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		A25B4F5A2094ACE00065171C /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		A25B4F5B2094ACE00065171C /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		A25B4F5C2094ACE00065171C /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		A25B4F5D2094ACE00065171C /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		A25B4F5E2094ACE00065171C /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		A25B4F602094ACE00065171C /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		A25B4F612094ACE00065171C /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		A25B4F682094AD640065171C /* iGoat-Objc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iGoat-Objc-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		A25B4F6A2094B5620065171C /* NSString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSString+Extension.swift"; sourceTree = "<group>"; };
+		A25B4F6C2094B7A50065171C /* CryptoChallengeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoChallengeVC.swift; sourceTree = "<group>"; };
+		A25B4F6D2094B7A50065171C /* CryptoChallengeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoChallengeVC.xib; sourceTree = "<group>"; };
+		A25B4F71209557020065171C /* URLSchemeAttackExerciseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSchemeAttackExerciseVC.swift; sourceTree = "<group>"; };
+		A25B4F72209557020065171C /* URLSchemeAttackExerciseVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = URLSchemeAttackExerciseVC.xib; sourceTree = "<group>"; };
+		A25B4F7520955CD50065171C /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		A25B4F77209580E70065171C /* SocialEngineeringVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialEngineeringVC.swift; sourceTree = "<group>"; };
+		A25B4F78209580E70065171C /* SocialEngineeringVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialEngineeringVC.xib; sourceTree = "<group>"; };
+		A25B4F7B2095A3CC0065171C /* StringAnalysisExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringAnalysisExerciseVC.swift; sourceTree = "<group>"; };
+		A25B4F7C2095A3CC0065171C /* StringAnalysisExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StringAnalysisExerciseVC.xib; sourceTree = "<group>"; };
 		A26CEAB6207A0A3A00A7E415 /* AboutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutCell.xib; sourceTree = "<group>"; };
 		A26CEAB9207A0C4A00A7E415 /* AboutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCell.swift; sourceTree = "<group>"; };
 		A26CEABB207A0DF200A7E415 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		A26CEABD207A0FAF00A7E415 /* HTMLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLViewController.swift; sourceTree = "<group>"; };
 		A26CEABE207A0FAF00A7E415 /* HTMLViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HTMLViewController.xib; sourceTree = "<group>"; };
 		A26CEAC3207A34C900A7E415 /* HintVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintVC.swift; sourceTree = "<group>"; };
+		A2AFC9202094A5C6002EAEF7 /* DeviceLogsExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceLogsExerciseVC.xib; sourceTree = "<group>"; };
+		A2AFC9212094A5C6002EAEF7 /* DeviceLogsExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceLogsExerciseVC.swift; sourceTree = "<group>"; };
+		A2AFC9232094A5C6002EAEF7 /* BackgroundingExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundingExerciseVC.swift; sourceTree = "<group>"; };
+		A2AFC9242094A5C6002EAEF7 /* BackgroundingExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackgroundingExerciseVC.xib; sourceTree = "<group>"; };
+		A2AFC9262094A5C6002EAEF7 /* KeystrokeLoggingExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeystrokeLoggingExerciseVC.swift; sourceTree = "<group>"; };
+		A2AFC9272094A5C6002EAEF7 /* KeystrokeLoggingExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeystrokeLoggingExerciseVC.xib; sourceTree = "<group>"; };
+		A2AFC9292094A5C6002EAEF7 /* CutAndPasteExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CutAndPasteExerciseVC.swift; sourceTree = "<group>"; };
+		A2AFC92A2094A5C6002EAEF7 /* CutAndPasteExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CutAndPasteExerciseVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +213,7 @@
 		A238A975207897A2006C042F /* iGoat-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				A25B4F682094AD640065171C /* iGoat-Objc-Bridging-Header.h */,
 				A238AA362079A6A3006C042F /* Resources */,
 				A238AA182079A6A3006C042F /* Source */,
 				A238A976207897A2006C042F /* AppDelegate.swift */,
@@ -186,7 +242,6 @@
 				A238AA252079A6A3006C042F /* Exercises */,
 				A238AA282079A6A3006C042F /* Model */,
 				A238AA2A2079A6A3006C042F /* External */,
-				A238AA352079A6A3006C042F /* Utility */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -208,6 +263,8 @@
 				A238AA632079AD42006C042F /* NSObject+Extension.swift */,
 				A238AA652079AEA6006C042F /* UITableViewCell+Extension.swift */,
 				A26CEABB207A0DF200A7E415 /* UIView+Extension.swift */,
+				A25B4F6A2094B5620065171C /* NSString+Extension.swift */,
+				A25B4F7520955CD50065171C /* URL+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -232,9 +289,16 @@
 		A238AA252079A6A3006C042F /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
+				A25B4F7B2095A3CC0065171C /* StringAnalysisExerciseVC.swift */,
+				A25B4F7C2095A3CC0065171C /* StringAnalysisExerciseVC.xib */,
+				A2AFC91E2094A5C6002EAEF7 /* SideChannelDataLeaks */,
 				A238AA692079DE2F006C042F /* InsecureLocalDataStorage */,
-				A238AA262079A6A3006C042F /* SampleDemoVC.swift */,
-				A238AA272079A6A3006C042F /* SampleDemoVC.xib */,
+				A25B4F6C2094B7A50065171C /* CryptoChallengeVC.swift */,
+				A25B4F6D2094B7A50065171C /* CryptoChallengeVC.xib */,
+				A25B4F71209557020065171C /* URLSchemeAttackExerciseVC.swift */,
+				A25B4F72209557020065171C /* URLSchemeAttackExerciseVC.xib */,
+				A25B4F77209580E70065171C /* SocialEngineeringVC.swift */,
+				A25B4F78209580E70065171C /* SocialEngineeringVC.xib */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -251,6 +315,8 @@
 		A238AA2A2079A6A3006C042F /* External */ = {
 			isa = PBXGroup;
 			children = (
+				A25B4F5F2094ACE00065171C /* Gif */,
+				A25B4F542094ACE00065171C /* SVProgressHUD */,
 				A238AA2B2079A6A3006C042F /* SideBar */,
 			);
 			path = External;
@@ -270,13 +336,6 @@
 				A238AA342079A6A3006C042F /* SideMenuController+SideOver.swift */,
 			);
 			path = SideBar;
-			sourceTree = "<group>";
-		};
-		A238AA352079A6A3006C042F /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utility;
 			sourceTree = "<group>";
 		};
 		A238AA362079A6A3006C042F /* Resources */ = {
@@ -320,6 +379,89 @@
 				A238AA6C2079DE66006C042F /* NSUserDefaultsStorageExerciseVC.xib */,
 			);
 			path = NSUserDefaults;
+			sourceTree = "<group>";
+		};
+		A25B4F4F2094AC4C0065171C /* CloudMisconfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				A25B4F502094AC4C0065171C /* CloudMisconfigurationExerciseVC.swift */,
+				A25B4F512094AC4C0065171C /* CloudMisconfigurationExerciseVC.xib */,
+			);
+			path = CloudMisconfiguration;
+			sourceTree = "<group>";
+		};
+		A25B4F542094ACE00065171C /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A25B4F552094ACE00065171C /* SVRadialGradientLayer.m */,
+				A25B4F562094ACE00065171C /* SVIndefiniteAnimatedView.h */,
+				A25B4F572094ACE00065171C /* SVProgressHUD.h */,
+				A25B4F582094ACE00065171C /* SVProgressAnimatedView.m */,
+				A25B4F592094ACE00065171C /* SVProgressHUD-Prefix.pch */,
+				A25B4F5A2094ACE00065171C /* SVRadialGradientLayer.h */,
+				A25B4F5B2094ACE00065171C /* SVProgressHUD.m */,
+				A25B4F5C2094ACE00065171C /* SVIndefiniteAnimatedView.m */,
+				A25B4F5D2094ACE00065171C /* SVProgressHUD.bundle */,
+				A25B4F5E2094ACE00065171C /* SVProgressAnimatedView.h */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		A25B4F5F2094ACE00065171C /* Gif */ = {
+			isa = PBXGroup;
+			children = (
+				A25B4F602094ACE00065171C /* UIImage+animatedGIF.h */,
+				A25B4F612094ACE00065171C /* UIImage+animatedGIF.m */,
+			);
+			path = Gif;
+			sourceTree = "<group>";
+		};
+		A2AFC91E2094A5C6002EAEF7 /* SideChannelDataLeaks */ = {
+			isa = PBXGroup;
+			children = (
+				A25B4F4F2094AC4C0065171C /* CloudMisconfiguration */,
+				A2AFC91F2094A5C6002EAEF7 /* DeviceLogs */,
+				A2AFC9222094A5C6002EAEF7 /* Backgrounding */,
+				A2AFC9252094A5C6002EAEF7 /* KeyStroke */,
+				A2AFC9282094A5C6002EAEF7 /* CutNPaste */,
+			);
+			path = SideChannelDataLeaks;
+			sourceTree = "<group>";
+		};
+		A2AFC91F2094A5C6002EAEF7 /* DeviceLogs */ = {
+			isa = PBXGroup;
+			children = (
+				A2AFC9202094A5C6002EAEF7 /* DeviceLogsExerciseVC.xib */,
+				A2AFC9212094A5C6002EAEF7 /* DeviceLogsExerciseVC.swift */,
+			);
+			path = DeviceLogs;
+			sourceTree = "<group>";
+		};
+		A2AFC9222094A5C6002EAEF7 /* Backgrounding */ = {
+			isa = PBXGroup;
+			children = (
+				A2AFC9232094A5C6002EAEF7 /* BackgroundingExerciseVC.swift */,
+				A2AFC9242094A5C6002EAEF7 /* BackgroundingExerciseVC.xib */,
+			);
+			path = Backgrounding;
+			sourceTree = "<group>";
+		};
+		A2AFC9252094A5C6002EAEF7 /* KeyStroke */ = {
+			isa = PBXGroup;
+			children = (
+				A2AFC9262094A5C6002EAEF7 /* KeystrokeLoggingExerciseVC.swift */,
+				A2AFC9272094A5C6002EAEF7 /* KeystrokeLoggingExerciseVC.xib */,
+			);
+			path = KeyStroke;
+			sourceTree = "<group>";
+		};
+		A2AFC9282094A5C6002EAEF7 /* CutNPaste */ = {
+			isa = PBXGroup;
+			children = (
+				A2AFC9292094A5C6002EAEF7 /* CutAndPasteExerciseVC.swift */,
+				A2AFC92A2094A5C6002EAEF7 /* CutAndPasteExerciseVC.xib */,
+			);
+			path = CutNPaste;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,12 +549,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A238AA602079A6A3006C042F /* Swaroop_Heefan.html in Resources */,
+				A25B4F532094AC4C0065171C /* CloudMisconfigurationExerciseVC.xib in Resources */,
 				A238AA5B2079A6A3006C042F /* about.html in Resources */,
-				A238AA4D2079A6A3006C042F /* SampleDemoVC.xib in Resources */,
+				A2AFC9322094A5C6002EAEF7 /* CutAndPasteExerciseVC.xib in Resources */,
+				A25B4F662094ACE00065171C /* SVProgressHUD.bundle in Resources */,
+				A2AFC92B2094A5C6002EAEF7 /* DeviceLogsExerciseVC.xib in Resources */,
 				A26CEAC0207A0FAF00A7E415 /* HTMLViewController.xib in Resources */,
 				A238AA5F2079A6A3006C042F /* Swaroop_anthony.html in Resources */,
 				A238A981207897A2006C042F /* LaunchScreen.storyboard in Resources */,
 				A238AA572079A6A3006C042F /* Assets.xcassets in Resources */,
+				A2AFC9302094A5C6002EAEF7 /* KeystrokeLoggingExerciseVC.xib in Resources */,
 				A238A97C207897A2006C042F /* Main.storyboard in Resources */,
 				A238AA582079A6A3006C042F /* Assets.plist in Resources */,
 				A238AA612079A6A3006C042F /* Swaroop.html in Resources */,
@@ -420,9 +566,14 @@
 				A238AA592079A6A3006C042F /* rutger.html in Resources */,
 				A238AA5D2079A6A3006C042F /* splash.html in Resources */,
 				A238AA5A2079A6A3006C042F /* mansi.html in Resources */,
+				A25B4F6F2094B7A50065171C /* CryptoChallengeVC.xib in Resources */,
+				A25B4F7E2095A3CC0065171C /* StringAnalysisExerciseVC.xib in Resources */,
 				A238AA5C2079A6A3006C042F /* KRvWAssociates.html in Resources */,
+				A25B4F74209557020065171C /* URLSchemeAttackExerciseVC.xib in Resources */,
+				A2AFC92E2094A5C6002EAEF7 /* BackgroundingExerciseVC.xib in Resources */,
 				A238AA5E2079A6A3006C042F /* Swaroop_Junard.html in Resources */,
 				A238AA6E2079DE66006C042F /* NSUserDefaultsStorageExerciseVC.xib in Resources */,
+				A25B4F7A209580E70065171C /* SocialEngineeringVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,19 +610,31 @@
 				A238AA452079A6A3006C042F /* UIViewController+Extension.swift in Sources */,
 				A238AA442079A6A3006C042F /* UIAlertController+Extension.swift in Sources */,
 				A26CEABA207A0C4A00A7E415 /* AboutCell.swift in Sources */,
+				A2AFC9312094A5C6002EAEF7 /* CutAndPasteExerciseVC.swift in Sources */,
 				A238AA512079A6A3006C042F /* TransitionAnimator.swift in Sources */,
+				A25B4F642094ACE00065171C /* SVProgressHUD.m in Sources */,
 				A238AA552079A6A3006C042F /* SideMenuController.swift in Sources */,
+				A2AFC92C2094A5C6002EAEF7 /* DeviceLogsExerciseVC.swift in Sources */,
 				A238AA542079A6A3006C042F /* SideMenuController+SideUnder.swift in Sources */,
+				A2AFC92F2094A5C6002EAEF7 /* KeystrokeLoggingExerciseVC.swift in Sources */,
 				A238A977207897A2006C042F /* AppDelegate.swift in Sources */,
+				A25B4F79209580E70065171C /* SocialEngineeringVC.swift in Sources */,
 				A238AA4E2079A6A3006C042F /* Exercise.swift in Sources */,
+				A25B4F522094AC4C0065171C /* CloudMisconfigurationExerciseVC.swift in Sources */,
 				A238AA4A2079A6A3006C042F /* ExercisesVC.swift in Sources */,
 				A238AA522079A6A3006C042F /* UIKitExtensions.swift in Sources */,
-				A238AA4C2079A6A3006C042F /* SampleDemoVC.swift in Sources */,
+				A25B4F672094ACE00065171C /* UIImage+animatedGIF.m in Sources */,
 				A238AA482079A6A3006C042F /* ExerciseIntroductionVC.swift in Sources */,
+				A25B4F6B2094B5620065171C /* NSString+Extension.swift in Sources */,
+				A2AFC92D2094A5C6002EAEF7 /* BackgroundingExerciseVC.swift in Sources */,
+				A25B4F7D2095A3CC0065171C /* StringAnalysisExerciseVC.swift in Sources */,
 				A238AA532079A6A3006C042F /* SideMenuController+CustomTypes.swift in Sources */,
 				A238AA492079A6A3006C042F /* MenuTableViewController.swift in Sources */,
 				A26CEABF207A0FAF00A7E415 /* HTMLViewController.swift in Sources */,
+				A25B4F73209557020065171C /* URLSchemeAttackExerciseVC.swift in Sources */,
+				A25B4F702094C23A0065171C /* CryptoChallengeVC.swift in Sources */,
 				A26CEABC207A0DF300A7E415 /* UIView+Extension.swift in Sources */,
+				A25B4F7620955CD50065171C /* URL+Extension.swift in Sources */,
 				A238AA4F2079A6A3006C042F /* CenterContainmentSegue.swift in Sources */,
 				A238AA6D2079DE66006C042F /* NSUserDefaultsStorageExerciseVC.swift in Sources */,
 				A238AA562079A6A3006C042F /* SideMenuController+SideOver.swift in Sources */,
@@ -480,10 +643,13 @@
 				A238AA662079AEA6006C042F /* UITableViewCell+Extension.swift in Sources */,
 				A238AA4B2079A6A3006C042F /* ExerciseFlowController.swift in Sources */,
 				A238AA682079B137006C042F /* Asset.swift in Sources */,
+				A25B4F622094ACE00065171C /* SVRadialGradientLayer.m in Sources */,
 				A238AA462079A6A3006C042F /* UIStoryBoard+Extension.swift in Sources */,
+				A25B4F632094ACE00065171C /* SVProgressAnimatedView.m in Sources */,
 				A238AA472079A6A3006C042F /* ExerciseDemoVC.swift in Sources */,
 				A238AA642079AD42006C042F /* NSObject+Extension.swift in Sources */,
 				A26CEAC4207A34C900A7E415 /* HintVC.swift in Sources */,
+				A25B4F652094ACE00065171C /* SVIndefiniteAnimatedView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,6 +807,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "OWASP.iGoat-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iGoat-Objc-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -655,6 +822,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "OWASP.iGoat-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iGoat-Objc-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

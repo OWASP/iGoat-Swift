@@ -1,0 +1,11 @@
+
+#ifndef iGoat_Objc_Bridging_Header_h
+#define iGoat_Objc_Bridging_Header_h
+
+
+#endif /* iGoat_Objc_Bridging_Header_h */
+
+
+#import "UIImage+animatedGIF.h"
+#import "SVProgressHUD.h"
+#import <CommonCrypto/CommonCrypto.h>
