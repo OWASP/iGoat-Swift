@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BruteForceRuntimeVC" customModule="iGoat_Swift" customModuleProvider="target">
+            <connections>
+                <outlet property="pinTextField" destination="jWg-Aw-dwl" id="dJN-kJ-DPI"/>
+                <outlet property="view" destination="i2o-va-bJF" id="A7L-Le-YS6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="i2o-va-bJF">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uPd-io-lXW">
+                    <rect key="frame" x="0.0" y="57" width="320" height="160"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Enter 4 Digit PIN" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="r8v-KC-gys">
+                            <rect key="frame" x="97" y="29" width="127" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWc-qm-bH7">
+                            <rect key="frame" x="117" y="102" width="86" height="30"/>
+                            <state key="normal" title="Verify"/>
+                            <connections>
+                                <action selector="verifyItemPressed" destination="-1" eventType="touchUpInside" id="vD7-cv-4zJ"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jWg-Aw-dwl">
+                            <rect key="frame" x="67" y="56" width="187" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="9Lb-va-QUp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            <connections>
+                                <action selector="textFieldReturnWithSender:" destination="-1" eventType="editingDidEndOnExit" id="X98-UQ-xed"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="eWc-qm-bH7" firstAttribute="centerX" secondItem="uPd-io-lXW" secondAttribute="centerX" id="Ak5-ho-cl5"/>
+                        <constraint firstItem="eWc-qm-bH7" firstAttribute="leading" secondItem="jWg-Aw-dwl" secondAttribute="leading" constant="50" id="ELc-kO-ehH"/>
+                        <constraint firstItem="r8v-KC-gys" firstAttribute="centerX" secondItem="uPd-io-lXW" secondAttribute="centerX" id="JoV-Po-cUB"/>
+                        <constraint firstItem="eWc-qm-bH7" firstAttribute="top" secondItem="jWg-Aw-dwl" secondAttribute="bottom" constant="15" id="Rrt-YF-ZAo"/>
+                        <constraint firstItem="jWg-Aw-dwl" firstAttribute="leading" secondItem="r8v-KC-gys" secondAttribute="leading" constant="-30" id="VDJ-5w-0YU"/>
+                        <constraint firstAttribute="height" constant="160" id="a0L-TV-zWi"/>
+                        <constraint firstAttribute="width" constant="320" id="dwg-2F-aSo"/>
+                        <constraint firstAttribute="bottom" secondItem="jWg-Aw-dwl" secondAttribute="bottom" constant="73" id="lvB-8s-IfE"/>
+                        <constraint firstItem="jWg-Aw-dwl" firstAttribute="top" secondItem="r8v-KC-gys" secondAttribute="bottom" constant="6" id="sjd-3o-esw"/>
+                        <constraint firstItem="jWg-Aw-dwl" firstAttribute="centerX" secondItem="uPd-io-lXW" secondAttribute="centerX" id="tvY-Cf-fA1"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bank Statement" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="8va-Q4-8QH">
+                    <rect key="frame" x="68" y="36" width="184" height="29"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8va-Q4-8QH" firstAttribute="top" secondItem="ivm-P4-c75" secondAttribute="top" constant="16" id="6qt-gf-QO4"/>
+                <constraint firstItem="uPd-io-lXW" firstAttribute="top" secondItem="8va-Q4-8QH" secondAttribute="bottom" constant="-8" id="Em0-Mg-2Qj"/>
+                <constraint firstItem="8va-Q4-8QH" firstAttribute="centerX" secondItem="i2o-va-bJF" secondAttribute="centerX" id="GRf-Yk-eeS"/>
+                <constraint firstItem="uPd-io-lXW" firstAttribute="centerX" secondItem="i2o-va-bJF" secondAttribute="centerX" id="MsU-bT-utX"/>
+                <constraint firstItem="8va-Q4-8QH" firstAttribute="centerX" secondItem="i2o-va-bJF" secondAttribute="centerX" id="d4g-MV-JmG"/>
+                <constraint firstItem="r8v-KC-gys" firstAttribute="leading" secondItem="8va-Q4-8QH" secondAttribute="leading" constant="29" id="qrk-ZT-LOR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="ivm-P4-c75"/>
+            <point key="canvasLocation" x="-134" y="19"/>
+        </view>
+    </objects>
+</document>

@@ -9,3 +9,6 @@
 #import "UIImage+animatedGIF.h"
 #import "SVProgressHUD.h"
 #import <CommonCrypto/CommonCrypto.h>
+#import <sqlite3.h>
+
+char *do_it(void);

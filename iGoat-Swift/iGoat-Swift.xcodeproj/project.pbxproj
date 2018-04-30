@@ -43,10 +43,8 @@
 		A238AA642079AD42006C042F /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A238AA632079AD42006C042F /* NSObject+Extension.swift */; };
 		A238AA662079AEA6006C042F /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A238AA652079AEA6006C042F /* UITableViewCell+Extension.swift */; };
 		A238AA682079B137006C042F /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = A238AA672079B137006C042F /* Asset.swift */; };
-		A238AA6D2079DE66006C042F /* NSUserDefaultsStorageExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A238AA6B2079DE66006C042F /* NSUserDefaultsStorageExerciseVC.swift */; };
-		A238AA6E2079DE66006C042F /* NSUserDefaultsStorageExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A238AA6C2079DE66006C042F /* NSUserDefaultsStorageExerciseVC.xib */; };
-		A25B4F522094AC4C0065171C /* CloudMisconfigurationExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B4F502094AC4C0065171C /* CloudMisconfigurationExerciseVC.swift */; };
-		A25B4F532094AC4C0065171C /* CloudMisconfigurationExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A25B4F512094AC4C0065171C /* CloudMisconfigurationExerciseVC.xib */; };
+		A23E63CB2095F0F5005683A9 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23E63CA2095F0F5005683A9 /* Data+Extension.swift */; };
+		A23E63DA20961C27005683A9 /* maxpower.c in Sources */ = {isa = PBXBuildFile; fileRef = A23E63D920961C26005683A9 /* maxpower.c */; };
 		A25B4F622094ACE00065171C /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A25B4F552094ACE00065171C /* SVRadialGradientLayer.m */; };
 		A25B4F632094ACE00065171C /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = A25B4F582094ACE00065171C /* SVProgressAnimatedView.m */; };
 		A25B4F642094ACE00065171C /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A25B4F5B2094ACE00065171C /* SVProgressHUD.m */; };
@@ -54,29 +52,56 @@
 		A25B4F662094ACE00065171C /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A25B4F5D2094ACE00065171C /* SVProgressHUD.bundle */; };
 		A25B4F672094ACE00065171C /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = A25B4F612094ACE00065171C /* UIImage+animatedGIF.m */; };
 		A25B4F6B2094B5620065171C /* NSString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B4F6A2094B5620065171C /* NSString+Extension.swift */; };
-		A25B4F6F2094B7A50065171C /* CryptoChallengeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A25B4F6D2094B7A50065171C /* CryptoChallengeVC.xib */; };
-		A25B4F702094C23A0065171C /* CryptoChallengeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B4F6C2094B7A50065171C /* CryptoChallengeVC.swift */; };
-		A25B4F73209557020065171C /* URLSchemeAttackExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B4F71209557020065171C /* URLSchemeAttackExerciseVC.swift */; };
-		A25B4F74209557020065171C /* URLSchemeAttackExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A25B4F72209557020065171C /* URLSchemeAttackExerciseVC.xib */; };
 		A25B4F7620955CD50065171C /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B4F7520955CD50065171C /* URL+Extension.swift */; };
-		A25B4F79209580E70065171C /* SocialEngineeringVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B4F77209580E70065171C /* SocialEngineeringVC.swift */; };
-		A25B4F7A209580E70065171C /* SocialEngineeringVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A25B4F78209580E70065171C /* SocialEngineeringVC.xib */; };
-		A25B4F7D2095A3CC0065171C /* StringAnalysisExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B4F7B2095A3CC0065171C /* StringAnalysisExerciseVC.swift */; };
-		A25B4F7E2095A3CC0065171C /* StringAnalysisExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A25B4F7C2095A3CC0065171C /* StringAnalysisExerciseVC.xib */; };
+		A25B4F892095CC890065171C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A25B4F882095CC7E0065171C /* libsqlite3.tbd */; };
 		A26CEAB7207A0A3A00A7E415 /* AboutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A26CEAB6207A0A3A00A7E415 /* AboutCell.xib */; };
 		A26CEABA207A0C4A00A7E415 /* AboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CEAB9207A0C4A00A7E415 /* AboutCell.swift */; };
 		A26CEABC207A0DF300A7E415 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CEABB207A0DF200A7E415 /* UIView+Extension.swift */; };
 		A26CEABF207A0FAF00A7E415 /* HTMLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CEABD207A0FAF00A7E415 /* HTMLViewController.swift */; };
 		A26CEAC0207A0FAF00A7E415 /* HTMLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A26CEABE207A0FAF00A7E415 /* HTMLViewController.xib */; };
 		A26CEAC4207A34C900A7E415 /* HintVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CEAC3207A34C900A7E415 /* HintVC.swift */; };
-		A2AFC92B2094A5C6002EAEF7 /* DeviceLogsExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AFC9202094A5C6002EAEF7 /* DeviceLogsExerciseVC.xib */; };
-		A2AFC92C2094A5C6002EAEF7 /* DeviceLogsExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFC9212094A5C6002EAEF7 /* DeviceLogsExerciseVC.swift */; };
-		A2AFC92D2094A5C6002EAEF7 /* BackgroundingExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFC9232094A5C6002EAEF7 /* BackgroundingExerciseVC.swift */; };
-		A2AFC92E2094A5C6002EAEF7 /* BackgroundingExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AFC9242094A5C6002EAEF7 /* BackgroundingExerciseVC.xib */; };
-		A2AFC92F2094A5C6002EAEF7 /* KeystrokeLoggingExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFC9262094A5C6002EAEF7 /* KeystrokeLoggingExerciseVC.swift */; };
-		A2AFC9302094A5C6002EAEF7 /* KeystrokeLoggingExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AFC9272094A5C6002EAEF7 /* KeystrokeLoggingExerciseVC.xib */; };
-		A2AFC9312094A5C6002EAEF7 /* CutAndPasteExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFC9292094A5C6002EAEF7 /* CutAndPasteExerciseVC.swift */; };
-		A2AFC9322094A5C6002EAEF7 /* CutAndPasteExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AFC92A2094A5C6002EAEF7 /* CutAndPasteExerciseVC.xib */; };
+		A2C99F602096515F007E9BBE /* NSUserDefaultsStorageExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F1D2096515F007E9BBE /* NSUserDefaultsStorageExerciseVC.xib */; };
+		A2C99F612096515F007E9BBE /* NSUserDefaultsStorageExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C99F1E2096515F007E9BBE /* NSUserDefaultsStorageExerciseVC.swift */; };
+		A2C99F622096515F007E9BBE /* MemoryManagementVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F202096515F007E9BBE /* MemoryManagementVC.xib */; };
+		A2C99F632096515F007E9BBE /* MemoryManagementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C99F212096515F007E9BBE /* MemoryManagementVC.swift */; };
+		A2C99F642096515F007E9BBE /* CryptoChallengeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C99F242096515F007E9BBE /* CryptoChallengeVC.swift */; };
+		A2C99F652096515F007E9BBE /* CryptoChallengeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F252096515F007E9BBE /* CryptoChallengeVC.xib */; };
+		A2C99F662096515F007E9BBE /* CrossSiteScriptingExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C99F282096515F007E9BBE /* CrossSiteScriptingExerciseVC.swift */; };
+		A2C99F672096515F007E9BBE /* CrossSiteScriptingExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F292096515F007E9BBE /* CrossSiteScriptingExerciseVC.xib */; };
+		A2C99F682096515F007E9BBE /* SQLInjectionArticlesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F2B2096515F007E9BBE /* SQLInjectionArticlesVC.xib */; };
+		A2C99F692096515F007E9BBE /* SQLInjectionExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F2C2096515F007E9BBE /* SQLInjectionExerciseVC.xib */; };
+		A2C99F6A2096515F007E9BBE /* SQLInjectionArticlesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C99F2D2096515F007E9BBE /* SQLInjectionArticlesVC.swift */; };
+		A2C99F6B2096515F007E9BBE /* SQLInjectionExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C99F2E2096515F007E9BBE /* SQLInjectionExerciseVC.swift */; };
+		A2C99F6C2096515F007E9BBE /* StringAnalysisExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F302096515F007E9BBE /* StringAnalysisExerciseVC.xib */; };
+		A2C99F6D2096515F007E9BBE /* StringAnalysisExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C99F312096515F007E9BBE /* StringAnalysisExerciseVC.swift */; };
+		A2C99F6E2096515F007E9BBE /* URLSchemeAttackExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F332096515F007E9BBE /* URLSchemeAttackExerciseVC.xib */; };
+		A2C99F6F2096515F007E9BBE /* URLSchemeAttackExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C99F342096515F007E9BBE /* URLSchemeAttackExerciseVC.swift */; };
+		A2C99F702096515F007E9BBE /* RemoteAuthenticationExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C99F372096515F007E9BBE /* RemoteAuthenticationExerciseVC.swift */; };
+		A2C99F712096515F007E9BBE /* RemoteAuthenticationExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F382096515F007E9BBE /* RemoteAuthenticationExerciseVC.xib */; };
+		A2C99F722096515F007E9BBE /* BrokenCryptographyExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F3B2096515F007E9BBE /* BrokenCryptographyExerciseVC.xib */; };
+		A2C99F732096515F007E9BBE /* BrokenCryptographyExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C99F3C2096515F007E9BBE /* BrokenCryptographyExerciseVC.swift */; };
+		A2C99F742096515F007E9BBE /* KeyStorageServerSideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C99F3E2096515F007E9BBE /* KeyStorageServerSideVC.swift */; };
+		A2C99F752096515F007E9BBE /* KeyStorageServerSideVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F3F2096515F007E9BBE /* KeyStorageServerSideVC.xib */; };
+		A2C99F762096515F007E9BBE /* RandomKeyGenerationExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F412096515F007E9BBE /* RandomKeyGenerationExerciseVC.xib */; };
+		A2C99F772096515F007E9BBE /* RandomKeyGenerationExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C99F422096515F007E9BBE /* RandomKeyGenerationExerciseVC.swift */; };
+		A2C99F782096515F007E9BBE /* BinaryPatchingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F442096515F007E9BBE /* BinaryPatchingVC.xib */; };
+		A2C99F792096515F007E9BBE /* BinaryPatchingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C99F452096515F007E9BBE /* BinaryPatchingVC.swift */; };
+		A2C99F7A2096515F007E9BBE /* RuntimeAnalysisChallengeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C99F482096515F007E9BBE /* RuntimeAnalysisChallengeVC.swift */; };
+		A2C99F7B2096515F007E9BBE /* RuntimeAnalysisChallengeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F492096515F007E9BBE /* RuntimeAnalysisChallengeVC.xib */; };
+		A2C99F7C2096515F007E9BBE /* BruteForceRuntimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C99F4B2096515F007E9BBE /* BruteForceRuntimeVC.swift */; };
+		A2C99F7D2096515F007E9BBE /* BruteForceRuntimeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F4C2096515F007E9BBE /* BruteForceRuntimeVC.xib */; };
+		A2C99F7E2096515F007E9BBE /* DeviceLogsExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F4F2096515F007E9BBE /* DeviceLogsExerciseVC.xib */; };
+		A2C99F7F2096515F007E9BBE /* DeviceLogsExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C99F502096515F007E9BBE /* DeviceLogsExerciseVC.swift */; };
+		A2C99F802096515F007E9BBE /* BackgroundingExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C99F522096515F007E9BBE /* BackgroundingExerciseVC.swift */; };
+		A2C99F812096515F007E9BBE /* BackgroundingExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F532096515F007E9BBE /* BackgroundingExerciseVC.xib */; };
+		A2C99F822096515F007E9BBE /* KeystrokeLoggingExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C99F552096515F007E9BBE /* KeystrokeLoggingExerciseVC.swift */; };
+		A2C99F832096515F007E9BBE /* KeystrokeLoggingExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F562096515F007E9BBE /* KeystrokeLoggingExerciseVC.xib */; };
+		A2C99F842096515F007E9BBE /* CloudMisconfigurationExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C99F582096515F007E9BBE /* CloudMisconfigurationExerciseVC.swift */; };
+		A2C99F852096515F007E9BBE /* CloudMisconfigurationExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F592096515F007E9BBE /* CloudMisconfigurationExerciseVC.xib */; };
+		A2C99F862096515F007E9BBE /* CutAndPasteExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C99F5B2096515F007E9BBE /* CutAndPasteExerciseVC.swift */; };
+		A2C99F872096515F007E9BBE /* CutAndPasteExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F5C2096515F007E9BBE /* CutAndPasteExerciseVC.xib */; };
+		A2C99F882096515F007E9BBE /* SocialEngineeringVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C99F5E2096515F007E9BBE /* SocialEngineeringVC.swift */; };
+		A2C99F892096515F007E9BBE /* SocialEngineeringVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F5F2096515F007E9BBE /* SocialEngineeringVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,10 +156,9 @@
 		A238AA632079AD42006C042F /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		A238AA652079AEA6006C042F /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		A238AA672079B137006C042F /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
-		A238AA6B2079DE66006C042F /* NSUserDefaultsStorageExerciseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSUserDefaultsStorageExerciseVC.swift; sourceTree = "<group>"; };
-		A238AA6C2079DE66006C042F /* NSUserDefaultsStorageExerciseVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSUserDefaultsStorageExerciseVC.xib; sourceTree = "<group>"; };
-		A25B4F502094AC4C0065171C /* CloudMisconfigurationExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudMisconfigurationExerciseVC.swift; sourceTree = "<group>"; };
-		A25B4F512094AC4C0065171C /* CloudMisconfigurationExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CloudMisconfigurationExerciseVC.xib; sourceTree = "<group>"; };
+		A23E63CA2095F0F5005683A9 /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		A23E63D820961C26005683A9 /* maxpower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maxpower.h; sourceTree = "<group>"; };
+		A23E63D920961C26005683A9 /* maxpower.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = maxpower.c; sourceTree = "<group>"; };
 		A25B4F552094ACE00065171C /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
 		A25B4F562094ACE00065171C /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		A25B4F572094ACE00065171C /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
@@ -149,29 +173,56 @@
 		A25B4F612094ACE00065171C /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		A25B4F682094AD640065171C /* iGoat-Objc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iGoat-Objc-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		A25B4F6A2094B5620065171C /* NSString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSString+Extension.swift"; sourceTree = "<group>"; };
-		A25B4F6C2094B7A50065171C /* CryptoChallengeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoChallengeVC.swift; sourceTree = "<group>"; };
-		A25B4F6D2094B7A50065171C /* CryptoChallengeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoChallengeVC.xib; sourceTree = "<group>"; };
-		A25B4F71209557020065171C /* URLSchemeAttackExerciseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSchemeAttackExerciseVC.swift; sourceTree = "<group>"; };
-		A25B4F72209557020065171C /* URLSchemeAttackExerciseVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = URLSchemeAttackExerciseVC.xib; sourceTree = "<group>"; };
 		A25B4F7520955CD50065171C /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
-		A25B4F77209580E70065171C /* SocialEngineeringVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialEngineeringVC.swift; sourceTree = "<group>"; };
-		A25B4F78209580E70065171C /* SocialEngineeringVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialEngineeringVC.xib; sourceTree = "<group>"; };
-		A25B4F7B2095A3CC0065171C /* StringAnalysisExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringAnalysisExerciseVC.swift; sourceTree = "<group>"; };
-		A25B4F7C2095A3CC0065171C /* StringAnalysisExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StringAnalysisExerciseVC.xib; sourceTree = "<group>"; };
+		A25B4F882095CC7E0065171C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		A26CEAB6207A0A3A00A7E415 /* AboutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutCell.xib; sourceTree = "<group>"; };
 		A26CEAB9207A0C4A00A7E415 /* AboutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCell.swift; sourceTree = "<group>"; };
 		A26CEABB207A0DF200A7E415 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		A26CEABD207A0FAF00A7E415 /* HTMLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLViewController.swift; sourceTree = "<group>"; };
 		A26CEABE207A0FAF00A7E415 /* HTMLViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HTMLViewController.xib; sourceTree = "<group>"; };
 		A26CEAC3207A34C900A7E415 /* HintVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintVC.swift; sourceTree = "<group>"; };
-		A2AFC9202094A5C6002EAEF7 /* DeviceLogsExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceLogsExerciseVC.xib; sourceTree = "<group>"; };
-		A2AFC9212094A5C6002EAEF7 /* DeviceLogsExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceLogsExerciseVC.swift; sourceTree = "<group>"; };
-		A2AFC9232094A5C6002EAEF7 /* BackgroundingExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundingExerciseVC.swift; sourceTree = "<group>"; };
-		A2AFC9242094A5C6002EAEF7 /* BackgroundingExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackgroundingExerciseVC.xib; sourceTree = "<group>"; };
-		A2AFC9262094A5C6002EAEF7 /* KeystrokeLoggingExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeystrokeLoggingExerciseVC.swift; sourceTree = "<group>"; };
-		A2AFC9272094A5C6002EAEF7 /* KeystrokeLoggingExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeystrokeLoggingExerciseVC.xib; sourceTree = "<group>"; };
-		A2AFC9292094A5C6002EAEF7 /* CutAndPasteExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CutAndPasteExerciseVC.swift; sourceTree = "<group>"; };
-		A2AFC92A2094A5C6002EAEF7 /* CutAndPasteExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CutAndPasteExerciseVC.xib; sourceTree = "<group>"; };
+		A2C99F1D2096515F007E9BBE /* NSUserDefaultsStorageExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSUserDefaultsStorageExerciseVC.xib; sourceTree = "<group>"; };
+		A2C99F1E2096515F007E9BBE /* NSUserDefaultsStorageExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSUserDefaultsStorageExerciseVC.swift; sourceTree = "<group>"; };
+		A2C99F202096515F007E9BBE /* MemoryManagementVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemoryManagementVC.xib; sourceTree = "<group>"; };
+		A2C99F212096515F007E9BBE /* MemoryManagementVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryManagementVC.swift; sourceTree = "<group>"; };
+		A2C99F242096515F007E9BBE /* CryptoChallengeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoChallengeVC.swift; sourceTree = "<group>"; };
+		A2C99F252096515F007E9BBE /* CryptoChallengeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CryptoChallengeVC.xib; sourceTree = "<group>"; };
+		A2C99F282096515F007E9BBE /* CrossSiteScriptingExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrossSiteScriptingExerciseVC.swift; sourceTree = "<group>"; };
+		A2C99F292096515F007E9BBE /* CrossSiteScriptingExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrossSiteScriptingExerciseVC.xib; sourceTree = "<group>"; };
+		A2C99F2B2096515F007E9BBE /* SQLInjectionArticlesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLInjectionArticlesVC.xib; sourceTree = "<group>"; };
+		A2C99F2C2096515F007E9BBE /* SQLInjectionExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLInjectionExerciseVC.xib; sourceTree = "<group>"; };
+		A2C99F2D2096515F007E9BBE /* SQLInjectionArticlesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLInjectionArticlesVC.swift; sourceTree = "<group>"; };
+		A2C99F2E2096515F007E9BBE /* SQLInjectionExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLInjectionExerciseVC.swift; sourceTree = "<group>"; };
+		A2C99F302096515F007E9BBE /* StringAnalysisExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StringAnalysisExerciseVC.xib; sourceTree = "<group>"; };
+		A2C99F312096515F007E9BBE /* StringAnalysisExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringAnalysisExerciseVC.swift; sourceTree = "<group>"; };
+		A2C99F332096515F007E9BBE /* URLSchemeAttackExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URLSchemeAttackExerciseVC.xib; sourceTree = "<group>"; };
+		A2C99F342096515F007E9BBE /* URLSchemeAttackExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSchemeAttackExerciseVC.swift; sourceTree = "<group>"; };
+		A2C99F372096515F007E9BBE /* RemoteAuthenticationExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAuthenticationExerciseVC.swift; sourceTree = "<group>"; };
+		A2C99F382096515F007E9BBE /* RemoteAuthenticationExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoteAuthenticationExerciseVC.xib; sourceTree = "<group>"; };
+		A2C99F3B2096515F007E9BBE /* BrokenCryptographyExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrokenCryptographyExerciseVC.xib; sourceTree = "<group>"; };
+		A2C99F3C2096515F007E9BBE /* BrokenCryptographyExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrokenCryptographyExerciseVC.swift; sourceTree = "<group>"; };
+		A2C99F3E2096515F007E9BBE /* KeyStorageServerSideVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyStorageServerSideVC.swift; sourceTree = "<group>"; };
+		A2C99F3F2096515F007E9BBE /* KeyStorageServerSideVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyStorageServerSideVC.xib; sourceTree = "<group>"; };
+		A2C99F412096515F007E9BBE /* RandomKeyGenerationExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RandomKeyGenerationExerciseVC.xib; sourceTree = "<group>"; };
+		A2C99F422096515F007E9BBE /* RandomKeyGenerationExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomKeyGenerationExerciseVC.swift; sourceTree = "<group>"; };
+		A2C99F442096515F007E9BBE /* BinaryPatchingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BinaryPatchingVC.xib; sourceTree = "<group>"; };
+		A2C99F452096515F007E9BBE /* BinaryPatchingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryPatchingVC.swift; sourceTree = "<group>"; };
+		A2C99F482096515F007E9BBE /* RuntimeAnalysisChallengeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuntimeAnalysisChallengeVC.swift; sourceTree = "<group>"; };
+		A2C99F492096515F007E9BBE /* RuntimeAnalysisChallengeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RuntimeAnalysisChallengeVC.xib; sourceTree = "<group>"; };
+		A2C99F4B2096515F007E9BBE /* BruteForceRuntimeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BruteForceRuntimeVC.swift; sourceTree = "<group>"; };
+		A2C99F4C2096515F007E9BBE /* BruteForceRuntimeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BruteForceRuntimeVC.xib; sourceTree = "<group>"; };
+		A2C99F4F2096515F007E9BBE /* DeviceLogsExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceLogsExerciseVC.xib; sourceTree = "<group>"; };
+		A2C99F502096515F007E9BBE /* DeviceLogsExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceLogsExerciseVC.swift; sourceTree = "<group>"; };
+		A2C99F522096515F007E9BBE /* BackgroundingExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundingExerciseVC.swift; sourceTree = "<group>"; };
+		A2C99F532096515F007E9BBE /* BackgroundingExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackgroundingExerciseVC.xib; sourceTree = "<group>"; };
+		A2C99F552096515F007E9BBE /* KeystrokeLoggingExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeystrokeLoggingExerciseVC.swift; sourceTree = "<group>"; };
+		A2C99F562096515F007E9BBE /* KeystrokeLoggingExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeystrokeLoggingExerciseVC.xib; sourceTree = "<group>"; };
+		A2C99F582096515F007E9BBE /* CloudMisconfigurationExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudMisconfigurationExerciseVC.swift; sourceTree = "<group>"; };
+		A2C99F592096515F007E9BBE /* CloudMisconfigurationExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CloudMisconfigurationExerciseVC.xib; sourceTree = "<group>"; };
+		A2C99F5B2096515F007E9BBE /* CutAndPasteExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CutAndPasteExerciseVC.swift; sourceTree = "<group>"; };
+		A2C99F5C2096515F007E9BBE /* CutAndPasteExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CutAndPasteExerciseVC.xib; sourceTree = "<group>"; };
+		A2C99F5E2096515F007E9BBE /* SocialEngineeringVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialEngineeringVC.swift; sourceTree = "<group>"; };
+		A2C99F5F2096515F007E9BBE /* SocialEngineeringVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocialEngineeringVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +230,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A25B4F892095CC890065171C /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +250,7 @@
 				A238A975207897A2006C042F /* iGoat-Swift */,
 				A238A98A207897A2006C042F /* iGoat-SwiftTests */,
 				A238A974207897A2006C042F /* Products */,
+				A25B4F872095CC7E0065171C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -213,6 +266,8 @@
 		A238A975207897A2006C042F /* iGoat-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				A23E63D920961C26005683A9 /* maxpower.c */,
+				A23E63D820961C26005683A9 /* maxpower.h */,
 				A25B4F682094AD640065171C /* iGoat-Objc-Bridging-Header.h */,
 				A238AA362079A6A3006C042F /* Resources */,
 				A238AA182079A6A3006C042F /* Source */,
@@ -265,6 +320,7 @@
 				A26CEABB207A0DF200A7E415 /* UIView+Extension.swift */,
 				A25B4F6A2094B5620065171C /* NSString+Extension.swift */,
 				A25B4F7520955CD50065171C /* URL+Extension.swift */,
+				A23E63CA2095F0F5005683A9 /* Data+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -289,16 +345,18 @@
 		A238AA252079A6A3006C042F /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
-				A25B4F7B2095A3CC0065171C /* StringAnalysisExerciseVC.swift */,
-				A25B4F7C2095A3CC0065171C /* StringAnalysisExerciseVC.xib */,
-				A2AFC91E2094A5C6002EAEF7 /* SideChannelDataLeaks */,
-				A238AA692079DE2F006C042F /* InsecureLocalDataStorage */,
-				A25B4F6C2094B7A50065171C /* CryptoChallengeVC.swift */,
-				A25B4F6D2094B7A50065171C /* CryptoChallengeVC.xib */,
-				A25B4F71209557020065171C /* URLSchemeAttackExerciseVC.swift */,
-				A25B4F72209557020065171C /* URLSchemeAttackExerciseVC.xib */,
-				A25B4F77209580E70065171C /* SocialEngineeringVC.swift */,
-				A25B4F78209580E70065171C /* SocialEngineeringVC.xib */,
+				A2C99F352096515F007E9BBE /* Authentication */,
+				A2C99F432096515F007E9BBE /* Binary Patching */,
+				A2C99F222096515F007E9BBE /* Broken Cryptography */,
+				A2C99F262096515F007E9BBE /* Injection Flaws */,
+				A2C99F1B2096515F007E9BBE /* InsecureLocalDataStorage */,
+				A2C99F392096515F007E9BBE /* Key Management */,
+				A2C99F1F2096515F007E9BBE /* Memory Management */,
+				A2C99F2F2096515F007E9BBE /* Reverse Engineering */,
+				A2C99F462096515F007E9BBE /* Runtime Analysis */,
+				A2C99F4D2096515F007E9BBE /* SideChannelDataLeaks */,
+				A2C99F5D2096515F007E9BBE /* Social Engineering */,
+				A2C99F322096515F007E9BBE /* URL Scheme */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -364,32 +422,6 @@
 			path = HTML;
 			sourceTree = "<group>";
 		};
-		A238AA692079DE2F006C042F /* InsecureLocalDataStorage */ = {
-			isa = PBXGroup;
-			children = (
-				A238AA6A2079DE2F006C042F /* NSUserDefaults */,
-			);
-			path = InsecureLocalDataStorage;
-			sourceTree = "<group>";
-		};
-		A238AA6A2079DE2F006C042F /* NSUserDefaults */ = {
-			isa = PBXGroup;
-			children = (
-				A238AA6B2079DE66006C042F /* NSUserDefaultsStorageExerciseVC.swift */,
-				A238AA6C2079DE66006C042F /* NSUserDefaultsStorageExerciseVC.xib */,
-			);
-			path = NSUserDefaults;
-			sourceTree = "<group>";
-		};
-		A25B4F4F2094AC4C0065171C /* CloudMisconfiguration */ = {
-			isa = PBXGroup;
-			children = (
-				A25B4F502094AC4C0065171C /* CloudMisconfigurationExerciseVC.swift */,
-				A25B4F512094AC4C0065171C /* CloudMisconfigurationExerciseVC.xib */,
-			);
-			path = CloudMisconfiguration;
-			sourceTree = "<group>";
-		};
 		A25B4F542094ACE00065171C /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -416,52 +448,258 @@
 			path = Gif;
 			sourceTree = "<group>";
 		};
-		A2AFC91E2094A5C6002EAEF7 /* SideChannelDataLeaks */ = {
+		A25B4F872095CC7E0065171C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A25B4F4F2094AC4C0065171C /* CloudMisconfiguration */,
-				A2AFC91F2094A5C6002EAEF7 /* DeviceLogs */,
-				A2AFC9222094A5C6002EAEF7 /* Backgrounding */,
-				A2AFC9252094A5C6002EAEF7 /* KeyStroke */,
-				A2AFC9282094A5C6002EAEF7 /* CutNPaste */,
+				A25B4F882095CC7E0065171C /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2C99F1B2096515F007E9BBE /* InsecureLocalDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				A2C99F1C2096515F007E9BBE /* NSUserDefaults */,
+			);
+			path = InsecureLocalDataStorage;
+			sourceTree = "<group>";
+		};
+		A2C99F1C2096515F007E9BBE /* NSUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				A2C99F1D2096515F007E9BBE /* NSUserDefaultsStorageExerciseVC.xib */,
+				A2C99F1E2096515F007E9BBE /* NSUserDefaultsStorageExerciseVC.swift */,
+			);
+			path = NSUserDefaults;
+			sourceTree = "<group>";
+		};
+		A2C99F1F2096515F007E9BBE /* Memory Management */ = {
+			isa = PBXGroup;
+			children = (
+				A2C99F202096515F007E9BBE /* MemoryManagementVC.xib */,
+				A2C99F212096515F007E9BBE /* MemoryManagementVC.swift */,
+			);
+			path = "Memory Management";
+			sourceTree = "<group>";
+		};
+		A2C99F222096515F007E9BBE /* Broken Cryptography */ = {
+			isa = PBXGroup;
+			children = (
+				A2C99F232096515F007E9BBE /* Crypto Challenge */,
+			);
+			path = "Broken Cryptography";
+			sourceTree = "<group>";
+		};
+		A2C99F232096515F007E9BBE /* Crypto Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				A2C99F242096515F007E9BBE /* CryptoChallengeVC.swift */,
+				A2C99F252096515F007E9BBE /* CryptoChallengeVC.xib */,
+			);
+			path = "Crypto Challenge";
+			sourceTree = "<group>";
+		};
+		A2C99F262096515F007E9BBE /* Injection Flaws */ = {
+			isa = PBXGroup;
+			children = (
+				A2C99F272096515F007E9BBE /* XSS */,
+				A2C99F2A2096515F007E9BBE /* SQL Injection */,
+			);
+			path = "Injection Flaws";
+			sourceTree = "<group>";
+		};
+		A2C99F272096515F007E9BBE /* XSS */ = {
+			isa = PBXGroup;
+			children = (
+				A2C99F282096515F007E9BBE /* CrossSiteScriptingExerciseVC.swift */,
+				A2C99F292096515F007E9BBE /* CrossSiteScriptingExerciseVC.xib */,
+			);
+			path = XSS;
+			sourceTree = "<group>";
+		};
+		A2C99F2A2096515F007E9BBE /* SQL Injection */ = {
+			isa = PBXGroup;
+			children = (
+				A2C99F2B2096515F007E9BBE /* SQLInjectionArticlesVC.xib */,
+				A2C99F2C2096515F007E9BBE /* SQLInjectionExerciseVC.xib */,
+				A2C99F2D2096515F007E9BBE /* SQLInjectionArticlesVC.swift */,
+				A2C99F2E2096515F007E9BBE /* SQLInjectionExerciseVC.swift */,
+			);
+			path = "SQL Injection";
+			sourceTree = "<group>";
+		};
+		A2C99F2F2096515F007E9BBE /* Reverse Engineering */ = {
+			isa = PBXGroup;
+			children = (
+				A2C99F302096515F007E9BBE /* StringAnalysisExerciseVC.xib */,
+				A2C99F312096515F007E9BBE /* StringAnalysisExerciseVC.swift */,
+			);
+			path = "Reverse Engineering";
+			sourceTree = "<group>";
+		};
+		A2C99F322096515F007E9BBE /* URL Scheme */ = {
+			isa = PBXGroup;
+			children = (
+				A2C99F332096515F007E9BBE /* URLSchemeAttackExerciseVC.xib */,
+				A2C99F342096515F007E9BBE /* URLSchemeAttackExerciseVC.swift */,
+			);
+			path = "URL Scheme";
+			sourceTree = "<group>";
+		};
+		A2C99F352096515F007E9BBE /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				A2C99F362096515F007E9BBE /* Remote */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		A2C99F362096515F007E9BBE /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				A2C99F372096515F007E9BBE /* RemoteAuthenticationExerciseVC.swift */,
+				A2C99F382096515F007E9BBE /* RemoteAuthenticationExerciseVC.xib */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		A2C99F392096515F007E9BBE /* Key Management */ = {
+			isa = PBXGroup;
+			children = (
+				A2C99F3A2096515F007E9BBE /* Hard Coded Keys */,
+				A2C99F3D2096515F007E9BBE /* Key Storage Server Side */,
+				A2C99F402096515F007E9BBE /* Random Key Generation */,
+			);
+			path = "Key Management";
+			sourceTree = "<group>";
+		};
+		A2C99F3A2096515F007E9BBE /* Hard Coded Keys */ = {
+			isa = PBXGroup;
+			children = (
+				A2C99F3B2096515F007E9BBE /* BrokenCryptographyExerciseVC.xib */,
+				A2C99F3C2096515F007E9BBE /* BrokenCryptographyExerciseVC.swift */,
+			);
+			path = "Hard Coded Keys";
+			sourceTree = "<group>";
+		};
+		A2C99F3D2096515F007E9BBE /* Key Storage Server Side */ = {
+			isa = PBXGroup;
+			children = (
+				A2C99F3E2096515F007E9BBE /* KeyStorageServerSideVC.swift */,
+				A2C99F3F2096515F007E9BBE /* KeyStorageServerSideVC.xib */,
+			);
+			path = "Key Storage Server Side";
+			sourceTree = "<group>";
+		};
+		A2C99F402096515F007E9BBE /* Random Key Generation */ = {
+			isa = PBXGroup;
+			children = (
+				A2C99F412096515F007E9BBE /* RandomKeyGenerationExerciseVC.xib */,
+				A2C99F422096515F007E9BBE /* RandomKeyGenerationExerciseVC.swift */,
+			);
+			path = "Random Key Generation";
+			sourceTree = "<group>";
+		};
+		A2C99F432096515F007E9BBE /* Binary Patching */ = {
+			isa = PBXGroup;
+			children = (
+				A2C99F442096515F007E9BBE /* BinaryPatchingVC.xib */,
+				A2C99F452096515F007E9BBE /* BinaryPatchingVC.swift */,
+			);
+			path = "Binary Patching";
+			sourceTree = "<group>";
+		};
+		A2C99F462096515F007E9BBE /* Runtime Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				A2C99F472096515F007E9BBE /* Runtime Challenge */,
+				A2C99F4A2096515F007E9BBE /* BruteForce attack */,
+			);
+			path = "Runtime Analysis";
+			sourceTree = "<group>";
+		};
+		A2C99F472096515F007E9BBE /* Runtime Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				A2C99F482096515F007E9BBE /* RuntimeAnalysisChallengeVC.swift */,
+				A2C99F492096515F007E9BBE /* RuntimeAnalysisChallengeVC.xib */,
+			);
+			path = "Runtime Challenge";
+			sourceTree = "<group>";
+		};
+		A2C99F4A2096515F007E9BBE /* BruteForce attack */ = {
+			isa = PBXGroup;
+			children = (
+				A2C99F4B2096515F007E9BBE /* BruteForceRuntimeVC.swift */,
+				A2C99F4C2096515F007E9BBE /* BruteForceRuntimeVC.xib */,
+			);
+			path = "BruteForce attack";
+			sourceTree = "<group>";
+		};
+		A2C99F4D2096515F007E9BBE /* SideChannelDataLeaks */ = {
+			isa = PBXGroup;
+			children = (
+				A2C99F4E2096515F007E9BBE /* DeviceLogs */,
+				A2C99F512096515F007E9BBE /* Backgrounding */,
+				A2C99F542096515F007E9BBE /* KeyStroke */,
+				A2C99F572096515F007E9BBE /* CloudMisconfiguration */,
+				A2C99F5A2096515F007E9BBE /* CutNPaste */,
 			);
 			path = SideChannelDataLeaks;
 			sourceTree = "<group>";
 		};
-		A2AFC91F2094A5C6002EAEF7 /* DeviceLogs */ = {
+		A2C99F4E2096515F007E9BBE /* DeviceLogs */ = {
 			isa = PBXGroup;
 			children = (
-				A2AFC9202094A5C6002EAEF7 /* DeviceLogsExerciseVC.xib */,
-				A2AFC9212094A5C6002EAEF7 /* DeviceLogsExerciseVC.swift */,
+				A2C99F4F2096515F007E9BBE /* DeviceLogsExerciseVC.xib */,
+				A2C99F502096515F007E9BBE /* DeviceLogsExerciseVC.swift */,
 			);
 			path = DeviceLogs;
 			sourceTree = "<group>";
 		};
-		A2AFC9222094A5C6002EAEF7 /* Backgrounding */ = {
+		A2C99F512096515F007E9BBE /* Backgrounding */ = {
 			isa = PBXGroup;
 			children = (
-				A2AFC9232094A5C6002EAEF7 /* BackgroundingExerciseVC.swift */,
-				A2AFC9242094A5C6002EAEF7 /* BackgroundingExerciseVC.xib */,
+				A2C99F522096515F007E9BBE /* BackgroundingExerciseVC.swift */,
+				A2C99F532096515F007E9BBE /* BackgroundingExerciseVC.xib */,
 			);
 			path = Backgrounding;
 			sourceTree = "<group>";
 		};
-		A2AFC9252094A5C6002EAEF7 /* KeyStroke */ = {
+		A2C99F542096515F007E9BBE /* KeyStroke */ = {
 			isa = PBXGroup;
 			children = (
-				A2AFC9262094A5C6002EAEF7 /* KeystrokeLoggingExerciseVC.swift */,
-				A2AFC9272094A5C6002EAEF7 /* KeystrokeLoggingExerciseVC.xib */,
+				A2C99F552096515F007E9BBE /* KeystrokeLoggingExerciseVC.swift */,
+				A2C99F562096515F007E9BBE /* KeystrokeLoggingExerciseVC.xib */,
 			);
 			path = KeyStroke;
 			sourceTree = "<group>";
 		};
-		A2AFC9282094A5C6002EAEF7 /* CutNPaste */ = {
+		A2C99F572096515F007E9BBE /* CloudMisconfiguration */ = {
 			isa = PBXGroup;
 			children = (
-				A2AFC9292094A5C6002EAEF7 /* CutAndPasteExerciseVC.swift */,
-				A2AFC92A2094A5C6002EAEF7 /* CutAndPasteExerciseVC.xib */,
+				A2C99F582096515F007E9BBE /* CloudMisconfigurationExerciseVC.swift */,
+				A2C99F592096515F007E9BBE /* CloudMisconfigurationExerciseVC.xib */,
+			);
+			path = CloudMisconfiguration;
+			sourceTree = "<group>";
+		};
+		A2C99F5A2096515F007E9BBE /* CutNPaste */ = {
+			isa = PBXGroup;
+			children = (
+				A2C99F5B2096515F007E9BBE /* CutAndPasteExerciseVC.swift */,
+				A2C99F5C2096515F007E9BBE /* CutAndPasteExerciseVC.xib */,
 			);
 			path = CutNPaste;
+			sourceTree = "<group>";
+		};
+		A2C99F5D2096515F007E9BBE /* Social Engineering */ = {
+			isa = PBXGroup;
+			children = (
+				A2C99F5E2096515F007E9BBE /* SocialEngineeringVC.swift */,
+				A2C99F5F2096515F007E9BBE /* SocialEngineeringVC.xib */,
+			);
+			path = "Social Engineering";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -548,32 +786,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2C99F652096515F007E9BBE /* CryptoChallengeVC.xib in Resources */,
+				A2C99F712096515F007E9BBE /* RemoteAuthenticationExerciseVC.xib in Resources */,
 				A238AA602079A6A3006C042F /* Swaroop_Heefan.html in Resources */,
-				A25B4F532094AC4C0065171C /* CloudMisconfigurationExerciseVC.xib in Resources */,
 				A238AA5B2079A6A3006C042F /* about.html in Resources */,
-				A2AFC9322094A5C6002EAEF7 /* CutAndPasteExerciseVC.xib in Resources */,
 				A25B4F662094ACE00065171C /* SVProgressHUD.bundle in Resources */,
-				A2AFC92B2094A5C6002EAEF7 /* DeviceLogsExerciseVC.xib in Resources */,
 				A26CEAC0207A0FAF00A7E415 /* HTMLViewController.xib in Resources */,
+				A2C99F812096515F007E9BBE /* BackgroundingExerciseVC.xib in Resources */,
+				A2C99F852096515F007E9BBE /* CloudMisconfigurationExerciseVC.xib in Resources */,
 				A238AA5F2079A6A3006C042F /* Swaroop_anthony.html in Resources */,
+				A2C99F7D2096515F007E9BBE /* BruteForceRuntimeVC.xib in Resources */,
+				A2C99F762096515F007E9BBE /* RandomKeyGenerationExerciseVC.xib in Resources */,
+				A2C99F872096515F007E9BBE /* CutAndPasteExerciseVC.xib in Resources */,
 				A238A981207897A2006C042F /* LaunchScreen.storyboard in Resources */,
+				A2C99F6E2096515F007E9BBE /* URLSchemeAttackExerciseVC.xib in Resources */,
+				A2C99F782096515F007E9BBE /* BinaryPatchingVC.xib in Resources */,
 				A238AA572079A6A3006C042F /* Assets.xcassets in Resources */,
-				A2AFC9302094A5C6002EAEF7 /* KeystrokeLoggingExerciseVC.xib in Resources */,
+				A2C99F672096515F007E9BBE /* CrossSiteScriptingExerciseVC.xib in Resources */,
+				A2C99F892096515F007E9BBE /* SocialEngineeringVC.xib in Resources */,
+				A2C99F7B2096515F007E9BBE /* RuntimeAnalysisChallengeVC.xib in Resources */,
 				A238A97C207897A2006C042F /* Main.storyboard in Resources */,
+				A2C99F722096515F007E9BBE /* BrokenCryptographyExerciseVC.xib in Resources */,
 				A238AA582079A6A3006C042F /* Assets.plist in Resources */,
 				A238AA612079A6A3006C042F /* Swaroop.html in Resources */,
 				A26CEAB7207A0A3A00A7E415 /* AboutCell.xib in Resources */,
 				A238AA592079A6A3006C042F /* rutger.html in Resources */,
 				A238AA5D2079A6A3006C042F /* splash.html in Resources */,
+				A2C99F682096515F007E9BBE /* SQLInjectionArticlesVC.xib in Resources */,
 				A238AA5A2079A6A3006C042F /* mansi.html in Resources */,
-				A25B4F6F2094B7A50065171C /* CryptoChallengeVC.xib in Resources */,
-				A25B4F7E2095A3CC0065171C /* StringAnalysisExerciseVC.xib in Resources */,
+				A2C99F752096515F007E9BBE /* KeyStorageServerSideVC.xib in Resources */,
+				A2C99F622096515F007E9BBE /* MemoryManagementVC.xib in Resources */,
 				A238AA5C2079A6A3006C042F /* KRvWAssociates.html in Resources */,
-				A25B4F74209557020065171C /* URLSchemeAttackExerciseVC.xib in Resources */,
-				A2AFC92E2094A5C6002EAEF7 /* BackgroundingExerciseVC.xib in Resources */,
+				A2C99F6C2096515F007E9BBE /* StringAnalysisExerciseVC.xib in Resources */,
+				A2C99F692096515F007E9BBE /* SQLInjectionExerciseVC.xib in Resources */,
+				A2C99F832096515F007E9BBE /* KeystrokeLoggingExerciseVC.xib in Resources */,
+				A2C99F602096515F007E9BBE /* NSUserDefaultsStorageExerciseVC.xib in Resources */,
 				A238AA5E2079A6A3006C042F /* Swaroop_Junard.html in Resources */,
-				A238AA6E2079DE66006C042F /* NSUserDefaultsStorageExerciseVC.xib in Resources */,
-				A25B4F7A209580E70065171C /* SocialEngineeringVC.xib in Resources */,
+				A2C99F7E2096515F007E9BBE /* DeviceLogsExerciseVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,47 +857,60 @@
 			buildActionMask = 2147483647;
 			files = (
 				A238AA452079A6A3006C042F /* UIViewController+Extension.swift in Sources */,
+				A2C99F6D2096515F007E9BBE /* StringAnalysisExerciseVC.swift in Sources */,
+				A2C99F732096515F007E9BBE /* BrokenCryptographyExerciseVC.swift in Sources */,
+				A2C99F802096515F007E9BBE /* BackgroundingExerciseVC.swift in Sources */,
 				A238AA442079A6A3006C042F /* UIAlertController+Extension.swift in Sources */,
 				A26CEABA207A0C4A00A7E415 /* AboutCell.swift in Sources */,
-				A2AFC9312094A5C6002EAEF7 /* CutAndPasteExerciseVC.swift in Sources */,
 				A238AA512079A6A3006C042F /* TransitionAnimator.swift in Sources */,
 				A25B4F642094ACE00065171C /* SVProgressHUD.m in Sources */,
 				A238AA552079A6A3006C042F /* SideMenuController.swift in Sources */,
-				A2AFC92C2094A5C6002EAEF7 /* DeviceLogsExerciseVC.swift in Sources */,
 				A238AA542079A6A3006C042F /* SideMenuController+SideUnder.swift in Sources */,
-				A2AFC92F2094A5C6002EAEF7 /* KeystrokeLoggingExerciseVC.swift in Sources */,
 				A238A977207897A2006C042F /* AppDelegate.swift in Sources */,
-				A25B4F79209580E70065171C /* SocialEngineeringVC.swift in Sources */,
 				A238AA4E2079A6A3006C042F /* Exercise.swift in Sources */,
-				A25B4F522094AC4C0065171C /* CloudMisconfigurationExerciseVC.swift in Sources */,
 				A238AA4A2079A6A3006C042F /* ExercisesVC.swift in Sources */,
 				A238AA522079A6A3006C042F /* UIKitExtensions.swift in Sources */,
+				A2C99F642096515F007E9BBE /* CryptoChallengeVC.swift in Sources */,
 				A25B4F672094ACE00065171C /* UIImage+animatedGIF.m in Sources */,
 				A238AA482079A6A3006C042F /* ExerciseIntroductionVC.swift in Sources */,
+				A2C99F842096515F007E9BBE /* CloudMisconfigurationExerciseVC.swift in Sources */,
+				A2C99F7F2096515F007E9BBE /* DeviceLogsExerciseVC.swift in Sources */,
+				A2C99F662096515F007E9BBE /* CrossSiteScriptingExerciseVC.swift in Sources */,
+				A2C99F702096515F007E9BBE /* RemoteAuthenticationExerciseVC.swift in Sources */,
+				A2C99F6B2096515F007E9BBE /* SQLInjectionExerciseVC.swift in Sources */,
 				A25B4F6B2094B5620065171C /* NSString+Extension.swift in Sources */,
-				A2AFC92D2094A5C6002EAEF7 /* BackgroundingExerciseVC.swift in Sources */,
-				A25B4F7D2095A3CC0065171C /* StringAnalysisExerciseVC.swift in Sources */,
+				A2C99F7C2096515F007E9BBE /* BruteForceRuntimeVC.swift in Sources */,
 				A238AA532079A6A3006C042F /* SideMenuController+CustomTypes.swift in Sources */,
 				A238AA492079A6A3006C042F /* MenuTableViewController.swift in Sources */,
+				A2C99F6A2096515F007E9BBE /* SQLInjectionArticlesVC.swift in Sources */,
+				A2C99F882096515F007E9BBE /* SocialEngineeringVC.swift in Sources */,
+				A2C99F822096515F007E9BBE /* KeystrokeLoggingExerciseVC.swift in Sources */,
 				A26CEABF207A0FAF00A7E415 /* HTMLViewController.swift in Sources */,
-				A25B4F73209557020065171C /* URLSchemeAttackExerciseVC.swift in Sources */,
-				A25B4F702094C23A0065171C /* CryptoChallengeVC.swift in Sources */,
+				A23E63DA20961C27005683A9 /* maxpower.c in Sources */,
 				A26CEABC207A0DF300A7E415 /* UIView+Extension.swift in Sources */,
 				A25B4F7620955CD50065171C /* URL+Extension.swift in Sources */,
 				A238AA4F2079A6A3006C042F /* CenterContainmentSegue.swift in Sources */,
-				A238AA6D2079DE66006C042F /* NSUserDefaultsStorageExerciseVC.swift in Sources */,
 				A238AA562079A6A3006C042F /* SideMenuController+SideOver.swift in Sources */,
+				A2C99F862096515F007E9BBE /* CutAndPasteExerciseVC.swift in Sources */,
+				A2C99F792096515F007E9BBE /* BinaryPatchingVC.swift in Sources */,
+				A2C99F6F2096515F007E9BBE /* URLSchemeAttackExerciseVC.swift in Sources */,
+				A23E63CB2095F0F5005683A9 /* Data+Extension.swift in Sources */,
 				A238AA502079A6A3006C042F /* SideContainmentSegue.swift in Sources */,
 				A238AA432079A6A3006C042F /* Constants.swift in Sources */,
+				A2C99F7A2096515F007E9BBE /* RuntimeAnalysisChallengeVC.swift in Sources */,
 				A238AA662079AEA6006C042F /* UITableViewCell+Extension.swift in Sources */,
+				A2C99F772096515F007E9BBE /* RandomKeyGenerationExerciseVC.swift in Sources */,
+				A2C99F612096515F007E9BBE /* NSUserDefaultsStorageExerciseVC.swift in Sources */,
 				A238AA4B2079A6A3006C042F /* ExerciseFlowController.swift in Sources */,
 				A238AA682079B137006C042F /* Asset.swift in Sources */,
 				A25B4F622094ACE00065171C /* SVRadialGradientLayer.m in Sources */,
+				A2C99F632096515F007E9BBE /* MemoryManagementVC.swift in Sources */,
 				A238AA462079A6A3006C042F /* UIStoryBoard+Extension.swift in Sources */,
 				A25B4F632094ACE00065171C /* SVProgressAnimatedView.m in Sources */,
 				A238AA472079A6A3006C042F /* ExerciseDemoVC.swift in Sources */,
 				A238AA642079AD42006C042F /* NSObject+Extension.swift in Sources */,
 				A26CEAC4207A34C900A7E415 /* HintVC.swift in Sources */,
+				A2C99F742096515F007E9BBE /* KeyStorageServerSideVC.swift in Sources */,
 				A25B4F652094ACE00065171C /* SVIndefiniteAnimatedView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

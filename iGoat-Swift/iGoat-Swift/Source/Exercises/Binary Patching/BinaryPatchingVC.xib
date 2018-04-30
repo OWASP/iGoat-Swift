@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BinaryPatchingVC" customModule="iGoat_Swift" customModuleProvider="target">
+            <connections>
+                <outlet property="passwordTextField" destination="JA7-KI-xIA" id="enw-6G-krG"/>
+                <outlet property="view" destination="d3j-6I-3os" id="anR-0Y-Ltu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="d3j-6I-3os">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aWF-ev-LLT">
+                    <rect key="frame" x="0.0" y="57" width="320" height="160"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Enter you password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="HAW-bO-Bjm">
+                            <rect key="frame" x="25" y="29" width="269" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPg-ft-Brb">
+                            <rect key="frame" x="141" y="102" width="38" height="30"/>
+                            <state key="normal" title="Login"/>
+                            <connections>
+                                <action selector="loginItemPressed" destination="-1" eventType="touchUpInside" id="Qer-MR-4pJ"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="JA7-KI-xIA">
+                            <rect key="frame" x="23" y="56" width="273" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="Ptg-53-bdX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            <connections>
+                                <action selector="textFieldReturnWithSender:" destination="-1" eventType="editingDidEndOnExit" id="Fmm-Ob-Dqh"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="HAW-bO-Bjm" firstAttribute="leading" secondItem="aWF-ev-LLT" secondAttribute="leading" constant="25" id="9LG-QC-OOp"/>
+                        <constraint firstAttribute="width" constant="320" id="RGj-ad-Lft"/>
+                        <constraint firstItem="JA7-KI-xIA" firstAttribute="leading" secondItem="aWF-ev-LLT" secondAttribute="leading" constant="23" id="RGx-s6-ghL"/>
+                        <constraint firstAttribute="height" constant="160" id="Tl1-1o-axA"/>
+                        <constraint firstItem="HAW-bO-Bjm" firstAttribute="centerX" secondItem="aWF-ev-LLT" secondAttribute="centerX" id="Ur1-CY-Dcl"/>
+                        <constraint firstItem="JA7-KI-xIA" firstAttribute="top" secondItem="aWF-ev-LLT" secondAttribute="top" constant="56" id="VY3-ZN-YUc"/>
+                        <constraint firstItem="JA7-KI-xIA" firstAttribute="top" secondItem="HAW-bO-Bjm" secondAttribute="bottom" constant="6" id="kXW-X0-mec"/>
+                        <constraint firstItem="JA7-KI-xIA" firstAttribute="centerX" secondItem="aWF-ev-LLT" secondAttribute="centerX" id="mHj-ps-tqy"/>
+                        <constraint firstItem="fPg-ft-Brb" firstAttribute="top" secondItem="JA7-KI-xIA" secondAttribute="bottom" constant="15" id="ugW-jB-0t3"/>
+                        <constraint firstItem="fPg-ft-Brb" firstAttribute="centerX" secondItem="aWF-ev-LLT" secondAttribute="centerX" id="z4i-MG-qaS"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Login" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="0Kx-ah-wHa">
+                    <rect key="frame" x="129" y="36" width="62.5" height="29"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aWF-ev-LLT" firstAttribute="top" secondItem="0Kx-ah-wHa" secondAttribute="bottom" constant="-8" id="3Ow-kb-BZS"/>
+                <constraint firstItem="0Kx-ah-wHa" firstAttribute="centerX" secondItem="d3j-6I-3os" secondAttribute="centerX" id="QbJ-5M-IaG"/>
+                <constraint firstItem="aWF-ev-LLT" firstAttribute="centerX" secondItem="d3j-6I-3os" secondAttribute="centerX" id="gM7-1u-sgo"/>
+                <constraint firstItem="0Kx-ah-wHa" firstAttribute="centerX" secondItem="d3j-6I-3os" secondAttribute="centerX" id="kkz-kc-FxN"/>
+                <constraint firstItem="0Kx-ah-wHa" firstAttribute="top" secondItem="PPb-3I-sSC" secondAttribute="top" constant="16" id="o0N-6K-6TV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="PPb-3I-sSC"/>
+            <point key="canvasLocation" x="-343" y="17"/>
+        </view>
+    </objects>
+</document>
