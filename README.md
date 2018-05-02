@@ -1,6 +1,6 @@
 ## OWASP iGoat (Swift) - A Damn Vulnerable Swift Application for iOS [![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](https://twitter.com/OWASPiGoat/)
 
-This is a Swift version of original iGoat https://github.com/OWASP/igoat project. Using OWASP iGoat, you can learn exploiting and defending vulnerabilities in iOS Swift applications. 
+This is a Swift version of original iGoat https://github.com/OWASP/igoat project. Using OWASP iGoat, you can learn exploiting and defending vulnerabilities in iOS Swift applications. Developed using [![Swift 4](https://img.shields.io/badge/Swift-4-blue.svg)](https://developer.apple.com/swift/)
 
 iGoat (Objective C) was presented at:
 [![AppSec USA 2017](https://img.shields.io/badge/AppSec%20USA-2017-red.svg)](https://appsecusa2017.sched.com/event/B2Xk/igoat-a-self-learning-tool-for-ios-app-pentesting-and-security) &nbsp; [![c0c0n 2017](https://img.shields.io/badge/c0c0n-2017-red.svg)](http://is-ra.org/c0c0n/2017/agenda) &nbsp; [![SEC-T 2017](https://img.shields.io/badge/SEC--T-2017-red.svg)](https://www.sec-t.org/archive/2017_events/schedule/) &nbsp; [![BruCON 2017](https://img.shields.io/badge/BruCON-2017-red.svg)](https://2017.brucon.org/index.php/Practical_iOS_App_Exploitation_and_Defense_using_iGoat) &nbsp; [![Bugcrowd Levelup 2017](https://img.shields.io/badge/BugcrowdLevelUp-2017-red.svg)](https://forum.bugcrowd.com/t/levelup-2017-discussion-swaroop-owasp-igoat/3052)
