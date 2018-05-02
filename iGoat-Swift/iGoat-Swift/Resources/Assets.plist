@@ -916,30 +916,6 @@ Pinning is the process of a mobile app verifying an SSL server&apos;s identity t
 			</dict>
 		</array>
 	</dict>
-	<key>Weak Server Side Controls</key>
-	<dict>
-		<key>description</key>
-		<string></string>
-		<key>exercises</key>
-		<array>
-			<dict>
-				<key>creditsFile</key>
-				<string>Swaroop_anthony.html</string>
-				<key>description</key>
-				<string>In this exercise, you will learn attacks related with back-end web componenets. </string>
-				<key>hints</key>
-				<array>
-					<string>Can you see some other user&apos;s data?</string>
-				</array>
-				<key>initialViewController</key>
-				<string>WeakServerSideControlsVC</string>
-				<key>name</key>
-				<string>Weak Server Side Control </string>
-				<key>solution</key>
-				<string>All you need is proxy tool to observe / modify traffic. You can perform privlege escalation and other web related attacks.</string>
-			</dict>
-		</array>
-	</dict>
 	<key>Runtime Analysis</key>
 	<dict>
 		<key>description</key>
