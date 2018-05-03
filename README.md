@@ -13,7 +13,7 @@ __OWASP TOP 10 Mobile__ </br><p align="left">* __Reverse Engineering__</br>* __R
 ## Demo
 ![Demo](https://github.com/swaroopsy/test/blob/master/OWASP_iGoat_Demo.gif)
 
-## Documentation: ![iGoat Wiki](https://github.com/OWASP/iGoat-Swift/wiki)
+__Documentation:__ <a href="https://github.com/OWASP/iGoat-Swift/wiki">iGoat Wiki</a>
 
 __iGoat Installation__ `git clone https://github.com/OWASP/iGoat-Swift.git`and open iGoat-Swift.xcodeproj with xcode.
 __Setup iGoat Server__ Navigate to server > docker_packaging and then user command `docker compose up`
