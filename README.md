@@ -16,7 +16,7 @@ __OWASP TOP 10 Mobile__ </br><p align="left">* __Reverse Engineering__</br>* __R
 
 __Documentation:__ <a href="https://github.com/OWASP/iGoat-Swift/wiki">iGoat Wiki</a>
 
-__iGoat Quick Setup `git clone https://github.com/OWASP/iGoat-Swift.git`and open iGoat-Swift.xcodeproj with xcode.
+__iGoat Quick Setup__ `git clone https://github.com/OWASP/iGoat-Swift.git`and open iGoat-Swift.xcodeproj with xcode.
 __Setup iGoat Server__ Navigate to server > docker_packaging and then user command `docker compose up`
 
 __Project Lead__ - Swaroop Yermalkar [![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](https://twitter.com/swaroopsy)
