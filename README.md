@@ -37,4 +37,4 @@ To contribute to iGoat project, please contact __Swaroop__ ( swaroop.yermalkar@o
 
 ### Project Contributors - ###
 [Junard Lebajan](https://twitter.com/junard)
-Your name can be here :)
+<br> Your name can be here :)
