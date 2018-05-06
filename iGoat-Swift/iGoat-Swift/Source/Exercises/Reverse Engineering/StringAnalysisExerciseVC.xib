@@ -12,15 +12,78 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StringAnalysisExerciseVC" customModule="iGoat_Swift" customModuleProvider="target">
             <connections>
+                <outlet property="answerTextField" destination="Nmt-cn-0fk" id="Cch-h5-vOX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OcK-W7-6eQ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Why did the goat cross the road?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="iSa-v7-tvi">
+                            <rect key="frame" x="22.5" y="53" width="281.5" height="23"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nmt-cn-0fk">
+                            <rect key="frame" x="48" y="84" width="280" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="mQb-9U-ZD7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c39-YL-6Q7">
+                            <rect key="frame" x="151" y="123" width="75" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="gza-Ke-UBG"/>
+                                <constraint firstAttribute="width" constant="75" id="wBg-tx-Fol"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="Submit"/>
+                            <connections>
+                                <action selector="submit" destination="-1" eventType="touchUpInside" id="1fz-n5-BXV"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Reverse Engineering" lineBreakMode="tailTruncation" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="TFo-RH-SQe">
+                            <rect key="frame" x="74" y="23" width="228" height="29"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="iSa-v7-tvi" firstAttribute="top" secondItem="TFo-RH-SQe" secondAttribute="bottom" constant="1" id="9s3-Zt-UmL"/>
+                        <constraint firstItem="Nmt-cn-0fk" firstAttribute="top" secondItem="iSa-v7-tvi" secondAttribute="bottom" constant="8" symbolic="YES" id="KQb-ei-Uvr"/>
+                        <constraint firstItem="Nmt-cn-0fk" firstAttribute="centerX" secondItem="c39-YL-6Q7" secondAttribute="centerX" id="Njh-fB-ea1"/>
+                        <constraint firstItem="c39-YL-6Q7" firstAttribute="top" secondItem="Nmt-cn-0fk" secondAttribute="bottom" constant="8" symbolic="YES" id="Ycj-BF-m0w"/>
+                        <constraint firstItem="Nmt-cn-0fk" firstAttribute="leading" secondItem="OcK-W7-6eQ" secondAttribute="leading" constant="48" id="a5x-eh-Qxw"/>
+                        <constraint firstItem="TFo-RH-SQe" firstAttribute="top" secondItem="OcK-W7-6eQ" secondAttribute="top" constant="23" id="av3-e7-bJ3"/>
+                        <constraint firstItem="TFo-RH-SQe" firstAttribute="leading" secondItem="OcK-W7-6eQ" secondAttribute="leading" constant="74" id="bGK-W6-h92"/>
+                        <constraint firstItem="TFo-RH-SQe" firstAttribute="centerX" secondItem="OcK-W7-6eQ" secondAttribute="centerX" id="dDc-mC-V0F"/>
+                        <constraint firstAttribute="trailing" secondItem="iSa-v7-tvi" secondAttribute="trailing" constant="71" id="e0U-cm-MSE"/>
+                        <constraint firstAttribute="trailing" secondItem="Nmt-cn-0fk" secondAttribute="trailing" constant="47" id="h4I-os-Dvs"/>
+                        <constraint firstAttribute="bottom" secondItem="c39-YL-6Q7" secondAttribute="bottom" constant="460" id="khr-xv-TNF"/>
+                        <constraint firstItem="TFo-RH-SQe" firstAttribute="centerX" secondItem="Nmt-cn-0fk" secondAttribute="centerX" id="mTa-1e-q26"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OcK-W7-6eQ" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="0yR-Mp-fiY"/>
+                <constraint firstAttribute="trailing" secondItem="OcK-W7-6eQ" secondAttribute="trailing" id="7oa-Uf-pfb"/>
+                <constraint firstItem="OcK-W7-6eQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="STe-71-mWZ"/>
+                <constraint firstItem="OcK-W7-6eQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="u4w-ne-aU7"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-273" y="-26"/>
         </view>
     </objects>
 </document>

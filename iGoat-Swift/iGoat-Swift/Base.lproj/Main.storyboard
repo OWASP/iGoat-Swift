@@ -118,6 +118,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OEV-J2-e7k"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
                         <outlet property="containerView" destination="BMw-i3-Mh2" id="FfX-0o-mfi"/>
                     </connections>
