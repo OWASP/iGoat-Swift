@@ -36,4 +36,5 @@ __Lead Developer__ - Anthony Gonsalves
 To contribute to iGoat project, please contact __Swaroop__ ( swaroop.yermalkar@owasp.org or @swaroopsy )
 
 ### Project Contributors - ###
+[Junard Lebajan](https://twitter.com/junard)
 Your name can be here :)
