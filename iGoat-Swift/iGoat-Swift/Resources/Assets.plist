@@ -45,7 +45,7 @@
                     </string>
 				</array>
 				<key>initialViewController</key>
-				<string>StringAnalysisExerciseController</string>
+				<string>StringAnalysisExerciseVC</string>
 				<key>name</key>
 				<string>String Analysis</string>
 				<key>solution</key>
