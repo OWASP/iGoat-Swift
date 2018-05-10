@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		828ADF5720A4860800E935F3 /* PlistStorageExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 828ADF5520A4860800E935F3 /* PlistStorageExerciseViewController.xib */; };
+		828ADF5820A4860800E935F3 /* PlistStorageExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828ADF5620A4860800E935F3 /* PlistStorageExerciseViewController.swift */; };
+		828ADF5A20A48B6000E935F3 /* Credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 828ADF5920A48B5F00E935F3 /* Credentials.plist */; };
 		A238A977207897A2006C042F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A238A976207897A2006C042F /* AppDelegate.swift */; };
 		A238A97C207897A2006C042F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A238A97A207897A2006C042F /* Main.storyboard */; };
 		A238A981207897A2006C042F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A238A97F207897A2006C042F /* LaunchScreen.storyboard */; };
@@ -115,6 +118,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		828ADF5520A4860800E935F3 /* PlistStorageExerciseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlistStorageExerciseViewController.xib; sourceTree = "<group>"; };
+		828ADF5620A4860800E935F3 /* PlistStorageExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistStorageExerciseViewController.swift; sourceTree = "<group>"; };
+		828ADF5920A48B5F00E935F3 /* Credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Credentials.plist; sourceTree = "<group>"; };
 		A238A973207897A2006C042F /* iGoat-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iGoat-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A238A976207897A2006C042F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A238A97B207897A2006C042F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -244,6 +250,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		828ADF5420A4860800E935F3 /* PlistStorage */ = {
+			isa = PBXGroup;
+			children = (
+				828ADF5920A48B5F00E935F3 /* Credentials.plist */,
+				828ADF5520A4860800E935F3 /* PlistStorageExerciseViewController.xib */,
+				828ADF5620A4860800E935F3 /* PlistStorageExerciseViewController.swift */,
+			);
+			path = PlistStorage;
+			sourceTree = "<group>";
+		};
 		A238A96A207897A2006C042F = {
 			isa = PBXGroup;
 			children = (
@@ -459,6 +475,7 @@
 		A2C99F1B2096515F007E9BBE /* InsecureLocalDataStorage */ = {
 			isa = PBXGroup;
 			children = (
+				828ADF5420A4860800E935F3 /* PlistStorage */,
 				A2C99F1C2096515F007E9BBE /* NSUserDefaults */,
 			);
 			path = InsecureLocalDataStorage;
@@ -804,6 +821,7 @@
 				A238AA572079A6A3006C042F /* Assets.xcassets in Resources */,
 				A2C99F672096515F007E9BBE /* CrossSiteScriptingExerciseVC.xib in Resources */,
 				A2C99F892096515F007E9BBE /* SocialEngineeringVC.xib in Resources */,
+				828ADF5A20A48B6000E935F3 /* Credentials.plist in Resources */,
 				A2C99F7B2096515F007E9BBE /* RuntimeAnalysisChallengeVC.xib in Resources */,
 				A238A97C207897A2006C042F /* Main.storyboard in Resources */,
 				A2C99F722096515F007E9BBE /* BrokenCryptographyExerciseVC.xib in Resources */,
@@ -823,6 +841,7 @@
 				A2C99F602096515F007E9BBE /* NSUserDefaultsStorageExerciseVC.xib in Resources */,
 				A238AA5E2079A6A3006C042F /* Swaroop_Junard.html in Resources */,
 				A2C99F7E2096515F007E9BBE /* DeviceLogsExerciseVC.xib in Resources */,
+				828ADF5720A4860800E935F3 /* PlistStorageExerciseViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -906,6 +925,7 @@
 				A25B4F622094ACE00065171C /* SVRadialGradientLayer.m in Sources */,
 				A2C99F632096515F007E9BBE /* MemoryManagementVC.swift in Sources */,
 				A238AA462079A6A3006C042F /* UIStoryBoard+Extension.swift in Sources */,
+				828ADF5820A4860800E935F3 /* PlistStorageExerciseViewController.swift in Sources */,
 				A25B4F632094ACE00065171C /* SVProgressAnimatedView.m in Sources */,
 				A238AA472079A6A3006C042F /* ExerciseDemoVC.swift in Sources */,
 				A238AA642079AD42006C042F /* NSObject+Extension.swift in Sources */,

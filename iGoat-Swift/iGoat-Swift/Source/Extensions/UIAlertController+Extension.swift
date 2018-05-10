@@ -1,7 +1,7 @@
 import UIKit
 
 extension UIAlertController {
-    @discardableResult func cancel(_ action: String? = "Cancel", onCancel: ((UIAlertAction) -> Void)? = nil) -> UIAlertController {
+    @discardableResult func cancel(_ action: String? = "Dismiss", onCancel: ((UIAlertAction) -> Void)? = nil) -> UIAlertController {
         self.addAction(UIAlertAction(title: action, style: .cancel, handler: { alert in
             onCancel?(alert)
         }))
