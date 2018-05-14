@@ -18,6 +18,7 @@ __Documentation:__ <a href="https://github.com/OWASP/iGoat-Swift/wiki">iGoat Wik
 
 __iGoat Quick Setup__ `git clone https://github.com/OWASP/iGoat-Swift.git`and open iGoat-Swift.xcodeproj with xcode.
 __Setup iGoat Server__ Navigate to server > docker_packaging and then user command `docker compose up`
+__Using Cydia Repo__ - Open Cydia -> Sources -> Edit and add source http://swiftigoat.yourepo.com/ and then search for iGoat and install it.
 
 __Project Lead__ - Swaroop Yermalkar [![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](https://twitter.com/swaroopsy)
 
@@ -37,4 +38,5 @@ To contribute to iGoat project, please contact __Swaroop__ ( swaroop.yermalkar@o
 
 ### Project Contributors - ###
 [Junard Lebajan](https://twitter.com/junard)
+[Tim](https://twitter.com/0xff7)
 <br> Your name can be here :) We give cool iGoat t-shirt and swag!
