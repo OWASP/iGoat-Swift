@@ -305,7 +305,7 @@ This information is also stored in:
                         &lt;{Bundle ID}&gt;/Library/Preferences/com.krvw.iGoat.plist</string>
 				</array>
 				<key>initialViewController</key>
-				<string>KeychainExerciseViewController</string>
+				<string>KeychainExerciseVC</string>
 				<key>name</key>
 				<string>Keychain Usage</string>
 				<key>solution</key>

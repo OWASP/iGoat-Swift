@@ -108,6 +108,9 @@
 		C0AF230020B816B200B13D26 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0AF22FC20B816B200B13D26 /* CoreData.xcdatamodeld */; };
 		C0AF230120B816B200B13D26 /* CoreDataExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF22FE20B816B200B13D26 /* CoreDataExerciseVC.swift */; };
 		C0AF230220B816B200B13D26 /* CoreDataExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0AF22FF20B816B200B13D26 /* CoreDataExerciseVC.xib */; };
+		C0AF231220B81AD400B13D26 /* KeychainExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF230F20B81AD400B13D26 /* KeychainExerciseVC.swift */; };
+		C0AF231320B81AD400B13D26 /* KeychainExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0AF231020B81AD400B13D26 /* KeychainExerciseVC.xib */; };
+		C0AF231420B81AD400B13D26 /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF231120B81AD400B13D26 /* KeychainPasswordItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -235,6 +238,9 @@
 		C0AF22FD20B816B200B13D26 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		C0AF22FE20B816B200B13D26 /* CoreDataExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataExerciseVC.swift; sourceTree = "<group>"; };
 		C0AF22FF20B816B200B13D26 /* CoreDataExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoreDataExerciseVC.xib; sourceTree = "<group>"; };
+		C0AF230F20B81AD400B13D26 /* KeychainExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainExerciseVC.swift; sourceTree = "<group>"; };
+		C0AF231020B81AD400B13D26 /* KeychainExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeychainExerciseVC.xib; sourceTree = "<group>"; };
+		C0AF231120B81AD400B13D26 /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -481,6 +487,7 @@
 		A2C99F1B2096515F007E9BBE /* InsecureLocalDataStorage */ = {
 			isa = PBXGroup;
 			children = (
+				C0AF230E20B81AD400B13D26 /* KeychainAnalyze */,
 				C0AF22FB20B816B200B13D26 /* CoreData */,
 				828ADF5420A4860800E935F3 /* PlistStorage */,
 				A2C99F1C2096515F007E9BBE /* NSUserDefaults */,
@@ -736,6 +743,16 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		C0AF230E20B81AD400B13D26 /* KeychainAnalyze */ = {
+			isa = PBXGroup;
+			children = (
+				C0AF230F20B81AD400B13D26 /* KeychainExerciseVC.swift */,
+				C0AF231020B81AD400B13D26 /* KeychainExerciseVC.xib */,
+				C0AF231120B81AD400B13D26 /* KeychainPasswordItem.swift */,
+			);
+			path = KeychainAnalyze;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -850,6 +867,7 @@
 				A2C99F682096515F007E9BBE /* SQLInjectionArticlesVC.xib in Resources */,
 				A238AA5A2079A6A3006C042F /* mansi.html in Resources */,
 				A2C99F752096515F007E9BBE /* KeyStorageServerSideVC.xib in Resources */,
+				C0AF231320B81AD400B13D26 /* KeychainExerciseVC.xib in Resources */,
 				A2C99F622096515F007E9BBE /* MemoryManagementVC.xib in Resources */,
 				A238AA5C2079A6A3006C042F /* KRvWAssociates.html in Resources */,
 				A2C99F6C2096515F007E9BBE /* StringAnalysisExerciseVC.xib in Resources */,
@@ -929,6 +947,7 @@
 				A26CEABC207A0DF300A7E415 /* UIView+Extension.swift in Sources */,
 				A25B4F7620955CD50065171C /* URL+Extension.swift in Sources */,
 				A238AA4F2079A6A3006C042F /* CenterContainmentSegue.swift in Sources */,
+				C0AF231220B81AD400B13D26 /* KeychainExerciseVC.swift in Sources */,
 				A238AA562079A6A3006C042F /* SideMenuController+SideOver.swift in Sources */,
 				A2C99F862096515F007E9BBE /* CutAndPasteExerciseVC.swift in Sources */,
 				A2C99F792096515F007E9BBE /* BinaryPatchingVC.swift in Sources */,
@@ -950,6 +969,7 @@
 				A238AA472079A6A3006C042F /* ExerciseDemoVC.swift in Sources */,
 				A238AA642079AD42006C042F /* NSObject+Extension.swift in Sources */,
 				A26CEAC4207A34C900A7E415 /* HintVC.swift in Sources */,
+				C0AF231420B81AD400B13D26 /* KeychainPasswordItem.swift in Sources */,
 				A2C99F742096515F007E9BBE /* KeyStorageServerSideVC.swift in Sources */,
 				A25B4F652094ACE00065171C /* SVIndefiniteAnimatedView.m in Sources */,
 			);
