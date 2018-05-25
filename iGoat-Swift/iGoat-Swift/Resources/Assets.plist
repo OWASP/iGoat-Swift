@@ -227,7 +227,7 @@
 					<string>Try to find out NSUserDefaults file in app sandbox.</string>
 				</array>
 				<key>initialViewController</key>
-				<string>CoreDataExerciseViewController</string>
+				<string>CoreDataExerciseVC</string>
 				<key>name</key>
 				<string>Core Data Storage</string>
 				<key>solution</key>
@@ -253,7 +253,7 @@
 					<string>Now, go verify the sensitive data in the database file.</string>
 				</array>
 				<key>initialViewController</key>
-				<string>LocalDataStorageExerciseController</string>
+				<string></string>
 				<key>name</key>
 				<string>Local Data Storage (SQLite)</string>
 				<key>solution</key>

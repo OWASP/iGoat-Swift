@@ -105,6 +105,9 @@
 		A2C99F872096515F007E9BBE /* CutAndPasteExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F5C2096515F007E9BBE /* CutAndPasteExerciseVC.xib */; };
 		A2C99F882096515F007E9BBE /* SocialEngineeringVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C99F5E2096515F007E9BBE /* SocialEngineeringVC.swift */; };
 		A2C99F892096515F007E9BBE /* SocialEngineeringVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F5F2096515F007E9BBE /* SocialEngineeringVC.xib */; };
+		C0AF230020B816B200B13D26 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0AF22FC20B816B200B13D26 /* CoreData.xcdatamodeld */; };
+		C0AF230120B816B200B13D26 /* CoreDataExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF22FE20B816B200B13D26 /* CoreDataExerciseVC.swift */; };
+		C0AF230220B816B200B13D26 /* CoreDataExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0AF22FF20B816B200B13D26 /* CoreDataExerciseVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -229,6 +232,9 @@
 		A2C99F5C2096515F007E9BBE /* CutAndPasteExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CutAndPasteExerciseVC.xib; sourceTree = "<group>"; };
 		A2C99F5E2096515F007E9BBE /* SocialEngineeringVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialEngineeringVC.swift; sourceTree = "<group>"; };
 		A2C99F5F2096515F007E9BBE /* SocialEngineeringVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocialEngineeringVC.xib; sourceTree = "<group>"; };
+		C0AF22FD20B816B200B13D26 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		C0AF22FE20B816B200B13D26 /* CoreDataExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataExerciseVC.swift; sourceTree = "<group>"; };
+		C0AF22FF20B816B200B13D26 /* CoreDataExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoreDataExerciseVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -475,6 +481,7 @@
 		A2C99F1B2096515F007E9BBE /* InsecureLocalDataStorage */ = {
 			isa = PBXGroup;
 			children = (
+				C0AF22FB20B816B200B13D26 /* CoreData */,
 				828ADF5420A4860800E935F3 /* PlistStorage */,
 				A2C99F1C2096515F007E9BBE /* NSUserDefaults */,
 			);
@@ -719,6 +726,16 @@
 			path = "Social Engineering";
 			sourceTree = "<group>";
 		};
+		C0AF22FB20B816B200B13D26 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C0AF22FC20B816B200B13D26 /* CoreData.xcdatamodeld */,
+				C0AF22FE20B816B200B13D26 /* CoreDataExerciseVC.swift */,
+				C0AF22FF20B816B200B13D26 /* CoreDataExerciseVC.xib */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -838,6 +855,7 @@
 				A2C99F6C2096515F007E9BBE /* StringAnalysisExerciseVC.xib in Resources */,
 				A2C99F692096515F007E9BBE /* SQLInjectionExerciseVC.xib in Resources */,
 				A2C99F832096515F007E9BBE /* KeystrokeLoggingExerciseVC.xib in Resources */,
+				C0AF230220B816B200B13D26 /* CoreDataExerciseVC.xib in Resources */,
 				A2C99F602096515F007E9BBE /* NSUserDefaultsStorageExerciseVC.xib in Resources */,
 				A238AA5E2079A6A3006C042F /* Swaroop_Junard.html in Resources */,
 				A2C99F7E2096515F007E9BBE /* DeviceLogsExerciseVC.xib in Resources */,
@@ -885,6 +903,7 @@
 				A25B4F642094ACE00065171C /* SVProgressHUD.m in Sources */,
 				A238AA552079A6A3006C042F /* SideMenuController.swift in Sources */,
 				A238AA542079A6A3006C042F /* SideMenuController+SideUnder.swift in Sources */,
+				C0AF230020B816B200B13D26 /* CoreData.xcdatamodeld in Sources */,
 				A238A977207897A2006C042F /* AppDelegate.swift in Sources */,
 				A238AA4E2079A6A3006C042F /* Exercise.swift in Sources */,
 				A238AA4A2079A6A3006C042F /* ExercisesVC.swift in Sources */,
@@ -902,6 +921,7 @@
 				A238AA532079A6A3006C042F /* SideMenuController+CustomTypes.swift in Sources */,
 				A238AA492079A6A3006C042F /* MenuTableViewController.swift in Sources */,
 				A2C99F6A2096515F007E9BBE /* SQLInjectionArticlesVC.swift in Sources */,
+				C0AF230120B816B200B13D26 /* CoreDataExerciseVC.swift in Sources */,
 				A2C99F882096515F007E9BBE /* SocialEngineeringVC.swift in Sources */,
 				A2C99F822096515F007E9BBE /* KeystrokeLoggingExerciseVC.swift in Sources */,
 				A26CEABF207A0FAF00A7E415 /* HTMLViewController.swift in Sources */,
@@ -1087,6 +1107,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6J6AZQ7T23;
 				INFOPLIST_FILE = "iGoat-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "OWASP.iGoat-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1103,6 +1124,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6J6AZQ7T23;
 				INFOPLIST_FILE = "iGoat-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "OWASP.iGoat-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1175,6 +1197,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C0AF22FC20B816B200B13D26 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C0AF22FD20B816B200B13D26 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = C0AF22FD20B816B200B13D26 /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A238A96B207897A2006C042F /* Project object */;
 }
