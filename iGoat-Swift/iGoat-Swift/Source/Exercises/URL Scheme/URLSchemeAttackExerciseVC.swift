@@ -17,7 +17,11 @@ class URLSchemeAttackExerciseVC: UIViewController {
             let url = URL(string: urlString),
             app.canOpenURL(url) == true
         {
-            app.openURL(url)
+            if #available(iOS 10.0, *) {
+                app.open(url, options: [:], completionHandler: nil)
+            } else {
+                app.openURL(url)
+            }
         }
     }
 }
