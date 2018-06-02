@@ -19,7 +19,7 @@ class BruteForceRuntimeVC: UIViewController {
     }
     
     func validatePin(_ pin: String) -> Bool {
-        // 1181
+        // 6765
         let reference = "0252B081BDA70B478F0131B310A93CB8D79086D785FB4AE392A8C5FFC3DDC5FE"
         let data = ccSha256(data: pin.data(using: .utf8)!)
         let pinSHA256 = data.map { String(format: "%02hhx", $0) }.joined()
