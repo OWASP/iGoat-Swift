@@ -32,7 +32,7 @@ class BrokenCryptographyExerciseVC: UIViewController {
         let password = "b@nkP@ssword123"
         passwordTextField.text = password
         let data = password.data(using: .utf8)
-        print(data)
+        print(data!)
         
         let encryptionKeyData = encryptionKey.data(using: .utf8)
         let encryptedData = data?.aes(operation: kCCEncrypt, keyData: encryptionKeyData!)
