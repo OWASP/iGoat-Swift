@@ -484,7 +484,7 @@ Your task is to locate the cache file and find the sensitive data that it contai
 					<string>Now, run the exercise and send the data in the provided fields to the server by pressing the submit button.</string>
 				</array>
 				<key>initialViewController</key>
-				<string>ServerCommunicationExerciseController</string>
+				<string>ServerCommunicationExerciseVC</string>
 				<key>name</key>
 				<string>Server Communication</string>
 				<key>solution</key>
