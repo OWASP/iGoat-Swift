@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebkitCacheExerciseVC" customModule="iGoat_Swift" customModuleProvider="target">
+            <connections>
+                <outlet property="responseLabel" destination="t4U-2y-W7n" id="8AT-29-J6G"/>
+                <outlet property="textField" destination="aus-wO-8gO" id="dpy-Eo-JBf"/>
+                <outlet property="view" destination="zOI-eU-gAD" id="HrL-DZ-dvp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zOI-eU-gAD">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PGz-wm-vgV">
+                    <rect key="frame" x="0.0" y="57" width="320" height="160"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Guess" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="t4U-2y-W7n">
+                            <rect key="frame" x="25" y="29.5" width="269" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.14584872130000001" green="0.24874263999999999" blue="0.57747852799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aus-wO-8gO">
+                            <rect key="frame" x="23" y="56" width="273" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="JET-RM-ut8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            <connections>
+                                <action selector="textFieldReturnWithSender:" destination="-1" eventType="editingDidEndOnExit" id="leo-lZ-oP6"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="166-kd-Rkb"/>
+                        <constraint firstItem="t4U-2y-W7n" firstAttribute="leading" secondItem="PGz-wm-vgV" secondAttribute="leading" constant="25" id="3hG-G9-w4I"/>
+                        <constraint firstItem="t4U-2y-W7n" firstAttribute="centerX" secondItem="PGz-wm-vgV" secondAttribute="centerX" id="6x1-RA-nqB"/>
+                        <constraint firstItem="aus-wO-8gO" firstAttribute="top" secondItem="PGz-wm-vgV" secondAttribute="top" constant="56" id="Cyx-IR-5Cq"/>
+                        <constraint firstItem="aus-wO-8gO" firstAttribute="centerX" secondItem="PGz-wm-vgV" secondAttribute="centerX" id="LeV-kq-N9Q"/>
+                        <constraint firstAttribute="height" constant="160" id="WQ0-8B-fXv"/>
+                        <constraint firstItem="aus-wO-8gO" firstAttribute="top" secondItem="t4U-2y-W7n" secondAttribute="bottom" constant="6" id="Yb0-Eq-6DO"/>
+                        <constraint firstItem="aus-wO-8gO" firstAttribute="leading" secondItem="PGz-wm-vgV" secondAttribute="leading" constant="23" id="kUd-Be-A1G"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Guess" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="m74-dA-Avv">
+                    <rect key="frame" x="124" y="36" width="72" height="29"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVc-Bw-VCW">
+                    <rect key="frame" x="136" y="166" width="49" height="30"/>
+                    <state key="normal" title="Submit"/>
+                    <connections>
+                        <action selector="verify" destination="-1" eventType="touchUpInside" id="3aH-xY-Nqa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QlY-7Q-iqL" firstAttribute="bottom" secondItem="jVc-Bw-VCW" secondAttribute="bottom" constant="284" id="081-NA-RGC"/>
+                <constraint firstItem="PGz-wm-vgV" firstAttribute="centerX" secondItem="zOI-eU-gAD" secondAttribute="centerX" id="Dzf-fb-i4S"/>
+                <constraint firstItem="m74-dA-Avv" firstAttribute="centerX" secondItem="zOI-eU-gAD" secondAttribute="centerX" id="Gm7-pi-9RK"/>
+                <constraint firstItem="PGz-wm-vgV" firstAttribute="top" secondItem="m74-dA-Avv" secondAttribute="bottom" constant="-8" id="KqS-X4-6Mp"/>
+                <constraint firstItem="jVc-Bw-VCW" firstAttribute="centerX" secondItem="zOI-eU-gAD" secondAttribute="centerX" id="eL9-iD-eM9"/>
+                <constraint firstItem="m74-dA-Avv" firstAttribute="centerX" secondItem="zOI-eU-gAD" secondAttribute="centerX" id="feu-ed-7Eq"/>
+                <constraint firstItem="m74-dA-Avv" firstAttribute="top" secondItem="QlY-7Q-iqL" secondAttribute="top" constant="16" id="v1u-Mf-4PM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="QlY-7Q-iqL"/>
+            <point key="canvasLocation" x="-343" y="17"/>
+        </view>
+    </objects>
+</document>

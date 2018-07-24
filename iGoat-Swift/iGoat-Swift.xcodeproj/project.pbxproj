@@ -113,6 +113,10 @@
 		C0AF231220B81AD400B13D26 /* KeychainExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF230F20B81AD400B13D26 /* KeychainExerciseVC.swift */; };
 		C0AF231320B81AD400B13D26 /* KeychainExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0AF231020B81AD400B13D26 /* KeychainExerciseVC.xib */; };
 		C0AF231420B81AD400B13D26 /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF231120B81AD400B13D26 /* KeychainPasswordItem.swift */; };
+		C0FD38F52106E1D9004458FC /* WebkitCacheExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0FD38F32106E1D9004458FC /* WebkitCacheExerciseVC.xib */; };
+		C0FD38F62106E1D9004458FC /* WebkitCacheExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FD38F42106E1D9004458FC /* WebkitCacheExerciseVC.swift */; };
+		C0FD38FA2106E1DE004458FC /* BinaryCookiesExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FD38F82106E1DE004458FC /* BinaryCookiesExerciseVC.swift */; };
+		C0FD38FB2106E1DE004458FC /* BinaryCookiesExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0FD38F92106E1DE004458FC /* BinaryCookiesExerciseVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -245,6 +249,10 @@
 		C0AF230F20B81AD400B13D26 /* KeychainExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainExerciseVC.swift; sourceTree = "<group>"; };
 		C0AF231020B81AD400B13D26 /* KeychainExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeychainExerciseVC.xib; sourceTree = "<group>"; };
 		C0AF231120B81AD400B13D26 /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
+		C0FD38F32106E1D9004458FC /* WebkitCacheExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebkitCacheExerciseVC.xib; sourceTree = "<group>"; };
+		C0FD38F42106E1D9004458FC /* WebkitCacheExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebkitCacheExerciseVC.swift; sourceTree = "<group>"; };
+		C0FD38F82106E1DE004458FC /* BinaryCookiesExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryCookiesExerciseVC.swift; sourceTree = "<group>"; };
+		C0FD38F92106E1DE004458FC /* BinaryCookiesExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BinaryCookiesExerciseVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -501,6 +509,8 @@
 		A2C99F1B2096515F007E9BBE /* InsecureLocalDataStorage */ = {
 			isa = PBXGroup;
 			children = (
+				C0FD38F72106E1DE004458FC /* BinaryCookies */,
+				C0FD38F22106E1D9004458FC /* WebKit Cache */,
 				C0AF230E20B81AD400B13D26 /* KeychainAnalyze */,
 				C0AF22FB20B816B200B13D26 /* CoreData */,
 				828ADF5420A4860800E935F3 /* PlistStorage */,
@@ -767,6 +777,24 @@
 			path = KeychainAnalyze;
 			sourceTree = "<group>";
 		};
+		C0FD38F22106E1D9004458FC /* WebKit Cache */ = {
+			isa = PBXGroup;
+			children = (
+				C0FD38F32106E1D9004458FC /* WebkitCacheExerciseVC.xib */,
+				C0FD38F42106E1D9004458FC /* WebkitCacheExerciseVC.swift */,
+			);
+			path = "WebKit Cache";
+			sourceTree = "<group>";
+		};
+		C0FD38F72106E1DE004458FC /* BinaryCookies */ = {
+			isa = PBXGroup;
+			children = (
+				C0FD38F82106E1DE004458FC /* BinaryCookiesExerciseVC.swift */,
+				C0FD38F92106E1DE004458FC /* BinaryCookiesExerciseVC.xib */,
+			);
+			path = BinaryCookies;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -870,6 +898,7 @@
 				A238AA572079A6A3006C042F /* Assets.xcassets in Resources */,
 				A2C99F672096515F007E9BBE /* CrossSiteScriptingExerciseVC.xib in Resources */,
 				A2C99F892096515F007E9BBE /* SocialEngineeringVC.xib in Resources */,
+				C0FD38FB2106E1DE004458FC /* BinaryCookiesExerciseVC.xib in Resources */,
 				828ADF5A20A48B6000E935F3 /* Credentials.plist in Resources */,
 				A2C99F7B2096515F007E9BBE /* RuntimeAnalysisChallengeVC.xib in Resources */,
 				A238A97C207897A2006C042F /* Main.storyboard in Resources */,
@@ -878,6 +907,7 @@
 				A238AA612079A6A3006C042F /* Swaroop.html in Resources */,
 				A26CEAB7207A0A3A00A7E415 /* AboutCell.xib in Resources */,
 				A238AA592079A6A3006C042F /* rutger.html in Resources */,
+				C0FD38F52106E1D9004458FC /* WebkitCacheExerciseVC.xib in Resources */,
 				A238AA5D2079A6A3006C042F /* splash.html in Resources */,
 				A2C99F682096515F007E9BBE /* SQLInjectionArticlesVC.xib in Resources */,
 				A238AA5A2079A6A3006C042F /* mansi.html in Resources */,
@@ -969,6 +999,7 @@
 				A2C99F792096515F007E9BBE /* BinaryPatchingVC.swift in Sources */,
 				A2C99F6F2096515F007E9BBE /* URLSchemeAttackExerciseVC.swift in Sources */,
 				A23E63CB2095F0F5005683A9 /* Data+Extension.swift in Sources */,
+				C0FD38F62106E1D9004458FC /* WebkitCacheExerciseVC.swift in Sources */,
 				A238AA502079A6A3006C042F /* SideContainmentSegue.swift in Sources */,
 				A238AA432079A6A3006C042F /* Constants.swift in Sources */,
 				A2C99F7A2096515F007E9BBE /* RuntimeAnalysisChallengeVC.swift in Sources */,
@@ -984,6 +1015,7 @@
 				A25B4F632094ACE00065171C /* SVProgressAnimatedView.m in Sources */,
 				A238AA472079A6A3006C042F /* ExerciseDemoVC.swift in Sources */,
 				A238AA642079AD42006C042F /* NSObject+Extension.swift in Sources */,
+				C0FD38FA2106E1DE004458FC /* BinaryCookiesExerciseVC.swift in Sources */,
 				A26CEAC4207A34C900A7E415 /* HintVC.swift in Sources */,
 				C0AF231420B81AD400B13D26 /* KeychainPasswordItem.swift in Sources */,
 				A2C99F742096515F007E9BBE /* KeyStorageServerSideVC.swift in Sources */,
