@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebkitCacheExerciseVC" customModule="iGoat_Swift" customModuleProvider="target">
             <connections>
-                <outlet property="responseLabel" destination="t4U-2y-W7n" id="8AT-29-J6G"/>
                 <outlet property="textField" destination="aus-wO-8gO" id="dpy-Eo-JBf"/>
                 <outlet property="view" destination="zOI-eU-gAD" id="HrL-DZ-dvp"/>
             </connections>
@@ -25,13 +24,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PGz-wm-vgV">
                     <rect key="frame" x="0.0" y="57" width="320" height="160"/>
                     <subviews>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Guess" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="t4U-2y-W7n">
-                            <rect key="frame" x="25" y="29.5" width="269" height="20.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" red="0.14584872130000001" green="0.24874263999999999" blue="0.57747852799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aus-wO-8gO">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Key" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aus-wO-8gO">
                             <rect key="frame" x="23" y="56" width="273" height="31"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="31" id="JET-RM-ut8"/>
@@ -46,17 +39,14 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="320" id="166-kd-Rkb"/>
-                        <constraint firstItem="t4U-2y-W7n" firstAttribute="leading" secondItem="PGz-wm-vgV" secondAttribute="leading" constant="25" id="3hG-G9-w4I"/>
-                        <constraint firstItem="t4U-2y-W7n" firstAttribute="centerX" secondItem="PGz-wm-vgV" secondAttribute="centerX" id="6x1-RA-nqB"/>
                         <constraint firstItem="aus-wO-8gO" firstAttribute="top" secondItem="PGz-wm-vgV" secondAttribute="top" constant="56" id="Cyx-IR-5Cq"/>
                         <constraint firstItem="aus-wO-8gO" firstAttribute="centerX" secondItem="PGz-wm-vgV" secondAttribute="centerX" id="LeV-kq-N9Q"/>
                         <constraint firstAttribute="height" constant="160" id="WQ0-8B-fXv"/>
-                        <constraint firstItem="aus-wO-8gO" firstAttribute="top" secondItem="t4U-2y-W7n" secondAttribute="bottom" constant="6" id="Yb0-Eq-6DO"/>
                         <constraint firstItem="aus-wO-8gO" firstAttribute="leading" secondItem="PGz-wm-vgV" secondAttribute="leading" constant="23" id="kUd-Be-A1G"/>
                     </constraints>
                 </view>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Guess" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="m74-dA-Avv">
-                    <rect key="frame" x="124" y="36" width="72" height="29"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Webkit Cache" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="m74-dA-Avv">
+                    <rect key="frame" x="82" y="36" width="157" height="29"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
