@@ -35,7 +35,6 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FaV-0B-dmD">
                             <rect key="frame" x="8" y="69" width="359" height="303"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.36911709424986439" green="1" blue="0.2512923752760533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <mutableString key="text">If you are running iGoat in an emulator, you will not be running it in a Jailbroken environment.  For this exercise, you can either run this app on a proper Jailbroken iDevice or flip the switch below to fake it.  When creating a solution, be sure to run your solution within an acutal jailbroken device.  Otherwise, the app will not give you a true assessment of your success.</mutableString>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
