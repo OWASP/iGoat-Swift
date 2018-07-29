@@ -116,7 +116,7 @@
                     </string>
 				</array>
 				<key>initialViewController</key>
-				<string>MethodSwizzlingExerciseController</string>
+				<string>MethodSwizzlingExerciseVC</string>
 				<key>name</key>
 				<string>Method Swizzling</string>
 				<key>solution</key>

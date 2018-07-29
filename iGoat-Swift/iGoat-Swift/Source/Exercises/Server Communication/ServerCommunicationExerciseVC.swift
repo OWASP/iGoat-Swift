@@ -2,7 +2,7 @@
 //  ServerCommunicationExerciseVC.swift
 //  iGoat-Swift
 //
-//  Created by Junard Lebajan on 6/7/18.
+//  Created on 6/7/18.
 //  Copyright © 2018 OWASP. All rights reserved.
 //
 
