@@ -150,7 +150,6 @@
 		82A87DDE214E810700E5A12A /* CouchBaseExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouchBaseExerciseVC.swift; sourceTree = "<group>"; };
 		82A87DE1214E86C900E5A12A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		82A87DE3214E884500E5A12A /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
-		82A87DE5214E885600E5A12A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		82A87DE7214E886100E5A12A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		82EAF6CE210C3F0A00336012 /* MethodSwizzlingExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodSwizzlingExerciseVC.swift; sourceTree = "<group>"; };
 		82EAF6CF210C3F0A00336012 /* MethodSwizzlingExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MethodSwizzlingExerciseVC.xib; sourceTree = "<group>"; };
@@ -545,7 +544,6 @@
 			isa = PBXGroup;
 			children = (
 				82A87DE7214E886100E5A12A /* SystemConfiguration.framework */,
-				82A87DE5214E885600E5A12A /* CFNetwork.framework */,
 				82A87DE3214E884500E5A12A /* libstdc++.tbd */,
 				82A87DE1214E86C900E5A12A /* libz.tbd */,
 				A25B4F882095CC7E0065171C /* libsqlite3.tbd */,
