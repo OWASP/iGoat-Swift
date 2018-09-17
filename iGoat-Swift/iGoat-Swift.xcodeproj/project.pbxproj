@@ -13,6 +13,12 @@
 		828ADF5820A4860800E935F3 /* PlistStorageExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828ADF5620A4860800E935F3 /* PlistStorageExerciseViewController.swift */; };
 		828ADF5A20A48B6000E935F3 /* Credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 828ADF5920A48B5F00E935F3 /* Credentials.plist */; };
 		82966AE4210C499E0000043F /* Sentinel.txt in Resources */ = {isa = PBXBuildFile; fileRef = 82966AE3210C499E0000043F /* Sentinel.txt */; };
+		82A87DD9214E800200E5A12A /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A87DD8214E800200E5A12A /* CouchbaseLite.framework */; };
+		82A87DDF214E810700E5A12A /* CouchBaseExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82A87DDD214E810700E5A12A /* CouchBaseExerciseVC.xib */; };
+		82A87DE0214E810700E5A12A /* CouchBaseExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A87DDE214E810700E5A12A /* CouchBaseExerciseVC.swift */; };
+		82A87DE2214E86C900E5A12A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A87DE1214E86C900E5A12A /* libz.tbd */; };
+		82A87DE4214E884500E5A12A /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A87DE3214E884500E5A12A /* libstdc++.tbd */; };
+		82A87DE8214E886100E5A12A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A87DE7214E886100E5A12A /* SystemConfiguration.framework */; };
 		82EAF6D0210C3F0A00336012 /* MethodSwizzlingExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EAF6CE210C3F0A00336012 /* MethodSwizzlingExerciseVC.swift */; };
 		82EAF6D1210C3F0A00336012 /* MethodSwizzlingExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EAF6CF210C3F0A00336012 /* MethodSwizzlingExerciseVC.xib */; };
 		A238A977207897A2006C042F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A238A976207897A2006C042F /* AppDelegate.swift */; };
@@ -139,6 +145,12 @@
 		828ADF5620A4860800E935F3 /* PlistStorageExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistStorageExerciseViewController.swift; sourceTree = "<group>"; };
 		828ADF5920A48B5F00E935F3 /* Credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Credentials.plist; sourceTree = "<group>"; };
 		82966AE3210C499E0000043F /* Sentinel.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sentinel.txt; sourceTree = "<group>"; };
+		82A87DD8214E800200E5A12A /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CouchbaseLite.framework; path = "iGoat-Swift/ThirdParty/CouchBase/CouchbaseLite.framework"; sourceTree = "<group>"; };
+		82A87DDD214E810700E5A12A /* CouchBaseExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouchBaseExerciseVC.xib; sourceTree = "<group>"; };
+		82A87DDE214E810700E5A12A /* CouchBaseExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouchBaseExerciseVC.swift; sourceTree = "<group>"; };
+		82A87DE1214E86C900E5A12A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		82A87DE3214E884500E5A12A /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		82A87DE7214E886100E5A12A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		82EAF6CE210C3F0A00336012 /* MethodSwizzlingExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodSwizzlingExerciseVC.swift; sourceTree = "<group>"; };
 		82EAF6CF210C3F0A00336012 /* MethodSwizzlingExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MethodSwizzlingExerciseVC.xib; sourceTree = "<group>"; };
 		A238A973207897A2006C042F /* iGoat-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iGoat-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -266,6 +278,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82A87DE8214E886100E5A12A /* SystemConfiguration.framework in Frameworks */,
+				82A87DD9214E800200E5A12A /* CouchbaseLite.framework in Frameworks */,
+				82A87DE4214E884500E5A12A /* libstdc++.tbd in Frameworks */,
+				82A87DE2214E86C900E5A12A /* libz.tbd in Frameworks */,
 				A25B4F892095CC890065171C /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +313,15 @@
 				828ADF5620A4860800E935F3 /* PlistStorageExerciseViewController.swift */,
 			);
 			path = PlistStorage;
+			sourceTree = "<group>";
+		};
+		82A87DDC214E810700E5A12A /* CouchBase */ = {
+			isa = PBXGroup;
+			children = (
+				82A87DDD214E810700E5A12A /* CouchBaseExerciseVC.xib */,
+				82A87DDE214E810700E5A12A /* CouchBaseExerciseVC.swift */,
+			);
+			path = CouchBase;
 			sourceTree = "<group>";
 		};
 		82EAF6CD210C3F0A00336012 /* Tampering */ = {
@@ -518,7 +543,11 @@
 		A25B4F872095CC7E0065171C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				82A87DE7214E886100E5A12A /* SystemConfiguration.framework */,
+				82A87DE3214E884500E5A12A /* libstdc++.tbd */,
+				82A87DE1214E86C900E5A12A /* libz.tbd */,
 				A25B4F882095CC7E0065171C /* libsqlite3.tbd */,
+				82A87DD8214E800200E5A12A /* CouchbaseLite.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -526,6 +555,7 @@
 		A2C99F1B2096515F007E9BBE /* InsecureLocalDataStorage */ = {
 			isa = PBXGroup;
 			children = (
+				82A87DDC214E810700E5A12A /* CouchBase */,
 				C0FD38F72106E1DE004458FC /* BinaryCookies */,
 				C0FD38F22106E1D9004458FC /* WebKit Cache */,
 				C0AF230E20B81AD400B13D26 /* KeychainAnalyze */,
@@ -917,6 +947,7 @@
 				A2C99F892096515F007E9BBE /* SocialEngineeringVC.xib in Resources */,
 				C0FD38FB2106E1DE004458FC /* BinaryCookiesExerciseVC.xib in Resources */,
 				828ADF5A20A48B6000E935F3 /* Credentials.plist in Resources */,
+				82A87DDF214E810700E5A12A /* CouchBaseExerciseVC.xib in Resources */,
 				A2C99F7B2096515F007E9BBE /* RuntimeAnalysisChallengeVC.xib in Resources */,
 				A238A97C207897A2006C042F /* Main.storyboard in Resources */,
 				A2C99F722096515F007E9BBE /* BrokenCryptographyExerciseVC.xib in Resources */,
@@ -1031,6 +1062,7 @@
 				A25B4F622094ACE00065171C /* SVRadialGradientLayer.m in Sources */,
 				A2C99F632096515F007E9BBE /* MemoryManagementVC.swift in Sources */,
 				A238AA462079A6A3006C042F /* UIStoryBoard+Extension.swift in Sources */,
+				82A87DE0214E810700E5A12A /* CouchBaseExerciseVC.swift in Sources */,
 				828ADF5820A4860800E935F3 /* PlistStorageExerciseViewController.swift in Sources */,
 				A25B4F632094ACE00065171C /* SVProgressAnimatedView.m in Sources */,
 				A238AA472079A6A3006C042F /* ExerciseDemoVC.swift in Sources */,
@@ -1198,9 +1230,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6J6AZQ7T23;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iGoat-Swift/ThirdParty/CouchBase\"",
+					"$(PROJECT_DIR)/iGoat-Swift/ThirdParty/CouchBase",
+				);
 				INFOPLIST_FILE = "iGoat-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "OWASP.iGoat-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "iGoat-Objc-Bridging-Header.h";
@@ -1215,9 +1253,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6J6AZQ7T23;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iGoat-Swift/ThirdParty/CouchBase\"",
+					"$(PROJECT_DIR)/iGoat-Swift/ThirdParty/CouchBase",
+				);
 				INFOPLIST_FILE = "iGoat-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "OWASP.iGoat-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "iGoat-Objc-Bridging-Header.h";

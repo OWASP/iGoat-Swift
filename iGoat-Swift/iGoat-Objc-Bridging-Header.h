@@ -10,5 +10,6 @@
 #import "SVProgressHUD.h"
 #import <CommonCrypto/CommonCrypto.h>
 #import <sqlite3.h>
+#import <CouchbaseLite/CouchbaseLite.h>
 
 char *do_it(void);

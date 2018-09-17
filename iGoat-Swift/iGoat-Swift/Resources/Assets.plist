@@ -414,7 +414,7 @@ Keychain API usage is demonstrated in function &quot;storeCredentialsInKeychain&
 					<string>Try to find out CouchBase file in app sandbox.</string>
 				</array>
 				<key>initialViewController</key>
-				<string>CouchBaseExerciseViewController</string>
+				<string>CouchBaseExerciseVC</string>
 				<key>name</key>
 				<string>CouchBase Storage</string>
 				<key>solution</key>
