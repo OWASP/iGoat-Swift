@@ -393,7 +393,7 @@ Keychain API usage is demonstrated in function &quot;storeCredentialsInKeychain&
 					<string>Try to find out Realm storage file in app sandbox.</string>
 				</array>
 				<key>initialViewController</key>
-				<string>RealmExerciseViewController</string>
+				<string>RealmExerciseVC</string>
 				<key>name</key>
 				<string>Realm Data Storage</string>
 				<key>solution</key>

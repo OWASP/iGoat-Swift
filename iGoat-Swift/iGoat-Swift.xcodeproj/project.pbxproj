@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		823D42E32156C67E001B138F /* RealmExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823D42E12156C67E001B138F /* RealmExerciseVC.swift */; };
+		823D42E42156C67E001B138F /* RealmExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 823D42E22156C67E001B138F /* RealmExerciseVC.xib */; };
 		826335FF20C9866900392E48 /* ServerCommunicationExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826335FE20C9866900392E48 /* ServerCommunicationExerciseVC.swift */; };
 		8263360220C99B8F00392E48 /* ServerCommunicationExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8263360120C99B8E00392E48 /* ServerCommunicationExerciseVC.xib */; };
 		828ADF5720A4860800E935F3 /* PlistStorageExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 828ADF5520A4860800E935F3 /* PlistStorageExerciseViewController.xib */; };
@@ -21,6 +23,7 @@
 		82A87DE8214E886100E5A12A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A87DE7214E886100E5A12A /* SystemConfiguration.framework */; };
 		82EAF6D0210C3F0A00336012 /* MethodSwizzlingExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EAF6CE210C3F0A00336012 /* MethodSwizzlingExerciseVC.swift */; };
 		82EAF6D1210C3F0A00336012 /* MethodSwizzlingExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EAF6CF210C3F0A00336012 /* MethodSwizzlingExerciseVC.xib */; };
+		82FF64142156D9110042D913 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 823D42EA2156D5B2001B138F /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A238A977207897A2006C042F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A238A976207897A2006C042F /* AppDelegate.swift */; };
 		A238A97C207897A2006C042F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A238A97A207897A2006C042F /* Main.storyboard */; };
 		A238A981207897A2006C042F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A238A97F207897A2006C042F /* LaunchScreen.storyboard */; };
@@ -138,7 +141,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		823D42E92156CEA0001B138F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				82FF64142156D9110042D913 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		823D42E12156C67E001B138F /* RealmExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmExerciseVC.swift; sourceTree = "<group>"; };
+		823D42E22156C67E001B138F /* RealmExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RealmExerciseVC.xib; sourceTree = "<group>"; };
+		823D42EA2156D5B2001B138F /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "iGoat-Swift/ThirdParty/Realm/Realm.framework"; sourceTree = "<group>"; };
 		826335FE20C9866900392E48 /* ServerCommunicationExerciseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerCommunicationExerciseVC.swift; sourceTree = "<group>"; };
 		8263360120C99B8E00392E48 /* ServerCommunicationExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServerCommunicationExerciseVC.xib; sourceTree = "<group>"; };
 		828ADF5520A4860800E935F3 /* PlistStorageExerciseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlistStorageExerciseViewController.xib; sourceTree = "<group>"; };
@@ -296,6 +316,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		823D42E02156C67E001B138F /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				823D42E12156C67E001B138F /* RealmExerciseVC.swift */,
+				823D42E22156C67E001B138F /* RealmExerciseVC.xib */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
 		826335F420C985C800392E48 /* Server Communication */ = {
 			isa = PBXGroup;
 			children = (
@@ -548,6 +577,7 @@
 				82A87DE1214E86C900E5A12A /* libz.tbd */,
 				A25B4F882095CC7E0065171C /* libsqlite3.tbd */,
 				82A87DD8214E800200E5A12A /* CouchbaseLite.framework */,
+				823D42EA2156D5B2001B138F /* Realm.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -555,6 +585,7 @@
 		A2C99F1B2096515F007E9BBE /* InsecureLocalDataStorage */ = {
 			isa = PBXGroup;
 			children = (
+				823D42E02156C67E001B138F /* Realm */,
 				82A87DDC214E810700E5A12A /* CouchBase */,
 				C0FD38F72106E1DE004458FC /* BinaryCookies */,
 				C0FD38F22106E1D9004458FC /* WebKit Cache */,
@@ -853,6 +884,7 @@
 				A238A970207897A2006C042F /* Frameworks */,
 				A238A971207897A2006C042F /* Resources */,
 				A238AA622079A6F2006C042F /* ShellScript */,
+				823D42E92156CEA0001B138F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -932,6 +964,7 @@
 				A238AA5B2079A6A3006C042F /* about.html in Resources */,
 				A25B4F662094ACE00065171C /* SVProgressHUD.bundle in Resources */,
 				A26CEAC0207A0FAF00A7E415 /* HTMLViewController.xib in Resources */,
+				823D42E42156C67E001B138F /* RealmExerciseVC.xib in Resources */,
 				A2C99F812096515F007E9BBE /* BackgroundingExerciseVC.xib in Resources */,
 				A2C99F852096515F007E9BBE /* CloudMisconfigurationExerciseVC.xib in Resources */,
 				A238AA5F2079A6A3006C042F /* Swaroop_anthony.html in Resources */,
@@ -1056,6 +1089,7 @@
 				A2C99F7A2096515F007E9BBE /* RuntimeAnalysisChallengeVC.swift in Sources */,
 				A238AA662079AEA6006C042F /* UITableViewCell+Extension.swift in Sources */,
 				A2C99F772096515F007E9BBE /* RandomKeyGenerationExerciseVC.swift in Sources */,
+				823D42E32156C67E001B138F /* RealmExerciseVC.swift in Sources */,
 				A2C99F612096515F007E9BBE /* NSUserDefaultsStorageExerciseVC.swift in Sources */,
 				A238AA4B2079A6A3006C042F /* ExerciseFlowController.swift in Sources */,
 				A238AA682079B137006C042F /* Asset.swift in Sources */,
@@ -1234,6 +1268,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/iGoat-Swift/ThirdParty/CouchBase\"",
 					"$(PROJECT_DIR)/iGoat-Swift/ThirdParty/CouchBase",
+					"$(PROJECT_DIR)/iGoat-Swift/ThirdParty/Realm",
 				);
 				INFOPLIST_FILE = "iGoat-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1257,6 +1292,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/iGoat-Swift/ThirdParty/CouchBase\"",
 					"$(PROJECT_DIR)/iGoat-Swift/ThirdParty/CouchBase",
+					"$(PROJECT_DIR)/iGoat-Swift/ThirdParty/Realm",
 				);
 				INFOPLIST_FILE = "iGoat-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
