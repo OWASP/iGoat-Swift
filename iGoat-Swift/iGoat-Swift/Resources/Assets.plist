@@ -372,7 +372,7 @@ Keychain API usage is demonstrated in function &quot;storeCredentialsInKeychain&
 					<string>Try to find out YAP Storage file in app sandbox.</string>
 				</array>
 				<key>initialViewController</key>
-				<string>YAPExcersizeViewController</string>
+				<string>YapExerciseVC</string>
 				<key>name</key>
 				<string>YAP Storage</string>
 				<key>solution</key>
