@@ -93,7 +93,6 @@
 		82FF6520215773E50042D913 /* YapNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FF64C5215773E40042D913 /* YapNull.m */; };
 		82FF6521215773E50042D913 /* YapRowidSet.mm in Sources */ = {isa = PBXBuildFile; fileRef = 82FF64C7215773E40042D913 /* YapRowidSet.mm */; };
 		82FF6522215773E50042D913 /* YapTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FF64C9215773E40042D913 /* YapTouch.m */; };
-		82FF6523215773E50042D913 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 82FF64CA215773E40042D913 /* LICENSE.txt */; };
 		82FF6524215773E50042D913 /* YapCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FF64CD215773E40042D913 /* YapCache.m */; };
 		82FF6525215773E50042D913 /* YapCollectionKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FF64CF215773E40042D913 /* YapCollectionKey.m */; };
 		82FF6526215773E50042D913 /* YapDatabaseQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FF64D1215773E40042D913 /* YapDatabaseQuery.m */; };
@@ -115,7 +114,6 @@
 		82FF6550215774430042D913 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FF6543215774420042D913 /* DDDispatchQueueLogFormatter.m */; };
 		82FF6551215774430042D913 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FF6545215774420042D913 /* DDMultiFormatter.m */; };
 		82FF6552215774430042D913 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 82FF6546215774420042D913 /* README.txt */; };
-		82FF6553215774430042D913 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 82FF6547215774420042D913 /* LICENSE.txt */; };
 		A238A977207897A2006C042F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A238A976207897A2006C042F /* AppDelegate.swift */; };
 		A238A97C207897A2006C042F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A238A97A207897A2006C042F /* Main.storyboard */; };
 		A238A981207897A2006C042F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A238A97F207897A2006C042F /* LaunchScreen.storyboard */; };
@@ -418,7 +416,6 @@
 		82FF64C7215773E40042D913 /* YapRowidSet.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YapRowidSet.mm; sourceTree = "<group>"; };
 		82FF64C8215773E40042D913 /* YapTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YapTouch.h; sourceTree = "<group>"; };
 		82FF64C9215773E40042D913 /* YapTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YapTouch.m; sourceTree = "<group>"; };
-		82FF64CA215773E40042D913 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		82FF64CC215773E40042D913 /* YapCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YapCache.h; sourceTree = "<group>"; };
 		82FF64CD215773E40042D913 /* YapCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YapCache.m; sourceTree = "<group>"; };
 		82FF64CE215773E40042D913 /* YapCollectionKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YapCollectionKey.h; sourceTree = "<group>"; };
@@ -461,7 +458,6 @@
 		82FF6544215774420042D913 /* DDMultiFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMultiFormatter.h; sourceTree = "<group>"; };
 		82FF6545215774420042D913 /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
 		82FF6546215774420042D913 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		82FF6547215774420042D913 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		A238A973207897A2006C042F /* iGoat-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iGoat-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A238A976207897A2006C042F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A238A97B207897A2006C042F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -674,7 +670,6 @@
 			children = (
 				82FF641D215773E40042D913 /* Extensions */,
 				82FF64B1215773E40042D913 /* Internal */,
-				82FF64CA215773E40042D913 /* LICENSE.txt */,
 				82FF64CB215773E40042D913 /* Utilities */,
 				82FF64D8215773E40042D913 /* YapDatabase.h */,
 				82FF64D9215773E40042D913 /* YapDatabase.m */,
@@ -1051,7 +1046,6 @@
 				82FF653D215774420042D913 /* DDTTYLogger.h */,
 				82FF653E215774420042D913 /* DDTTYLogger.m */,
 				82FF653F215774420042D913 /* Extensions */,
-				82FF6547215774420042D913 /* LICENSE.txt */,
 			);
 			name = CocoaLumberjack;
 			path = "iGoat-Swift/ThirdParty/CocoaLumberjack";
@@ -1722,13 +1716,11 @@
 				A2C99F692096515F007E9BBE /* SQLInjectionExerciseVC.xib in Resources */,
 				A2C99F832096515F007E9BBE /* KeystrokeLoggingExerciseVC.xib in Resources */,
 				82EAF6D1210C3F0A00336012 /* MethodSwizzlingExerciseVC.xib in Resources */,
-				82FF6553215774430042D913 /* LICENSE.txt in Resources */,
 				C0AF230220B816B200B13D26 /* CoreDataExerciseVC.xib in Resources */,
 				A2C99F602096515F007E9BBE /* NSUserDefaultsStorageExerciseVC.xib in Resources */,
 				A238AA5E2079A6A3006C042F /* Swaroop_Junard.html in Resources */,
 				82FF641A21576EEB0042D913 /* YapExerciseVC.xib in Resources */,
 				A2C99F7E2096515F007E9BBE /* DeviceLogsExerciseVC.xib in Resources */,
-				82FF6523215773E50042D913 /* LICENSE.txt in Resources */,
 				828ADF5720A4860800E935F3 /* PlistStorageExerciseViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1754,7 +1746,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2074,8 +2066,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6J6AZQ7T23;
+				DEVELOPMENT_TEAM = TNAJ496RHB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/iGoat-Swift/ThirdParty/CouchBase\"",
@@ -2087,8 +2080,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "OWASP.iGoat-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "OWASP.iGoat-Swifth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "iGoat-Objc-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2099,8 +2093,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6J6AZQ7T23;
+				DEVELOPMENT_TEAM = TNAJ496RHB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/iGoat-Swift/ThirdParty/CouchBase\"",
@@ -2112,8 +2107,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "OWASP.iGoat-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "OWASP.iGoat-Swifth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "iGoat-Objc-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
