@@ -23,6 +23,10 @@ class ServerCommunicationExerciseVC: UIViewController {
                            "socialSecurityNumber":ssnField.text]
         
         do {
+            //resign first responder before attempting to submit data. 
+            firstNameField.resignFirstResponder()
+            lastNameField.resignFirstResponder()
+            ssnField.resignFirstResponder()
             
             let jsonData = try JSONSerialization.data(withJSONObject: accountInfo, options: .prettyPrinted)
             var request = URLRequest(url: URL(string: serverCommunicationUserUrl)!)
