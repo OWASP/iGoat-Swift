@@ -3,7 +3,7 @@ import UIKit
 
 enum KSSConstants {
     enum EndPoints {
-        static let cryptoKey = "http://ec2-13-59-35-177.us-east-2.compute.amazonaws.com/crypto1/cryptoKey.php"
+        static let cryptoKey = "http://localhost:8081/cryptoKey.php"
     }
     static let secretMessage = "SecretPass"
 }

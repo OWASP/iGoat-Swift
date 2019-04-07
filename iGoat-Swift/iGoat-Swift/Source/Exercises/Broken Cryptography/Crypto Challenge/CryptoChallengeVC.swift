@@ -20,7 +20,7 @@ class CryptoChallengeVC: UIViewController {
         let postStr = postArray.reduce("") { $0 + "&" + $1 }
         let postData = postStr.data(using: .utf8)
         
-        let url = URL(string: "http://13.59.35.177/crypto1/checkout/")!
+        let url = URL(string: "http://localhost:8081/checkout/")!
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "POST"
         urlRequest.httpBody = postData

@@ -24,7 +24,7 @@ class WebkitCacheExerciseVC: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var responseLabel: UILabel!
     
-    let demoEndpoint = "http://ec2-13-59-35-177.us-east-2.compute.amazonaws.com/crypto1/webkit.php"
+    let demoEndpoint = "http://localhost:8081/webkit.php"
 
     
     override func viewDidLoad() {
