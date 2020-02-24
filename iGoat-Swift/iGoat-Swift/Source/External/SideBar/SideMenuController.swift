@@ -421,10 +421,6 @@ open class SideMenuController: UIViewController, UIGestureRecognizerDelegate {
     // MARK: - Computed variables -
     
     fileprivate var sbw: UIWindow? {
-
-//        if #available(iOS 13, *) {
-//            UIApplication.shared.keyWindow?.windowScene?.statusBarManager.
-//        }
         
         let s = "status"
         let b = "Bar"

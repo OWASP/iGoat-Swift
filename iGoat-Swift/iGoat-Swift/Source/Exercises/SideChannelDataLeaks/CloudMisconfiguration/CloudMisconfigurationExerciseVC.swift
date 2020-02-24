@@ -61,6 +61,6 @@ class CloudMisconfigurationExerciseVC: UIViewController {
 
 extension UIViewController {
     @IBAction func textFieldReturn(sender: UITextField) {
-        sender.resignFirstResponder()
+        sender.resignFirstResponder
     }
 }
