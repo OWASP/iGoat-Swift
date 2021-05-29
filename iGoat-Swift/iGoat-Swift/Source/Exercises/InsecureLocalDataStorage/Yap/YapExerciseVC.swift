@@ -1,5 +1,5 @@
-
 import UIKit
+import YapDatabase
 
 class YapExerciseVC: UIViewController {
     
@@ -19,13 +19,16 @@ class YapExerciseVC: UIViewController {
     }
 
     func saveData() {
-        let database = YapDatabase(path: databasePath)
-        let connection = database.newConnection()
-        connection.readWrite { (transaction) in
-            transaction.setObject(YapExerciseVC.YapValueEmail, forKey: YapExerciseVC.YapKeyEmail, inCollection: YapExerciseVC.YapCollection)
-            transaction.setObject(YapExerciseVC.YapValuePassword, forKey: YapExerciseVC.YapKeyPassword, inCollection: YapExerciseVC.YapCollection)
+        let databaseURL = URL(fileURLWithPath: databasePath)
+        if let database = YapDatabase(url: databaseURL) {
+            let connection = database.newConnection()
+            connection.readWrite { (transaction) in
+                transaction.setObject(YapExerciseVC.YapValueEmail, forKey: YapExerciseVC.YapKeyEmail, inCollection: YapExerciseVC.YapCollection)
+                transaction.setObject(YapExerciseVC.YapValuePassword, forKey: YapExerciseVC.YapKeyPassword, inCollection: YapExerciseVC.YapCollection)
+            }
         }
     }
+    
     
     @IBAction func verifyItemPressed() {
         let isVerified = verifyName(usernameTextField.text!, enteredPassword: passwordTextField.text!)
@@ -43,20 +46,19 @@ class YapExerciseVC: UIViewController {
     }
     
     func verifyName(_ enteredUserName:String, enteredPassword:String) -> Bool {
-        
-        let database = YapDatabase(path: databasePath)
-        let connection = database.newConnection()
         var isVerified = false
-        
-        connection.read { (transaction) in
-            let email = transaction.object(forKey: YapExerciseVC.YapKeyEmail, inCollection: YapExerciseVC.YapCollection) as? String
-            let password = transaction.object(forKey: YapExerciseVC.YapKeyPassword, inCollection: YapExerciseVC.YapCollection) as? String
-            if email == nil || password == nil {
-                isVerified = false
+        let databaseURL = URL(fileURLWithPath: databasePath)
+        if let database = YapDatabase(url: databaseURL) {
+            let connection = database.newConnection()
+            connection.read { (transaction) in
+                let email = transaction.object(forKey: YapExerciseVC.YapKeyEmail, inCollection: YapExerciseVC.YapCollection) as? String
+                let password = transaction.object(forKey: YapExerciseVC.YapKeyPassword, inCollection: YapExerciseVC.YapCollection) as? String
+                if email == nil || password == nil {
+                    isVerified = false
+                }
+                isVerified = email == enteredUserName && password == enteredPassword
             }
-            isVerified = email == enteredUserName && password == enteredPassword
         }
-
         return isVerified
     }
 }

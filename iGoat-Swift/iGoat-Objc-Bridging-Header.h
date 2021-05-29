@@ -10,9 +10,6 @@
 #import "SVProgressHUD.h"
 #import <CommonCrypto/CommonCrypto.h>
 #import <sqlite3.h>
-#import <CouchbaseLite/CouchbaseLite.h>
-#import <Realm/Realm.h>
-#import <YapDatabase/YapDatabase.h>
 
 
 char *do_it(void);

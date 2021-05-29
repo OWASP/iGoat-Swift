@@ -1,75 +1,82 @@
 
 import UIKit
+import CouchbaseLiteSwift
 
 class CouchBaseExerciseVC: UIViewController {
-    
+
     @IBOutlet weak var nameTextfield: UITextField!
     @IBOutlet weak var ageTextField: UITextField!
     @IBOutlet weak var genderTextField: UITextField!
     @IBOutlet weak var diseaseTextField: UITextField!
     
-    let CBKeyPatientName = "CouchKeyPatientName";
-    let CBKeyPatientAge = "CouchKeyPatientAge";
-    let CBKeyPatientGender = "CouchKeyPatientGender";
-    let CBKeyPatientDisease = "CouchKeyPatientDisease";
-    
-    let CBValuePatientName = "Jane Roe";
-    let CBValuePatientAge = "52";
-    let CBValuePatientGender = "Female";
-    let CBValuePatientDisease = "Cancer";
-    
-    var database:CBLDatabase?
-    
+    var database: Database?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        do {
-            try database = CBLManager.sharedInstance().databaseNamed("couchbasedb")
-        } catch {
-        }
-
+        database = try? Database(name: "couchbasedb")
         saveData()
     }
 
     func saveData() {
         if UserDefaults.standard.object(forKey: "documentID") == nil {
-            let properties = [CBKeyPatientName:CBValuePatientName,
-                              CBKeyPatientAge : CBValuePatientAge,
-                              CBKeyPatientGender : CBValuePatientGender,
-                              CBKeyPatientDisease : CBValuePatientDisease]
-            
-            let newDocument = database?.createDocument()
-            
-            do {
-                try newDocument?.putProperties(properties)
-            } catch {
-            }
-            
-            UserDefaults.standard.set(newDocument?.documentID, forKey: "documentID")
+            let document = MutableDocument(id: UserRecord.demoID)
+            document.setString(UserRecord.demoUser.name, forKey: UserRecord.CBKeys.name.rawValue)
+            document.setString(UserRecord.demoUser.age, forKey: UserRecord.CBKeys.age.rawValue)
+            document.setString(UserRecord.demoUser.gender, forKey: UserRecord.CBKeys.gender.rawValue)
+            document.setString(UserRecord.demoUser.disease, forKey: UserRecord.CBKeys.disease.rawValue)
+            try? database?.saveDocument(document)
+            UserDefaults.standard.set(UserRecord.demoID, forKey: "documentID")
         }
     }
     
     @IBAction func verifyItemPressed() {
+        let record = UserRecord(name: nameTextfield.text!,
+                                age: ageTextField.text!,
+                                gender: genderTextField.text!,
+                                disease: diseaseTextField.text!)
         
-        let info:Dictionary<String, String> = [CBKeyPatientName: self.nameTextfield.text!,
-                                               CBKeyPatientAge: self.ageTextField.text!,
-                                               CBKeyPatientGender: self.genderTextField.text!,
-                                               CBKeyPatientDisease: self.diseaseTextField.text!]
-
-        let isVerified = verifyPatientInfo(info)
+        let isVerified = verifyPatientInfo(record)
         UIAlertController.showAlertWith(title: "iGoat", message: isVerified ? "Success!!" :  "Failed")
     }
     
-    func verifyPatientInfo(_ info:Dictionary<String, String>) -> Bool {
-    
+    func verifyPatientInfo(_ info: UserRecord) -> Bool {
         let documentId = UserDefaults.standard.object(forKey: "documentID") as! String
-        let document:CBLDocument = (database?.document(withID: documentId))!
-        
-        let isEqual = (document.property(forKey: CBKeyPatientName) as? String == info[CBKeyPatientName]) &&
-            (document.property(forKey: CBKeyPatientAge) as? String == info[CBKeyPatientAge]) &&
-            (document.property(forKey: CBKeyPatientGender) as? String == info[CBKeyPatientGender]) &&
-            (document.property(forKey: CBKeyPatientDisease) as? String == info[CBKeyPatientDisease])
-
-        return isEqual
+        if let document = database?.document(withID: documentId) {
+            var stored = UserRecord()
+            stored.age  =  document.string(forKey: UserRecord.CBKeys.age.rawValue)
+            stored.gender = document.string(forKey:UserRecord.CBKeys.gender.rawValue)
+            stored.name =  document.string(forKey: UserRecord.CBKeys.name.rawValue)
+            stored.disease = document.string(forKey:UserRecord.CBKeys.disease.rawValue)
+            return stored == info
+        }
+        return false
     }
+
+    deinit {
+        try? database?.close()
+    }
+}
+
+let kUserRecordDocumentType = "user"
+struct UserRecord : CustomStringConvertible, Equatable {
+    var name:String?
+    var age:String?
+    var gender :String?
+    var disease: String?
     
+    var description: String {
+        return "name = \(String(describing: name)), email = \(String(describing: age))"
+    }
+
+    enum CBKeys: String {
+        case name
+        case age
+        case gender
+        case disease
+    }
+}
+
+extension UserRecord {
+    static let demoUser = UserRecord(name: "Jane Roe", age: "52", gender: "Female", disease: "Cancer")
+    static let demoID = "Jane Roe Doc"
 }

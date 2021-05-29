@@ -1,0 +1,1401 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target armv7-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CouchbaseLiteSwift
+@_exported import CouchbaseLiteSwift
+import Foundation
+import Swift
+public enum LogDomain : Swift.UInt8 {
+  case all
+  case database
+  case query
+  case replicator
+  case network
+  public typealias RawValue = Swift.UInt8
+  public init?(rawValue: Swift.UInt8)
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+public enum LogLevel : Swift.UInt8 {
+  case debug
+  case verbose
+  case info
+  case warning
+  case error
+  case none
+  public typealias RawValue = Swift.UInt8
+  public init?(rawValue: Swift.UInt8)
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+public protocol Logger {
+  var level: CouchbaseLiteSwift.LogLevel { get }
+  func log(level: CouchbaseLiteSwift.LogLevel, domain: CouchbaseLiteSwift.LogDomain, message: Swift.String)
+}
+public protocol Authenticator {
+}
+public struct BasicAuthenticator {
+  public let username: Swift.String
+  public let password: Swift.String
+  public init(username: Swift.String, password: Swift.String)
+}
+public struct SessionAuthenticator {
+  public let sessionID: Swift.String
+  public let cookieName: Swift.String
+  public init(sessionID: Swift.String)
+  public init(sessionID: Swift.String, cookieName: Swift.String?)
+}
+@_hasMissingDesignatedInitializers public class LogFileConfiguration {
+  final public let directory: Swift.String
+  public var usePlainText: Swift.Bool {
+    get
+    set
+  }
+  public var maxSize: Swift.UInt64 {
+    get
+    set
+  }
+  public var maxRotateCount: Swift.Int {
+    get
+    set
+  }
+  public init(directory: Swift.String)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class Having : CouchbaseLiteSwift.Query {
+  final public func orderBy(_ orderings: CouchbaseLiteSwift.OrderingProtocol...) -> CouchbaseLiteSwift.OrderBy
+  final public func orderBy(_ orderings: [CouchbaseLiteSwift.OrderingProtocol]) -> CouchbaseLiteSwift.OrderBy
+  final public func limit(_ limit: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.Limit
+  final public func limit(_ limit: CouchbaseLiteSwift.ExpressionProtocol, offset: CouchbaseLiteSwift.ExpressionProtocol?) -> CouchbaseLiteSwift.Limit
+  @objc deinit
+}
+public struct ReplicatorChange {
+  public let replicator: CouchbaseLiteSwift.Replicator
+  public let status: CouchbaseLiteSwift.Replicator.Status
+}
+@_hasMissingDesignatedInitializers public class Log {
+  final public let console: CouchbaseLiteSwift.ConsoleLogger
+  final public let file: CouchbaseLiteSwift.FileLogger
+  public var custom: CouchbaseLiteSwift.Logger? {
+    get
+    set
+  }
+  @objc deinit
+}
+public protocol Endpoint {
+}
+public struct URLEndpoint {
+  public let url: Foundation.URL
+  public init(url: Foundation.URL)
+}
+@_hasMissingDesignatedInitializers final public class GroupBy : CouchbaseLiteSwift.Query {
+  final public func having(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.Having
+  final public func orderBy(_ orderings: CouchbaseLiteSwift.OrderingProtocol...) -> CouchbaseLiteSwift.OrderBy
+  final public func orderBy(_ orderings: [CouchbaseLiteSwift.OrderingProtocol]) -> CouchbaseLiteSwift.OrderBy
+  final public func limit(_ limit: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.Limit
+  final public func limit(_ limit: CouchbaseLiteSwift.ExpressionProtocol, offset: CouchbaseLiteSwift.ExpressionProtocol?) -> CouchbaseLiteSwift.Limit
+  @objc deinit
+}
+extension Database {
+  final public var indexes: Swift.Array<Swift.String> {
+    get
+  }
+  final public func createIndex(_ index: CouchbaseLiteSwift.Index, withName name: Swift.String) throws
+  final public func deleteIndex(forName name: Swift.String) throws
+}
+public protocol DataSourceProtocol {
+}
+public protocol DataSourceAs : CouchbaseLiteSwift.DataSourceProtocol {
+  func `as`(_ alias: Swift.String) -> CouchbaseLiteSwift.DataSourceProtocol
+}
+@_hasMissingDesignatedInitializers final public class DataSource {
+  public static func database(_ database: CouchbaseLiteSwift.Database) -> CouchbaseLiteSwift.DataSourceAs
+  @objc deinit
+}
+public struct DocumentChange {
+  public let database: CouchbaseLiteSwift.Database
+  public let documentID: Swift.String
+}
+public struct DocumentReplication {
+  public let replicator: CouchbaseLiteSwift.Replicator
+  public let isPush: Swift.Bool
+  public let documents: [CouchbaseLiteSwift.ReplicatedDocument]
+}
+public struct ReplicatedDocument {
+  public let id: Swift.String
+  public let flags: CouchbaseLiteSwift.DocumentFlags
+  public let error: Swift.Error?
+}
+@_hasMissingDesignatedInitializers public class Parameters {
+  convenience public init()
+  convenience public init(parameters: CouchbaseLiteSwift.Parameters?)
+  public func value(forName name: Swift.String) -> Any?
+  @discardableResult
+  public func setArray(_ value: CouchbaseLiteSwift.ArrayObject?, forName name: Swift.String) -> CouchbaseLiteSwift.Parameters
+  @discardableResult
+  public func setBlob(_ value: CouchbaseLiteSwift.Blob?, forName name: Swift.String) -> CouchbaseLiteSwift.Parameters
+  @discardableResult
+  public func setBoolean(_ value: Swift.Bool, forName name: Swift.String) -> CouchbaseLiteSwift.Parameters
+  @discardableResult
+  public func setDate(_ value: Foundation.Date?, forName name: Swift.String) -> CouchbaseLiteSwift.Parameters
+  @discardableResult
+  public func setDictionary(_ value: CouchbaseLiteSwift.DictionaryObject?, forName name: Swift.String) -> CouchbaseLiteSwift.Parameters
+  @discardableResult
+  public func setDouble(_ value: Swift.Double, forName name: Swift.String) -> CouchbaseLiteSwift.Parameters
+  @discardableResult
+  public func setFloat(_ value: Swift.Float, forName name: Swift.String) -> CouchbaseLiteSwift.Parameters
+  @discardableResult
+  public func setInt(_ value: Swift.Int, forName name: Swift.String) -> CouchbaseLiteSwift.Parameters
+  @discardableResult
+  public func setInt64(_ value: Swift.Int64, forName name: Swift.String) -> CouchbaseLiteSwift.Parameters
+  @discardableResult
+  public func setString(_ value: Swift.String?, forName name: Swift.String) -> CouchbaseLiteSwift.Parameters
+  @discardableResult
+  public func setValue(_ value: Any?, forName name: Swift.String) -> CouchbaseLiteSwift.Parameters
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class DatabaseConfiguration {
+  public var directory: Swift.String {
+    get
+    set
+  }
+  convenience public init()
+  convenience public init(config: CouchbaseLiteSwift.DatabaseConfiguration?)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class ArrayExpressionSatisfies {
+  final public func satisfies(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  @objc deinit
+}
+public protocol MutableFragmentProtocol : CouchbaseLiteSwift.FragmentProtocol {
+  var value: Any? { get set }
+  var string: Swift.String? { get set }
+  var number: Foundation.NSNumber? { get set }
+  var int: Swift.Int { get set }
+  var int64: Swift.Int64 { get set }
+  var float: Swift.Float { get set }
+  var double: Swift.Double { get set }
+  var boolean: Swift.Bool { get set }
+  var date: Foundation.Date? { get set }
+  var blob: CouchbaseLiteSwift.Blob? { get set }
+  var array: CouchbaseLiteSwift.MutableArrayObject? { get set }
+  var dictionary: CouchbaseLiteSwift.MutableDictionaryObject? { get set }
+}
+public protocol MutableArrayFragment {
+  subscript(index: Swift.Int) -> CouchbaseLiteSwift.MutableFragment { get }
+}
+public protocol MutableDictionaryFragment {
+  subscript(key: Swift.String) -> CouchbaseLiteSwift.MutableFragment { get }
+}
+@_hasMissingDesignatedInitializers final public class MutableFragment : CouchbaseLiteSwift.Fragment, CouchbaseLiteSwift.MutableDictionaryFragment, CouchbaseLiteSwift.MutableArrayFragment {
+  override final public var value: Any? {
+    get
+    set
+  }
+  override final public var string: Swift.String? {
+    get
+    set
+  }
+  override final public var number: Foundation.NSNumber? {
+    get
+    set
+  }
+  override final public var int: Swift.Int {
+    get
+    set
+  }
+  override final public var int64: Swift.Int64 {
+    get
+    set
+  }
+  override final public var float: Swift.Float {
+    get
+    set
+  }
+  override final public var double: Swift.Double {
+    get
+    set
+  }
+  override final public var boolean: Swift.Bool {
+    get
+    set
+  }
+  override final public var date: Foundation.Date? {
+    get
+    set
+  }
+  override final public var blob: CouchbaseLiteSwift.Blob? {
+    get
+    set
+  }
+  override final public var array: CouchbaseLiteSwift.MutableArrayObject? {
+    get
+    set
+  }
+  override final public var dictionary: CouchbaseLiteSwift.MutableDictionaryObject? {
+    get
+    set
+  }
+  override final public subscript(index: Swift.Int) -> CouchbaseLiteSwift.MutableFragment {
+    get
+  }
+  override final public subscript(key: Swift.String) -> CouchbaseLiteSwift.MutableFragment {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ListenerToken {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class Function {
+  public static func avg(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func count(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func min(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func max(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func sum(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func abs(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func acos(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func asin(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func atan(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func atan2(x: CouchbaseLiteSwift.ExpressionProtocol, y: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func ceil(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func cos(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func degrees(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func e() -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func exp(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func floor(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func ln(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func log(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func pi() -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func power(base: CouchbaseLiteSwift.ExpressionProtocol, exponent: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func radians(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func round(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func round(_ expression: CouchbaseLiteSwift.ExpressionProtocol, digits: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func sign(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func sin(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func sqrt(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func tan(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func trunc(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func trunc(_ expression: CouchbaseLiteSwift.ExpressionProtocol, digits: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func contains(_ expression: CouchbaseLiteSwift.ExpressionProtocol, substring: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func length(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func lower(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func ltrim(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func rtrim(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func trim(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func upper(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func stringToMillis(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func stringToUTC(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func millisToString(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func millisToUTC(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  @objc deinit
+}
+public protocol OrderingProtocol {
+}
+public protocol SortOrder : CouchbaseLiteSwift.OrderingProtocol {
+  func ascending() -> CouchbaseLiteSwift.OrderingProtocol
+  func descending() -> CouchbaseLiteSwift.OrderingProtocol
+}
+@_hasMissingDesignatedInitializers final public class Ordering {
+  public static func property(_ property: Swift.String) -> CouchbaseLiteSwift.SortOrder
+  public static func expression(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.SortOrder
+  @objc deinit
+}
+final public class Replicator {
+  public enum ActivityLevel : Swift.UInt8 {
+    case stopped
+    case offline
+    case connecting
+    case idle
+    case busy
+    public typealias RawValue = Swift.UInt8
+    public init?(rawValue: Swift.UInt8)
+    public var rawValue: Swift.UInt8 {
+      get
+    }
+  }
+  public struct Progress {
+    public let completed: Swift.UInt64
+    public let total: Swift.UInt64
+  }
+  public struct Status {
+    public let activity: CouchbaseLiteSwift.Replicator.ActivityLevel
+    public let progress: CouchbaseLiteSwift.Replicator.Progress
+    public let error: Swift.Error?
+  }
+  public init(config: CouchbaseLiteSwift.ReplicatorConfiguration)
+  final public var config: CouchbaseLiteSwift.ReplicatorConfiguration {
+    get
+  }
+  final public var status: CouchbaseLiteSwift.Replicator.Status {
+    get
+  }
+  final public var serverCertificate: Security.SecCertificate? {
+    get
+  }
+  final public func start()
+  final public func start(reset: Swift.Bool)
+  final public func stop()
+  @available(*, deprecated, message: "Use start(reset:) instead.")
+  final public func resetCheckpoint()
+  @discardableResult
+  final public func addChangeListener(_ listener: @escaping (CouchbaseLiteSwift.ReplicatorChange) -> Swift.Void) -> CouchbaseLiteSwift.ListenerToken
+  @discardableResult
+  final public func addChangeListener(withQueue queue: Dispatch.DispatchQueue?, _ listener: @escaping (CouchbaseLiteSwift.ReplicatorChange) -> Swift.Void) -> CouchbaseLiteSwift.ListenerToken
+  @discardableResult
+  final public func addDocumentReplicationListener(_ listener: @escaping (CouchbaseLiteSwift.DocumentReplication) -> Swift.Void) -> CouchbaseLiteSwift.ListenerToken
+  @discardableResult
+  final public func addDocumentReplicationListener(withQueue queue: Dispatch.DispatchQueue?, _ listener: @escaping (CouchbaseLiteSwift.DocumentReplication) -> Swift.Void) -> CouchbaseLiteSwift.ListenerToken
+  final public func removeChangeListener(withToken token: CouchbaseLiteSwift.ListenerToken)
+  final public func pendingDocumentIds() throws -> Swift.Set<Swift.String>
+  final public func isDocumentPending(_ documentID: Swift.String) throws -> Swift.Bool
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class IndexBuilder {
+  public static func valueIndex(items: CouchbaseLiteSwift.ValueIndexItem...) -> CouchbaseLiteSwift.ValueIndex
+  public static func valueIndex(items: [CouchbaseLiteSwift.ValueIndexItem]) -> CouchbaseLiteSwift.ValueIndex
+  public static func fullTextIndex(items: CouchbaseLiteSwift.FullTextIndexItem...) -> CouchbaseLiteSwift.FullTextIndex
+  public static func fullTextIndex(items: [CouchbaseLiteSwift.FullTextIndexItem]) -> CouchbaseLiteSwift.FullTextIndex
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class DocumentFragment : CouchbaseLiteSwift.DictionaryFragment {
+  final public var exists: Swift.Bool {
+    get
+  }
+  final public var document: CouchbaseLiteSwift.Document? {
+    get
+  }
+  final public subscript(key: Swift.String) -> CouchbaseLiteSwift.Fragment {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class Result : CouchbaseLiteSwift.ArrayProtocol, CouchbaseLiteSwift.DictionaryProtocol, Swift.Sequence {
+  final public var count: Swift.Int {
+    get
+  }
+  final public func value(at index: Swift.Int) -> Any?
+  final public func string(at index: Swift.Int) -> Swift.String?
+  final public func number(at index: Swift.Int) -> Foundation.NSNumber?
+  final public func int(at index: Swift.Int) -> Swift.Int
+  final public func int64(at index: Swift.Int) -> Swift.Int64
+  final public func double(at index: Swift.Int) -> Swift.Double
+  final public func float(at index: Swift.Int) -> Swift.Float
+  final public func boolean(at index: Swift.Int) -> Swift.Bool
+  final public func blob(at index: Swift.Int) -> CouchbaseLiteSwift.Blob?
+  final public func date(at index: Swift.Int) -> Foundation.Date?
+  final public func array(at index: Swift.Int) -> CouchbaseLiteSwift.ArrayObject?
+  final public func dictionary(at index: Swift.Int) -> CouchbaseLiteSwift.DictionaryObject?
+  final public func toArray() -> Swift.Array<Any>
+  final public subscript(index: Swift.Int) -> CouchbaseLiteSwift.Fragment {
+    get
+  }
+  final public var keys: Swift.Array<Swift.String> {
+    get
+  }
+  final public func value(forKey key: Swift.String) -> Any?
+  final public func string(forKey key: Swift.String) -> Swift.String?
+  final public func number(forKey key: Swift.String) -> Foundation.NSNumber?
+  final public func int(forKey key: Swift.String) -> Swift.Int
+  final public func int64(forKey key: Swift.String) -> Swift.Int64
+  final public func float(forKey key: Swift.String) -> Swift.Float
+  final public func double(forKey key: Swift.String) -> Swift.Double
+  final public func boolean(forKey key: Swift.String) -> Swift.Bool
+  final public func blob(forKey key: Swift.String) -> CouchbaseLiteSwift.Blob?
+  final public func date(forKey key: Swift.String) -> Foundation.Date?
+  final public func array(forKey key: Swift.String) -> CouchbaseLiteSwift.ArrayObject?
+  final public func dictionary(forKey key: Swift.String) -> CouchbaseLiteSwift.DictionaryObject?
+  final public func contains(key: Swift.String) -> Swift.Bool
+  final public func toDictionary() -> Swift.Dictionary<Swift.String, Any>
+  final public func makeIterator() -> Swift.IndexingIterator<[Swift.String]>
+  final public subscript(key: Swift.String) -> CouchbaseLiteSwift.Fragment {
+    get
+  }
+  @objc deinit
+  public typealias Element = Swift.IndexingIterator<[Swift.String]>.Element
+  public typealias Iterator = Swift.IndexingIterator<[Swift.String]>
+}
+public struct DatabaseChange {
+  public let database: CouchbaseLiteSwift.Database
+  public let documentIDs: [Swift.String]
+}
+public struct Conflict {
+  public var documentID: Swift.String {
+    get
+  }
+  public var localDocument: CouchbaseLiteSwift.Document? {
+    get
+  }
+  public var remoteDocument: CouchbaseLiteSwift.Document? {
+    get
+  }
+}
+public protocol JoinProtocol {
+}
+public protocol JoinOnProtocol : CouchbaseLiteSwift.JoinProtocol {
+  func on(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.JoinProtocol
+}
+@_hasMissingDesignatedInitializers public class Join {
+  public static func join(_ datasource: CouchbaseLiteSwift.DataSourceProtocol) -> CouchbaseLiteSwift.JoinOnProtocol
+  public static func leftJoin(_ datasource: CouchbaseLiteSwift.DataSourceProtocol) -> CouchbaseLiteSwift.JoinOnProtocol
+  public static func leftOuterJoin(_ datasource: CouchbaseLiteSwift.DataSourceProtocol) -> CouchbaseLiteSwift.JoinOnProtocol
+  public static func innerJoin(_ datasource: CouchbaseLiteSwift.DataSourceProtocol) -> CouchbaseLiteSwift.JoinOnProtocol
+  public static func crossJoin(_ datasource: CouchbaseLiteSwift.DataSourceProtocol) -> CouchbaseLiteSwift.JoinProtocol
+  @objc deinit
+}
+public protocol PropertyExpressionProtocol : CouchbaseLiteSwift.ExpressionProtocol {
+  func from(_ alias: Swift.String?) -> CouchbaseLiteSwift.ExpressionProtocol
+}
+@_hasMissingDesignatedInitializers final public class ArrayFunction {
+  public static func contains(_ expression: CouchbaseLiteSwift.ExpressionProtocol, value: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func length(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  @objc deinit
+}
+public protocol FullTextExpressionProtocol {
+  func match(_ query: Swift.String) -> CouchbaseLiteSwift.ExpressionProtocol
+}
+@_hasMissingDesignatedInitializers final public class FullTextExpression {
+  public static func index(_ name: Swift.String) -> CouchbaseLiteSwift.FullTextExpressionProtocol
+  @objc deinit
+}
+public protocol ConflictResolverProtocol {
+  func resolve(conflict: CouchbaseLiteSwift.Conflict) -> CouchbaseLiteSwift.Document?
+}
+@_hasMissingDesignatedInitializers final public class ConflictResolver {
+  public static var `default`: CouchbaseLiteSwift.ConflictResolverProtocol {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class ArrayExpressionIn {
+  final public func `in`(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ArrayExpressionSatisfies
+  @objc deinit
+}
+public protocol FragmentProtocol {
+  var value: Any? { get }
+  var string: Swift.String? { get }
+  var int: Swift.Int { get }
+  var int64: Swift.Int64 { get }
+  var float: Swift.Float { get }
+  var double: Swift.Double { get }
+  var number: Foundation.NSNumber? { get }
+  var boolean: Swift.Bool { get }
+  var date: Foundation.Date? { get }
+  var blob: CouchbaseLiteSwift.Blob? { get }
+  var array: CouchbaseLiteSwift.ArrayObject? { get }
+  var dictionary: CouchbaseLiteSwift.DictionaryObject? { get }
+  var exists: Swift.Bool { get }
+}
+public protocol ArrayFragment {
+  subscript(index: Swift.Int) -> CouchbaseLiteSwift.Fragment { get }
+}
+public protocol DictionaryFragment {
+  subscript(key: Swift.String) -> CouchbaseLiteSwift.Fragment { get }
+}
+@_hasMissingDesignatedInitializers public class Fragment : CouchbaseLiteSwift.FragmentProtocol, CouchbaseLiteSwift.ArrayFragment, CouchbaseLiteSwift.DictionaryFragment {
+  public var value: Any? {
+    get
+  }
+  public var string: Swift.String? {
+    get
+  }
+  public var int: Swift.Int {
+    get
+  }
+  public var int64: Swift.Int64 {
+    get
+  }
+  public var float: Swift.Float {
+    get
+  }
+  public var double: Swift.Double {
+    get
+  }
+  public var number: Foundation.NSNumber? {
+    get
+  }
+  public var boolean: Swift.Bool {
+    get
+  }
+  public var date: Foundation.Date? {
+    get
+  }
+  public var blob: CouchbaseLiteSwift.Blob? {
+    get
+  }
+  public var array: CouchbaseLiteSwift.ArrayObject? {
+    get
+  }
+  public var dictionary: CouchbaseLiteSwift.DictionaryObject? {
+    get
+  }
+  public var exists: Swift.Bool {
+    get
+  }
+  public subscript(index: Swift.Int) -> CouchbaseLiteSwift.Fragment {
+    get
+  }
+  public subscript(key: Swift.String) -> CouchbaseLiteSwift.Fragment {
+    get
+  }
+  @objc deinit
+}
+public protocol VariableExpressionProtocol : CouchbaseLiteSwift.ExpressionProtocol {
+}
+@_hasMissingDesignatedInitializers public class Query {
+  public var parameters: CouchbaseLiteSwift.Parameters? {
+    get
+    set
+  }
+  public func execute() throws -> CouchbaseLiteSwift.ResultSet
+  public func explain() throws -> Swift.String
+  @discardableResult
+  public func addChangeListener(_ listener: @escaping (CouchbaseLiteSwift.QueryChange) -> Swift.Void) -> CouchbaseLiteSwift.ListenerToken
+  @discardableResult
+  public func addChangeListener(withQueue queue: Dispatch.DispatchQueue?, _ listener: @escaping (CouchbaseLiteSwift.QueryChange) -> Swift.Void) -> CouchbaseLiteSwift.ListenerToken
+  public func removeChangeListener(withToken token: CouchbaseLiteSwift.ListenerToken)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class QueryBuilder {
+  public static func select(_ results: CouchbaseLiteSwift.SelectResultProtocol...) -> CouchbaseLiteSwift.Select
+  public static func select(_ results: [CouchbaseLiteSwift.SelectResultProtocol]) -> CouchbaseLiteSwift.Select
+  public static func selectDistinct(_ results: CouchbaseLiteSwift.SelectResultProtocol...) -> CouchbaseLiteSwift.Select
+  public static func selectDistinct(_ results: [CouchbaseLiteSwift.SelectResultProtocol]) -> CouchbaseLiteSwift.Select
+  @objc deinit
+}
+extension Query : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class Joins : CouchbaseLiteSwift.Query {
+  final public func `where`(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.Where
+  final public func orderBy(_ orderings: CouchbaseLiteSwift.OrderingProtocol...) -> CouchbaseLiteSwift.OrderBy
+  final public func orderBy(_ orderings: [CouchbaseLiteSwift.OrderingProtocol]) -> CouchbaseLiteSwift.OrderBy
+  final public func limit(_ limit: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.Limit
+  final public func limit(_ limit: CouchbaseLiteSwift.ExpressionProtocol, offset: CouchbaseLiteSwift.ExpressionProtocol?) -> CouchbaseLiteSwift.Limit
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class ResultSet : Swift.Sequence, Swift.IteratorProtocol {
+  public typealias Element = CouchbaseLiteSwift.Result
+  final public func next() -> CouchbaseLiteSwift.Result?
+  final public func allResults() -> [CouchbaseLiteSwift.Result]
+  @objc deinit
+  public typealias Iterator = CouchbaseLiteSwift.ResultSet
+}
+@_hasMissingDesignatedInitializers final public class Limit : CouchbaseLiteSwift.Query {
+  @objc deinit
+}
+public protocol MutableDictionaryProtocol : CouchbaseLiteSwift.DictionaryProtocol, CouchbaseLiteSwift.MutableDictionaryFragment {
+  @discardableResult
+  func setValue(_ value: Any?, forKey key: Swift.String) -> Self
+  @discardableResult
+  func setString(_ value: Swift.String?, forKey key: Swift.String) -> Self
+  @discardableResult
+  func setNumber(_ value: Foundation.NSNumber?, forKey key: Swift.String) -> Self
+  @discardableResult
+  func setInt(_ value: Swift.Int, forKey key: Swift.String) -> Self
+  @discardableResult
+  func setInt64(_ value: Swift.Int64, forKey key: Swift.String) -> Self
+  @discardableResult
+  func setFloat(_ value: Swift.Float, forKey key: Swift.String) -> Self
+  @discardableResult
+  func setDouble(_ value: Swift.Double, forKey key: Swift.String) -> Self
+  @discardableResult
+  func setBoolean(_ value: Swift.Bool, forKey key: Swift.String) -> Self
+  @discardableResult
+  func setDate(_ value: Foundation.Date?, forKey key: Swift.String) -> Self
+  @discardableResult
+  func setBlob(_ value: CouchbaseLiteSwift.Blob?, forKey key: Swift.String) -> Self
+  @discardableResult
+  func setArray(_ value: CouchbaseLiteSwift.ArrayObject?, forKey key: Swift.String) -> Self
+  @discardableResult
+  func setDictionary(_ value: CouchbaseLiteSwift.DictionaryObject?, forKey key: Swift.String) -> Self
+  @discardableResult
+  func setData(_ data: Swift.Dictionary<Swift.String, Any>?) -> Self
+  @discardableResult
+  func removeValue(forKey key: Swift.String) -> Self
+  func array(forKey key: Swift.String) -> CouchbaseLiteSwift.MutableArrayObject?
+  func dictionary(forKey key: Swift.String) -> CouchbaseLiteSwift.MutableDictionaryObject?
+}
+@_hasMissingDesignatedInitializers final public class MutableDictionaryObject : CouchbaseLiteSwift.DictionaryObject, CouchbaseLiteSwift.MutableDictionaryProtocol {
+  public init()
+  public init(data: Swift.Dictionary<Swift.String, Any>?)
+  @discardableResult
+  final public func setValue(_ value: Any?, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setString(_ value: Swift.String?, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setNumber(_ value: Foundation.NSNumber?, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setInt(_ value: Swift.Int, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setInt64(_ value: Swift.Int64, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setDouble(_ value: Swift.Double, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setFloat(_ value: Swift.Float, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setBoolean(_ value: Swift.Bool, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setDate(_ value: Foundation.Date?, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setBlob(_ value: CouchbaseLiteSwift.Blob?, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setArray(_ value: CouchbaseLiteSwift.ArrayObject?, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setDictionary(_ value: CouchbaseLiteSwift.DictionaryObject?, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setData(_ data: Swift.Dictionary<Swift.String, Any>?) -> Self
+  @discardableResult
+  final public func removeValue(forKey key: Swift.String) -> Self
+  override final public func array(forKey key: Swift.String) -> CouchbaseLiteSwift.MutableArrayObject?
+  override final public func dictionary(forKey key: Swift.String) -> CouchbaseLiteSwift.MutableDictionaryObject?
+  override final public subscript(key: Swift.String) -> CouchbaseLiteSwift.MutableFragment {
+    get
+  }
+  @objc deinit
+}
+public protocol DictionaryProtocol : CouchbaseLiteSwift.DictionaryFragment {
+  var count: Swift.Int { get }
+  var keys: Swift.Array<Swift.String> { get }
+  func value(forKey key: Swift.String) -> Any?
+  func string(forKey key: Swift.String) -> Swift.String?
+  func number(forKey key: Swift.String) -> Foundation.NSNumber?
+  func int(forKey key: Swift.String) -> Swift.Int
+  func int64(forKey key: Swift.String) -> Swift.Int64
+  func float(forKey key: Swift.String) -> Swift.Float
+  func double(forKey key: Swift.String) -> Swift.Double
+  func boolean(forKey key: Swift.String) -> Swift.Bool
+  func date(forKey key: Swift.String) -> Foundation.Date?
+  func blob(forKey key: Swift.String) -> CouchbaseLiteSwift.Blob?
+  func array(forKey key: Swift.String) -> CouchbaseLiteSwift.ArrayObject?
+  func dictionary(forKey key: Swift.String) -> CouchbaseLiteSwift.DictionaryObject?
+  func contains(key: Swift.String) -> Swift.Bool
+  func toDictionary() -> Swift.Dictionary<Swift.String, Any>
+}
+@_hasMissingDesignatedInitializers public class DictionaryObject : CouchbaseLiteSwift.DictionaryProtocol, Swift.Equatable, Swift.Hashable, Swift.Sequence {
+  public var count: Swift.Int {
+    get
+  }
+  public var keys: Swift.Array<Swift.String> {
+    get
+  }
+  public func value(forKey key: Swift.String) -> Any?
+  public func string(forKey key: Swift.String) -> Swift.String?
+  public func number(forKey key: Swift.String) -> Foundation.NSNumber?
+  public func int(forKey key: Swift.String) -> Swift.Int
+  public func int64(forKey key: Swift.String) -> Swift.Int64
+  public func float(forKey key: Swift.String) -> Swift.Float
+  public func double(forKey key: Swift.String) -> Swift.Double
+  public func boolean(forKey key: Swift.String) -> Swift.Bool
+  public func date(forKey key: Swift.String) -> Foundation.Date?
+  public func blob(forKey key: Swift.String) -> CouchbaseLiteSwift.Blob?
+  public func array(forKey key: Swift.String) -> CouchbaseLiteSwift.ArrayObject?
+  public func dictionary(forKey key: Swift.String) -> CouchbaseLiteSwift.DictionaryObject?
+  public func contains(key: Swift.String) -> Swift.Bool
+  public func toDictionary() -> Swift.Dictionary<Swift.String, Any>
+  public func toMutable() -> CouchbaseLiteSwift.MutableDictionaryObject
+  public func makeIterator() -> Swift.IndexingIterator<[Swift.String]>
+  public subscript(key: Swift.String) -> CouchbaseLiteSwift.Fragment {
+    get
+  }
+  public static func == (dict1: CouchbaseLiteSwift.DictionaryObject, dict2: CouchbaseLiteSwift.DictionaryObject) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  @objc deinit
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias Element = Swift.IndexingIterator<[Swift.String]>.Element
+  public typealias Iterator = Swift.IndexingIterator<[Swift.String]>
+}
+public enum ReplicatorType : Swift.UInt8 {
+  case pushAndPull
+  case push
+  case pull
+  public typealias RawValue = Swift.UInt8
+  public init?(rawValue: Swift.UInt8)
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+public struct DocumentFlags : Swift.OptionSet {
+  public let rawValue: Swift.Int
+  public init(rawValue: Swift.Int)
+  public static let deleted: CouchbaseLiteSwift.DocumentFlags
+  public static let accessRemoved: CouchbaseLiteSwift.DocumentFlags
+  public typealias Element = CouchbaseLiteSwift.DocumentFlags
+  public typealias ArrayLiteralElement = CouchbaseLiteSwift.DocumentFlags
+  public typealias RawValue = Swift.Int
+}
+public typealias ReplicationFilter = (CouchbaseLiteSwift.Document, CouchbaseLiteSwift.DocumentFlags) -> Swift.Bool
+@_hasMissingDesignatedInitializers public class ReplicatorConfiguration {
+  final public let database: CouchbaseLiteSwift.Database
+  final public let target: CouchbaseLiteSwift.Endpoint
+  public var replicatorType: CouchbaseLiteSwift.ReplicatorType {
+    get
+    set
+  }
+  public var continuous: Swift.Bool {
+    get
+    set
+  }
+  public var authenticator: CouchbaseLiteSwift.Authenticator? {
+    get
+    set
+  }
+  public var pinnedServerCertificate: Security.SecCertificate? {
+    get
+    set
+  }
+  public var headers: Swift.Dictionary<Swift.String, Swift.String>? {
+    get
+    set
+  }
+  public var channels: [Swift.String]? {
+    get
+    set
+  }
+  public var documentIDs: [Swift.String]? {
+    get
+    set
+  }
+  public var pushFilter: CouchbaseLiteSwift.ReplicationFilter? {
+    get
+    set
+  }
+  public var pullFilter: CouchbaseLiteSwift.ReplicationFilter? {
+    get
+    set
+  }
+  public var conflictResolver: CouchbaseLiteSwift.ConflictResolverProtocol? {
+    get
+    set
+  }
+  public var allowReplicatingInBackground: Swift.Bool {
+    get
+    set
+  }
+  public var heartbeat: Swift.Double {
+    get
+    set
+  }
+  public init(database: CouchbaseLiteSwift.Database, target: CouchbaseLiteSwift.Endpoint)
+  convenience public init(config: CouchbaseLiteSwift.ReplicatorConfiguration)
+  @objc deinit
+}
+public protocol Index {
+}
+@_hasMissingDesignatedInitializers final public class ValueIndex : CouchbaseLiteSwift.Index {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class ValueIndexItem {
+  final public class func property(_ property: Swift.String) -> CouchbaseLiteSwift.ValueIndexItem
+  final public class func expression(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ValueIndexItem
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class FullTextIndex : CouchbaseLiteSwift.Index {
+  final public func ignoreAccents(_ ignoreAccents: Swift.Bool) -> Self
+  final public func language(_ language: Swift.String?) -> Self
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class FullTextIndexItem {
+  public class func property(_ property: Swift.String) -> CouchbaseLiteSwift.FullTextIndexItem
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class Blob : Swift.Equatable, Swift.Hashable {
+  convenience public init(contentType: Swift.String, data: Foundation.Data)
+  convenience public init(contentType: Swift.String, contentStream: Foundation.InputStream)
+  convenience public init(contentType: Swift.String, fileURL: Foundation.URL) throws
+  final public var content: Foundation.Data? {
+    get
+  }
+  final public var contentStream: Foundation.InputStream? {
+    get
+  }
+  final public var contentType: Swift.String? {
+    get
+  }
+  final public var length: Swift.UInt64 {
+    get
+  }
+  final public var digest: Swift.String? {
+    get
+  }
+  final public var properties: [Swift.String : Any] {
+    get
+  }
+  public static func == (blob1: CouchbaseLiteSwift.Blob, blob2: CouchbaseLiteSwift.Blob) -> Swift.Bool
+  final public var hashValue: Swift.Int {
+    get
+  }
+  @objc deinit
+  final public func hash(into hasher: inout Swift.Hasher)
+}
+@_hasMissingDesignatedInitializers final public class FullTextFunction {
+  public static func rank(_ indexName: Swift.String) -> CouchbaseLiteSwift.ExpressionProtocol
+  @objc deinit
+}
+public protocol ArrayProtocol : CouchbaseLiteSwift.ArrayFragment {
+  var count: Swift.Int { get }
+  func value(at index: Swift.Int) -> Any?
+  func string(at index: Swift.Int) -> Swift.String?
+  func int(at index: Swift.Int) -> Swift.Int
+  func int64(at index: Swift.Int) -> Swift.Int64
+  func float(at index: Swift.Int) -> Swift.Float
+  func double(at index: Swift.Int) -> Swift.Double
+  func number(at index: Swift.Int) -> Foundation.NSNumber?
+  func boolean(at index: Swift.Int) -> Swift.Bool
+  func blob(at index: Swift.Int) -> CouchbaseLiteSwift.Blob?
+  func date(at index: Swift.Int) -> Foundation.Date?
+  func array(at index: Swift.Int) -> CouchbaseLiteSwift.ArrayObject?
+  func dictionary(at index: Swift.Int) -> CouchbaseLiteSwift.DictionaryObject?
+  func toArray() -> Swift.Array<Any>
+}
+@_hasMissingDesignatedInitializers public class ArrayObject : CouchbaseLiteSwift.ArrayProtocol, Swift.Equatable, Swift.Hashable, Swift.Sequence {
+  public var count: Swift.Int {
+    get
+  }
+  public func value(at index: Swift.Int) -> Any?
+  public func string(at index: Swift.Int) -> Swift.String?
+  public func number(at index: Swift.Int) -> Foundation.NSNumber?
+  public func int(at index: Swift.Int) -> Swift.Int
+  public func int64(at index: Swift.Int) -> Swift.Int64
+  public func float(at index: Swift.Int) -> Swift.Float
+  public func double(at index: Swift.Int) -> Swift.Double
+  public func boolean(at index: Swift.Int) -> Swift.Bool
+  public func date(at index: Swift.Int) -> Foundation.Date?
+  public func blob(at index: Swift.Int) -> CouchbaseLiteSwift.Blob?
+  public func array(at index: Swift.Int) -> CouchbaseLiteSwift.ArrayObject?
+  public func dictionary(at index: Swift.Int) -> CouchbaseLiteSwift.DictionaryObject?
+  public func toArray() -> Swift.Array<Any>
+  public func toMutable() -> CouchbaseLiteSwift.MutableArrayObject
+  public func makeIterator() -> Swift.AnyIterator<Any>
+  public subscript(index: Swift.Int) -> CouchbaseLiteSwift.Fragment {
+    get
+  }
+  public static func == (array1: CouchbaseLiteSwift.ArrayObject, array2: CouchbaseLiteSwift.ArrayObject) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  @objc deinit
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias Element = Any
+  public typealias Iterator = Swift.AnyIterator<Any>
+}
+@_hasMissingDesignatedInitializers final public class ArrayExpression {
+  public static func variable(_ name: Swift.String) -> CouchbaseLiteSwift.VariableExpressionProtocol
+  public static func any(_ variable: CouchbaseLiteSwift.VariableExpressionProtocol) -> CouchbaseLiteSwift.ArrayExpressionIn
+  public static func every(_ variable: CouchbaseLiteSwift.VariableExpressionProtocol) -> CouchbaseLiteSwift.ArrayExpressionIn
+  public static func anyAndEvery(_ variable: CouchbaseLiteSwift.VariableExpressionProtocol) -> CouchbaseLiteSwift.ArrayExpressionIn
+  @objc deinit
+}
+public protocol ExpressionProtocol {
+  func multiply(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  func divide(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  func modulo(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  func add(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  func subtract(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  func lessThan(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  func lessThanOrEqualTo(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  func greaterThan(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  func greaterThanOrEqualTo(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  func equalTo(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  func notEqualTo(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  func like(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  func regex(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  func `is`(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  func isNot(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  func isNullOrMissing() -> CouchbaseLiteSwift.ExpressionProtocol
+  func notNullOrMissing() -> CouchbaseLiteSwift.ExpressionProtocol
+  func and(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  func or(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  func between(_ expression1: CouchbaseLiteSwift.ExpressionProtocol, and expression2: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  func `in`(_ expressions: [CouchbaseLiteSwift.ExpressionProtocol]) -> CouchbaseLiteSwift.ExpressionProtocol
+  func collate(_ collation: CouchbaseLiteSwift.CollationProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+}
+@_hasMissingDesignatedInitializers final public class Expression {
+  public static func property(_ property: Swift.String) -> CouchbaseLiteSwift.PropertyExpressionProtocol
+  public static func all() -> CouchbaseLiteSwift.PropertyExpressionProtocol
+  public static func value(_ value: Any?) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func string(_ value: Swift.String?) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func number(_ value: Foundation.NSNumber?) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func int(_ value: Swift.Int) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func int64(_ value: Swift.Int64) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func float(_ value: Swift.Float) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func double(_ value: Swift.Double) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func boolean(_ value: Swift.Bool) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func date(_ value: Foundation.Date?) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func dictionary(_ value: Swift.Dictionary<Swift.String, Any>?) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func array(_ value: Swift.Array<Any>?) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func parameter(_ name: Swift.String) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func negated(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  public static func not(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.ExpressionProtocol
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class FileLogger {
+  public var config: CouchbaseLiteSwift.LogFileConfiguration? {
+    get
+    set
+  }
+  public var level: CouchbaseLiteSwift.LogLevel {
+    get
+    set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class Where : CouchbaseLiteSwift.Query {
+  final public func orderBy(_ orderings: CouchbaseLiteSwift.OrderingProtocol...) -> CouchbaseLiteSwift.OrderBy
+  final public func orderBy(_ orderings: [CouchbaseLiteSwift.OrderingProtocol]) -> CouchbaseLiteSwift.OrderBy
+  final public func groupBy(_ expressions: CouchbaseLiteSwift.ExpressionProtocol...) -> CouchbaseLiteSwift.GroupBy
+  final public func groupBy(_ expressions: [CouchbaseLiteSwift.ExpressionProtocol]) -> CouchbaseLiteSwift.GroupBy
+  final public func limit(_ limit: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.Limit
+  final public func limit(_ limit: CouchbaseLiteSwift.ExpressionProtocol, offset: CouchbaseLiteSwift.ExpressionProtocol?) -> CouchbaseLiteSwift.Limit
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class MutableDocument : CouchbaseLiteSwift.Document, CouchbaseLiteSwift.MutableDictionaryProtocol {
+  convenience public init()
+  convenience public init(id: Swift.String?)
+  convenience public init(data: Swift.Dictionary<Swift.String, Any>?)
+  convenience public init(id: Swift.String?, data: Swift.Dictionary<Swift.String, Any>?)
+  override final public func toMutable() -> CouchbaseLiteSwift.MutableDocument
+  @discardableResult
+  final public func setValue(_ value: Any?, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setString(_ value: Swift.String?, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setNumber(_ value: Foundation.NSNumber?, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setInt(_ value: Swift.Int, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setInt64(_ value: Swift.Int64, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setDouble(_ value: Swift.Double, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setFloat(_ value: Swift.Float, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setBoolean(_ value: Swift.Bool, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setBlob(_ value: CouchbaseLiteSwift.Blob?, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setDate(_ value: Foundation.Date?, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setArray(_ value: CouchbaseLiteSwift.ArrayObject?, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setDictionary(_ value: CouchbaseLiteSwift.DictionaryObject?, forKey key: Swift.String) -> Self
+  @discardableResult
+  final public func setData(_ data: Swift.Dictionary<Swift.String, Any>?) -> Self
+  @discardableResult
+  final public func removeValue(forKey key: Swift.String) -> Self
+  override final public func array(forKey key: Swift.String) -> CouchbaseLiteSwift.MutableArrayObject?
+  override final public func dictionary(forKey key: Swift.String) -> CouchbaseLiteSwift.MutableDictionaryObject?
+  override final public subscript(key: Swift.String) -> CouchbaseLiteSwift.MutableFragment {
+    get
+  }
+  @objc deinit
+}
+public struct QueryChange {
+  public let query: CouchbaseLiteSwift.Query
+  public let results: CouchbaseLiteSwift.ResultSet?
+  public let error: Swift.Error?
+}
+public enum ConcurrencyControl : Swift.UInt8 {
+  case lastWriteWins
+  case failOnConflict
+  public typealias RawValue = Swift.UInt8
+  public init?(rawValue: Swift.UInt8)
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+public enum MaintenanceType : Swift.UInt8 {
+  case compact
+  case reindex
+  case integrityCheck
+  public typealias RawValue = Swift.UInt8
+  public init?(rawValue: Swift.UInt8)
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+final public class Database {
+  public init(name: Swift.String, config: CouchbaseLiteSwift.DatabaseConfiguration = DatabaseConfiguration()) throws
+  final public var name: Swift.String {
+    get
+  }
+  final public var path: Swift.String? {
+    get
+  }
+  final public var count: Swift.UInt64 {
+    get
+  }
+  final public var config: CouchbaseLiteSwift.DatabaseConfiguration {
+    get
+  }
+  final public func document(withID id: Swift.String) -> CouchbaseLiteSwift.Document?
+  final public subscript(key: Swift.String) -> CouchbaseLiteSwift.DocumentFragment {
+    get
+  }
+  final public func saveDocument(_ document: CouchbaseLiteSwift.MutableDocument) throws
+  @discardableResult
+  final public func saveDocument(_ document: CouchbaseLiteSwift.MutableDocument, concurrencyControl: CouchbaseLiteSwift.ConcurrencyControl) throws -> Swift.Bool
+  @discardableResult
+  final public func saveDocument(_ document: CouchbaseLiteSwift.MutableDocument, conflictHandler: @escaping (CouchbaseLiteSwift.MutableDocument, CouchbaseLiteSwift.Document?) -> Swift.Bool) throws -> Swift.Bool
+  final public func deleteDocument(_ document: CouchbaseLiteSwift.Document) throws
+  @discardableResult
+  final public func deleteDocument(_ document: CouchbaseLiteSwift.Document, concurrencyControl: CouchbaseLiteSwift.ConcurrencyControl) throws -> Swift.Bool
+  final public func purgeDocument(_ document: CouchbaseLiteSwift.Document) throws
+  final public func purgeDocument(withID documentID: Swift.String) throws
+  final public func inBatch(using block: () throws -> Swift.Void) throws
+  final public func setDocumentExpiration(withID documentID: Swift.String, expiration: Foundation.Date?) throws
+  final public func getDocumentExpiration(withID documentID: Swift.String) -> Foundation.Date?
+  @discardableResult
+  final public func addChangeListener(_ listener: @escaping (CouchbaseLiteSwift.DatabaseChange) -> Swift.Void) -> CouchbaseLiteSwift.ListenerToken
+  @discardableResult
+  final public func addChangeListener(withQueue queue: Dispatch.DispatchQueue?, listener: @escaping (CouchbaseLiteSwift.DatabaseChange) -> Swift.Void) -> CouchbaseLiteSwift.ListenerToken
+  @discardableResult
+  final public func addDocumentChangeListener(withID id: Swift.String, listener: @escaping (CouchbaseLiteSwift.DocumentChange) -> Swift.Void) -> CouchbaseLiteSwift.ListenerToken
+  @discardableResult
+  final public func addDocumentChangeListener(withID id: Swift.String, queue: Dispatch.DispatchQueue?, listener: @escaping (CouchbaseLiteSwift.DocumentChange) -> Swift.Void) -> CouchbaseLiteSwift.ListenerToken
+  final public func removeChangeListener(withToken token: CouchbaseLiteSwift.ListenerToken)
+  final public func close() throws
+  final public func delete() throws
+  final public func performMaintenance(type: CouchbaseLiteSwift.MaintenanceType) throws
+  @available(*, deprecated, message: "Use performMaintenance(type:) instead.")
+  final public func compact() throws
+  public static func delete(withName name: Swift.String, inDirectory directory: Swift.String? = nil) throws
+  public static func exists(withName name: Swift.String, inDirectory directory: Swift.String? = nil) -> Swift.Bool
+  public static func copy(fromPath path: Swift.String, toDatabase name: Swift.String, withConfig config: CouchbaseLiteSwift.DatabaseConfiguration?) throws
+  @available(*, deprecated, message: "Use Database.log.console instead.")
+  final public class func setLogLevel(_ level: CouchbaseLiteSwift.LogLevel, domain: CouchbaseLiteSwift.LogDomain)
+  public static let log: CouchbaseLiteSwift.Log
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class From : CouchbaseLiteSwift.Query {
+  final public func join(_ joins: CouchbaseLiteSwift.JoinProtocol...) -> CouchbaseLiteSwift.Joins
+  final public func join(_ joins: [CouchbaseLiteSwift.JoinProtocol]) -> CouchbaseLiteSwift.Joins
+  final public func `where`(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.Where
+  final public func groupBy(_ expressions: CouchbaseLiteSwift.ExpressionProtocol...) -> CouchbaseLiteSwift.GroupBy
+  final public func groupBy(_ expressions: [CouchbaseLiteSwift.ExpressionProtocol]) -> CouchbaseLiteSwift.GroupBy
+  final public func orderBy(_ orderings: CouchbaseLiteSwift.OrderingProtocol...) -> CouchbaseLiteSwift.OrderBy
+  final public func orderBy(_ orderings: [CouchbaseLiteSwift.OrderingProtocol]) -> CouchbaseLiteSwift.OrderBy
+  final public func limit(_ limit: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.Limit
+  final public func limit(_ limit: CouchbaseLiteSwift.ExpressionProtocol, offset: CouchbaseLiteSwift.ExpressionProtocol?) -> CouchbaseLiteSwift.Limit
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class Select : CouchbaseLiteSwift.Query {
+  final public func from(_ dataSource: CouchbaseLiteSwift.DataSourceProtocol) -> CouchbaseLiteSwift.From
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class OrderBy : CouchbaseLiteSwift.Query {
+  final public func limit(_ limit: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.Limit
+  final public func limit(_ limit: CouchbaseLiteSwift.ExpressionProtocol, offset: CouchbaseLiteSwift.ExpressionProtocol?) -> CouchbaseLiteSwift.Limit
+  @objc deinit
+}
+public protocol CollationProtocol {
+}
+@_hasMissingDesignatedInitializers final public class Collation {
+  public static func ascii() -> CouchbaseLiteSwift.Collation.ASCII
+  public static func unicode() -> CouchbaseLiteSwift.Collation.Unicode
+  @_hasMissingDesignatedInitializers final public class ASCII : CouchbaseLiteSwift.CollationProtocol {
+    final public func ignoreCase(_ ignoreCase: Swift.Bool) -> Self
+    @objc deinit
+  }
+  @_hasMissingDesignatedInitializers final public class Unicode : CouchbaseLiteSwift.CollationProtocol {
+    final public func ignoreCase(_ ignoreCase: Swift.Bool) -> Self
+    final public func ignoreAccents(_ ignoreAccents: Swift.Bool) -> Self
+    final public func locale(_ locale: Swift.String?) -> Self
+    @objc deinit
+  }
+  @objc deinit
+}
+public struct LogDomains : Swift.OptionSet {
+  public let rawValue: Swift.Int
+  public init(rawValue: Swift.Int)
+  public static let all: CouchbaseLiteSwift.LogDomains
+  public static let database: CouchbaseLiteSwift.LogDomains
+  public static let query: CouchbaseLiteSwift.LogDomains
+  public static let replicator: CouchbaseLiteSwift.LogDomains
+  public static let network: CouchbaseLiteSwift.LogDomains
+  public typealias Element = CouchbaseLiteSwift.LogDomains
+  public typealias ArrayLiteralElement = CouchbaseLiteSwift.LogDomains
+  public typealias RawValue = Swift.Int
+}
+@_hasMissingDesignatedInitializers public class ConsoleLogger {
+  public var level: CouchbaseLiteSwift.LogLevel {
+    get
+    set
+  }
+  public var domains: CouchbaseLiteSwift.LogDomains {
+    get
+    set
+  }
+  @objc deinit
+}
+public protocol MutableArrayProtocol : CouchbaseLiteSwift.ArrayProtocol, CouchbaseLiteSwift.MutableArrayFragment {
+  @discardableResult
+  func setValue(_ value: Any?, at index: Swift.Int) -> Self
+  @discardableResult
+  func setString(_ value: Swift.String?, at index: Swift.Int) -> Self
+  @discardableResult
+  func setNumber(_ value: Foundation.NSNumber?, at index: Swift.Int) -> Self
+  @discardableResult
+  func setInt(_ value: Swift.Int, at index: Swift.Int) -> Self
+  @discardableResult
+  func setInt64(_ value: Swift.Int64, at index: Swift.Int) -> Self
+  @discardableResult
+  func setFloat(_ value: Swift.Float, at index: Swift.Int) -> Self
+  @discardableResult
+  func setDouble(_ value: Swift.Double, at index: Swift.Int) -> Self
+  @discardableResult
+  func setBoolean(_ value: Swift.Bool, at index: Swift.Int) -> Self
+  @discardableResult
+  func setDate(_ value: Foundation.Date?, at index: Swift.Int) -> Self
+  @discardableResult
+  func setBlob(_ value: CouchbaseLiteSwift.Blob?, at index: Swift.Int) -> Self
+  @discardableResult
+  func setArray(_ value: CouchbaseLiteSwift.ArrayObject?, at index: Swift.Int) -> Self
+  @discardableResult
+  func setDictionary(_ value: CouchbaseLiteSwift.DictionaryObject?, at index: Swift.Int) -> Self
+  @discardableResult
+  func addValue(_ value: Any?) -> Self
+  @discardableResult
+  func addString(_ value: Swift.String?) -> Self
+  @discardableResult
+  func addNumber(_ value: Foundation.NSNumber?) -> Self
+  @discardableResult
+  func addInt(_ value: Swift.Int) -> Self
+  @discardableResult
+  func addInt64(_ value: Swift.Int64) -> Self
+  @discardableResult
+  func addFloat(_ value: Swift.Float) -> Self
+  @discardableResult
+  func addDouble(_ value: Swift.Double) -> Self
+  @discardableResult
+  func addBlob(_ value: CouchbaseLiteSwift.Blob?) -> Self
+  @discardableResult
+  func addBoolean(_ value: Swift.Bool) -> Self
+  @discardableResult
+  func addDate(_ value: Foundation.Date?) -> Self
+  @discardableResult
+  func addArray(_ value: CouchbaseLiteSwift.ArrayObject?) -> Self
+  @discardableResult
+  func addDictionary(_ value: CouchbaseLiteSwift.DictionaryObject?) -> Self
+  @discardableResult
+  func insertValue(_ value: Any?, at index: Swift.Int) -> Self
+  @discardableResult
+  func insertString(_ value: Swift.String?, at index: Swift.Int) -> Self
+  @discardableResult
+  func insertNumber(_ value: Foundation.NSNumber?, at index: Swift.Int) -> Self
+  @discardableResult
+  func insertInt(_ value: Swift.Int, at index: Swift.Int) -> Self
+  @discardableResult
+  func insertInt64(_ value: Swift.Int64, at index: Swift.Int) -> Self
+  @discardableResult
+  func insertFloat(_ value: Swift.Float, at index: Swift.Int) -> Self
+  @discardableResult
+  func insertDouble(_ value: Swift.Double, at index: Swift.Int) -> Self
+  @discardableResult
+  func insertBoolean(_ value: Swift.Bool, at index: Swift.Int) -> Self
+  @discardableResult
+  func insertDate(_ value: Foundation.Date?, at index: Swift.Int) -> Self
+  @discardableResult
+  func insertBlob(_ value: CouchbaseLiteSwift.Blob?, at index: Swift.Int) -> Self
+  @discardableResult
+  func insertArray(_ value: CouchbaseLiteSwift.ArrayObject?, at index: Swift.Int) -> Self
+  @discardableResult
+  func insertDictionary(_ value: CouchbaseLiteSwift.DictionaryObject?, at index: Swift.Int) -> Self
+  @discardableResult
+  func setData(_ data: Swift.Array<Any>?) -> Self
+  @discardableResult
+  func removeValue(at index: Swift.Int) -> Self
+  func array(at index: Swift.Int) -> CouchbaseLiteSwift.MutableArrayObject?
+  func dictionary(at index: Swift.Int) -> CouchbaseLiteSwift.MutableDictionaryObject?
+}
+@_hasMissingDesignatedInitializers final public class MutableArrayObject : CouchbaseLiteSwift.ArrayObject, CouchbaseLiteSwift.MutableArrayProtocol {
+  public init()
+  public init(data: Swift.Array<Any>?)
+  @discardableResult
+  final public func setValue(_ value: Any?, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func setString(_ value: Swift.String?, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func setNumber(_ value: Foundation.NSNumber?, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func setInt(_ value: Swift.Int, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func setInt64(_ value: Swift.Int64, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func setFloat(_ value: Swift.Float, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func setDouble(_ value: Swift.Double, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func setBoolean(_ value: Swift.Bool, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func setDate(_ value: Foundation.Date?, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func setBlob(_ value: CouchbaseLiteSwift.Blob?, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func setArray(_ value: CouchbaseLiteSwift.ArrayObject?, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func setDictionary(_ value: CouchbaseLiteSwift.DictionaryObject?, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func addValue(_ value: Any?) -> Self
+  @discardableResult
+  final public func addString(_ value: Swift.String?) -> Self
+  @discardableResult
+  final public func addNumber(_ value: Foundation.NSNumber?) -> Self
+  @discardableResult
+  final public func addInt(_ value: Swift.Int) -> Self
+  @discardableResult
+  final public func addInt64(_ value: Swift.Int64) -> Self
+  @discardableResult
+  final public func addFloat(_ value: Swift.Float) -> Self
+  @discardableResult
+  final public func addDouble(_ value: Swift.Double) -> Self
+  @discardableResult
+  final public func addBoolean(_ value: Swift.Bool) -> Self
+  @discardableResult
+  final public func addDate(_ value: Foundation.Date?) -> Self
+  @discardableResult
+  final public func addBlob(_ value: CouchbaseLiteSwift.Blob?) -> Self
+  @discardableResult
+  final public func addArray(_ value: CouchbaseLiteSwift.ArrayObject?) -> Self
+  @discardableResult
+  final public func addDictionary(_ value: CouchbaseLiteSwift.DictionaryObject?) -> Self
+  @discardableResult
+  final public func insertValue(_ value: Any?, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func insertString(_ value: Swift.String?, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func insertNumber(_ value: Foundation.NSNumber?, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func insertInt(_ value: Swift.Int, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func insertInt64(_ value: Swift.Int64, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func insertFloat(_ value: Swift.Float, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func insertDouble(_ value: Swift.Double, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func insertBoolean(_ value: Swift.Bool, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func insertDate(_ value: Foundation.Date?, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func insertBlob(_ value: CouchbaseLiteSwift.Blob?, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func insertArray(_ value: CouchbaseLiteSwift.ArrayObject?, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func insertDictionary(_ value: CouchbaseLiteSwift.DictionaryObject?, at index: Swift.Int) -> Self
+  @discardableResult
+  final public func removeValue(at index: Swift.Int) -> Self
+  @discardableResult
+  final public func setData(_ data: Swift.Array<Any>?) -> Self
+  override final public func array(at index: Swift.Int) -> CouchbaseLiteSwift.MutableArrayObject?
+  override final public func dictionary(at index: Swift.Int) -> CouchbaseLiteSwift.MutableDictionaryObject?
+  override final public subscript(index: Swift.Int) -> CouchbaseLiteSwift.MutableFragment {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Document : CouchbaseLiteSwift.DictionaryProtocol, Swift.Equatable, Swift.Hashable, Swift.Sequence {
+  public var id: Swift.String {
+    get
+  }
+  public var revisionID: Swift.String? {
+    get
+  }
+  public var sequence: Swift.UInt64 {
+    get
+  }
+  public func toMutable() -> CouchbaseLiteSwift.MutableDocument
+  public var count: Swift.Int {
+    get
+  }
+  public var keys: Swift.Array<Swift.String> {
+    get
+  }
+  public func value(forKey key: Swift.String) -> Any?
+  public func string(forKey key: Swift.String) -> Swift.String?
+  public func number(forKey key: Swift.String) -> Foundation.NSNumber?
+  public func int(forKey key: Swift.String) -> Swift.Int
+  public func int64(forKey key: Swift.String) -> Swift.Int64
+  public func float(forKey key: Swift.String) -> Swift.Float
+  public func double(forKey key: Swift.String) -> Swift.Double
+  public func boolean(forKey key: Swift.String) -> Swift.Bool
+  public func blob(forKey key: Swift.String) -> CouchbaseLiteSwift.Blob?
+  public func date(forKey key: Swift.String) -> Foundation.Date?
+  public func array(forKey key: Swift.String) -> CouchbaseLiteSwift.ArrayObject?
+  public func dictionary(forKey key: Swift.String) -> CouchbaseLiteSwift.DictionaryObject?
+  public func contains(key: Swift.String) -> Swift.Bool
+  public func toDictionary() -> Swift.Dictionary<Swift.String, Any>
+  public func makeIterator() -> Swift.IndexingIterator<[Swift.String]>
+  public subscript(key: Swift.String) -> CouchbaseLiteSwift.Fragment {
+    get
+  }
+  public static func == (doc1: CouchbaseLiteSwift.Document, doc2: CouchbaseLiteSwift.Document) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  @objc deinit
+  public typealias Element = Swift.IndexingIterator<[Swift.String]>.Element
+  public typealias Iterator = Swift.IndexingIterator<[Swift.String]>
+}
+public protocol SelectResultProtocol {
+}
+public protocol SelectResultAs : CouchbaseLiteSwift.SelectResultProtocol {
+  func `as`(_ alias: Swift.String?) -> CouchbaseLiteSwift.SelectResultProtocol
+}
+public protocol SelectResultFrom : CouchbaseLiteSwift.SelectResultProtocol {
+  func from(_ alias: Swift.String?) -> CouchbaseLiteSwift.SelectResultProtocol
+}
+@_hasMissingDesignatedInitializers final public class SelectResult {
+  public static func property(_ property: Swift.String) -> CouchbaseLiteSwift.SelectResultAs
+  public static func expression(_ expression: CouchbaseLiteSwift.ExpressionProtocol) -> CouchbaseLiteSwift.SelectResultAs
+  public static func all() -> CouchbaseLiteSwift.SelectResultFrom
+  @objc deinit
+}
+public protocol MetaExpressionProtocol : CouchbaseLiteSwift.ExpressionProtocol {
+  func from(_ alias: Swift.String) -> CouchbaseLiteSwift.ExpressionProtocol
+}
+@_hasMissingDesignatedInitializers final public class Meta {
+  public static var id: CouchbaseLiteSwift.MetaExpressionProtocol {
+    get
+  }
+  public static var revisionID: CouchbaseLiteSwift.MetaExpressionProtocol {
+    get
+  }
+  public static var sequence: CouchbaseLiteSwift.MetaExpressionProtocol {
+    get
+  }
+  public static var isDeleted: CouchbaseLiteSwift.MetaExpressionProtocol {
+    get
+  }
+  public static var expiration: CouchbaseLiteSwift.MetaExpressionProtocol {
+    get
+  }
+  @objc deinit
+}
+extension CouchbaseLiteSwift.LogDomain : Swift.Equatable {}
+extension CouchbaseLiteSwift.LogDomain : Swift.Hashable {}
+extension CouchbaseLiteSwift.LogDomain : Swift.RawRepresentable {}
+extension CouchbaseLiteSwift.LogLevel : Swift.Equatable {}
+extension CouchbaseLiteSwift.LogLevel : Swift.Hashable {}
+extension CouchbaseLiteSwift.LogLevel : Swift.RawRepresentable {}
+extension CouchbaseLiteSwift.BasicAuthenticator : CouchbaseLiteSwift.Authenticator {}
+extension CouchbaseLiteSwift.SessionAuthenticator : CouchbaseLiteSwift.Authenticator {}
+extension CouchbaseLiteSwift.URLEndpoint : CouchbaseLiteSwift.Endpoint {}
+extension CouchbaseLiteSwift.Replicator.ActivityLevel : Swift.Equatable {}
+extension CouchbaseLiteSwift.Replicator.ActivityLevel : Swift.Hashable {}
+extension CouchbaseLiteSwift.Replicator.ActivityLevel : Swift.RawRepresentable {}
+extension CouchbaseLiteSwift.ReplicatorType : Swift.Equatable {}
+extension CouchbaseLiteSwift.ReplicatorType : Swift.Hashable {}
+extension CouchbaseLiteSwift.ReplicatorType : Swift.RawRepresentable {}
+extension CouchbaseLiteSwift.ConcurrencyControl : Swift.Equatable {}
+extension CouchbaseLiteSwift.ConcurrencyControl : Swift.Hashable {}
+extension CouchbaseLiteSwift.ConcurrencyControl : Swift.RawRepresentable {}
+extension CouchbaseLiteSwift.MaintenanceType : Swift.Equatable {}
+extension CouchbaseLiteSwift.MaintenanceType : Swift.Hashable {}
+extension CouchbaseLiteSwift.MaintenanceType : Swift.RawRepresentable {}

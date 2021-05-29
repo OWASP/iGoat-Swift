@@ -1,5 +1,6 @@
 
 import UIKit
+import Realm
 
 class RCreditInfo: RLMObject {
     @objc dynamic var name:String?

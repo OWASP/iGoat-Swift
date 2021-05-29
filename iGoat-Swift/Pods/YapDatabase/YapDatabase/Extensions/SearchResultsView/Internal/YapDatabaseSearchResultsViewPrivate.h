@@ -1,0 +1,59 @@
+#import "YapDatabaseSearchResultsView.h"
+#import "YapDatabaseSearchResultsViewOptions.h"
+#import "YapDatabaseSearchResultsViewConnection.h"
+#import "YapDatabaseSearchResultsViewTransaction.h"
+
+#import "YapDatabaseViewPrivate.h"
+#import "YapDatabaseAutoViewPrivate.h"
+
+/**
+ * Changeset keys (for changeset notification dictionary)
+ */
+static NSString *const changeset_key_query = @"query";
+
+@interface YapDatabaseSearchResultsViewOptions ()
+
+@property (nonatomic, strong, readonly) YapDatabaseFullTextSearchSnippetOptions *snippetOptions_NoCopy;
+
+@end
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark -
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@interface YapDatabaseSearchResultsView () {
+@public
+	
+	NSString *parentViewName;
+	NSString *fullTextSearchName;
+}
+
+@end
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark -
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@interface YapDatabaseSearchResultsViewConnection () {
+@private
+	
+	NSString *query;
+	BOOL queryChanged;
+}
+
+- (NSString *)query;
+- (void)getQuery:(NSString **)queryPtr wasChanged:(BOOL *)wasChangedPtr;
+- (void)setQuery:(NSString *)newQuery isChange:(BOOL)isChange;
+
+@end
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark -
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@interface YapDatabaseSearchResultsViewTransaction () {
+@private
+	
+}
+
+@end
