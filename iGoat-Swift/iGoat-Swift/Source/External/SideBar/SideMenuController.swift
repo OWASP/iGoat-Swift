@@ -396,7 +396,6 @@ open class SideMenuController: UIViewController, UIGestureRecognizerDelegate {
         return UIApplication.shared.statusBarUIView as? UIWindow
     }
     
-    
     fileprivate var showsStatusUnderlay: Bool {
         
         guard _preferences.animating.statusBarBehaviour == .showUnderlay else {

@@ -2,11 +2,13 @@
 //  UIAplication+Extension.swift
 //  iGoat-Swift
 //
-//  Created by Нуржан Керимбеков on 2023-01-07.
+//  Created by swaroopsy on 2023-01-07.
 //  Copyright © 2023 OWASP. All rights reserved.
 //
 
 import Foundation
+import UIKit
+
 
 extension UIApplication {
     var statusBarUIView: UIView? {

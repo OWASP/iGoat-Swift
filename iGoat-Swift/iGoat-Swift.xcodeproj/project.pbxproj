@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		202CB3B72969DDAE005B8745 /* UIAplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202CB3B62969DDAE005B8745 /* UIAplication+Extension.swift */; };
 		826335FF20C9866900392E48 /* ServerCommunicationExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826335FE20C9866900392E48 /* ServerCommunicationExerciseVC.swift */; };
 		8263360220C99B8F00392E48 /* ServerCommunicationExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8263360120C99B8E00392E48 /* ServerCommunicationExerciseVC.xib */; };
 		828ADF5720A4860800E935F3 /* PlistStorageExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 828ADF5520A4860800E935F3 /* PlistStorageExerciseViewController.xib */; };
@@ -126,6 +127,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		202CB3B62969DDAE005B8745 /* UIAplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAplication+Extension.swift"; sourceTree = "<group>"; };
 		826335FE20C9866900392E48 /* ServerCommunicationExerciseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerCommunicationExerciseVC.swift; sourceTree = "<group>"; };
 		8263360120C99B8E00392E48 /* ServerCommunicationExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServerCommunicationExerciseVC.xib; sourceTree = "<group>"; };
 		828ADF5520A4860800E935F3 /* PlistStorageExerciseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlistStorageExerciseViewController.xib; sourceTree = "<group>"; };
@@ -362,6 +364,7 @@
 				A25B4F6A2094B5620065171C /* NSString+Extension.swift */,
 				A25B4F7520955CD50065171C /* URL+Extension.swift */,
 				A23E63CA2095F0F5005683A9 /* Data+Extension.swift */,
+				202CB3B62969DDAE005B8745 /* UIAplication+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -986,6 +989,7 @@
 				A238AA642079AD42006C042F /* NSObject+Extension.swift in Sources */,
 				A26CEAC4207A34C900A7E415 /* HintVC.swift in Sources */,
 				C0AF231420B81AD400B13D26 /* KeychainPasswordItem.swift in Sources */,
+				202CB3B72969DDAE005B8745 /* UIAplication+Extension.swift in Sources */,
 				A2C99F742096515F007E9BBE /* KeyStorageServerSideVC.swift in Sources */,
 				A25B4F652094ACE00065171C /* SVIndefiniteAnimatedView.m in Sources */,
 			);
