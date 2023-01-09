@@ -393,12 +393,7 @@ open class SideMenuController: UIViewController, UIGestureRecognizerDelegate {
     // MARK: - Computed variables -
     
     fileprivate var sbw: UIWindow? {
-        
-        let s = "status"
-        let b = "Bar"
-        let w = "Window"
-        
-        return UIApplication.shared.value(forKey: s+b+w) as? UIWindow
+        return UIApplication.shared.statusBarUIView as? UIWindow
     }
     
     fileprivate var showsStatusUnderlay: Bool {
