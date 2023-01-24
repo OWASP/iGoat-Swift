@@ -23,7 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UIAlertController.showAlertWith(title: "iGoat", message: "Message \"\(message)\" sent to \(mobileNo)")
                 return true
         }
-        
         return false
     }
 }

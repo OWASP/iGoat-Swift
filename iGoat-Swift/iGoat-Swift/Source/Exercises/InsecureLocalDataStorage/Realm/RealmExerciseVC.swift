@@ -1,5 +1,6 @@
 
 import UIKit
+import Realm
 
 class RCreditInfo: RLMObject {
     @objc dynamic var name:String?
@@ -37,7 +38,7 @@ class RealmExerciseVC: UIViewController {
             realm.add(creditInfo)
             try realm.commitWriteTransactionWithoutNotifying([])
         }
-        
+    
     }
     
     @IBAction func verifyItemPressed() {
