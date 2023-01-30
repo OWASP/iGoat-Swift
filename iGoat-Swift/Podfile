@@ -7,6 +7,8 @@ target 'iGoat-Swift' do
 
   # Pods for iGoat-Swift
   pod 'RealmSwift', '10.7.6'
+#  pod 'CouchbaseLite-Swift', '3.0.0'
+#  pod 'CouchbaseLite', '2.5.0'
 
   target 'iGoat-SwiftTests' do
     inherit! :search_paths

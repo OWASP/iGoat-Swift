@@ -120,6 +120,7 @@
 		A2C99F872096515F007E9BBE /* CutAndPasteExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F5C2096515F007E9BBE /* CutAndPasteExerciseVC.xib */; };
 		A2C99F882096515F007E9BBE /* SocialEngineeringVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C99F5E2096515F007E9BBE /* SocialEngineeringVC.swift */; };
 		A2C99F892096515F007E9BBE /* SocialEngineeringVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C99F5F2096515F007E9BBE /* SocialEngineeringVC.xib */; };
+		BDED1303298406CA008C023D /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDED1302298406CA008C023D /* CouchbaseLite.framework */; };
 		BDF016E329802CCA0004EE8D /* YapDatabaseConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF0160229802CC90004EE8D /* YapDatabaseConnection.m */; };
 		BDF016E429802CCA0004EE8D /* YapDatabaseTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF0160429802CC90004EE8D /* YapDatabaseTransaction.m */; };
 		BDF016E529802CCA0004EE8D /* YapDatabaseConnectionState.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF0160729802CC90004EE8D /* YapDatabaseConnectionState.m */; };
@@ -208,7 +209,6 @@
 		BDF0173929802CCA0004EE8D /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF016DA29802CC90004EE8D /* DDAbstractDatabaseLogger.m */; };
 		BDF0173B29802CCA0004EE8D /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF016DC29802CC90004EE8D /* DDFileLogger.m */; };
 		BDF0173C29802CCA0004EE8D /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF016DE29802CC90004EE8D /* DDASLLogCapture.m */; };
-		BDF0173E29802CCA0004EE8D /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF016E229802CC90004EE8D /* CouchbaseLite.framework */; };
 		BDF0174029802D8D0004EE8D /* StatusBarView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF0173F29802D8D0004EE8D /* StatusBarView+Extension.swift */; };
 		C0AF230020B816B200B13D26 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0AF22FC20B816B200B13D26 /* CoreData.xcdatamodeld */; };
 		C0AF230120B816B200B13D26 /* CoreDataExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF22FE20B816B200B13D26 /* CoreDataExerciseVC.swift */; };
@@ -367,6 +367,7 @@
 		A2C99F5C2096515F007E9BBE /* CutAndPasteExerciseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CutAndPasteExerciseVC.xib; sourceTree = "<group>"; };
 		A2C99F5E2096515F007E9BBE /* SocialEngineeringVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialEngineeringVC.swift; sourceTree = "<group>"; };
 		A2C99F5F2096515F007E9BBE /* SocialEngineeringVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocialEngineeringVC.xib; sourceTree = "<group>"; };
+		BDED1302298406CA008C023D /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLite.framework; sourceTree = "<group>"; };
 		BDF0160229802CC90004EE8D /* YapDatabaseConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YapDatabaseConnection.m; sourceTree = "<group>"; };
 		BDF0160329802CC90004EE8D /* YapDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YapDatabase.h; sourceTree = "<group>"; };
 		BDF0160429802CC90004EE8D /* YapDatabaseTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YapDatabaseTransaction.m; sourceTree = "<group>"; };
@@ -560,7 +561,6 @@
 		BDF016DC29802CC90004EE8D /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
 		BDF016DD29802CC90004EE8D /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
 		BDF016DE29802CC90004EE8D /* DDASLLogCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogCapture.m; sourceTree = "<group>"; };
-		BDF016E229802CC90004EE8D /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLite.framework; sourceTree = "<group>"; };
 		BDF0173F29802D8D0004EE8D /* StatusBarView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StatusBarView+Extension.swift"; sourceTree = "<group>"; };
 		C0AF22FD20B816B200B13D26 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		C0AF22FE20B816B200B13D26 /* CoreDataExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataExerciseVC.swift; sourceTree = "<group>"; };
@@ -585,8 +585,8 @@
 				82A87DE4214E884500E5A12A /* libstdc++.tbd in Frameworks */,
 				82A87DE2214E86C900E5A12A /* libz.tbd in Frameworks */,
 				A25B4F892095CC890065171C /* libsqlite3.tbd in Frameworks */,
-				BDF0173E29802CCA0004EE8D /* CouchbaseLite.framework in Frameworks */,
 				D549FF54FDFCC63C56C22127 /* Pods_iGoat_Swift.framework in Frameworks */,
+				BDED1303298406CA008C023D /* CouchbaseLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1146,12 +1146,20 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BDED1301298406CA008C023D /* CouchBase */ = {
+			isa = PBXGroup;
+			children = (
+				BDED1302298406CA008C023D /* CouchbaseLite.framework */,
+			);
+			path = CouchBase;
+			sourceTree = "<group>";
+		};
 		BDF0160029802CC90004EE8D /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				BDED1301298406CA008C023D /* CouchBase */,
 				BDF0160129802CC90004EE8D /* YapDatabase */,
 				BDF016C529802CC90004EE8D /* CocoaLumberjack */,
-				BDF016E129802CC90004EE8D /* CouchBase */,
 			);
 			path = ThirdParty;
 			sourceTree = "<group>";
@@ -1561,14 +1569,6 @@
 				BDF016D629802CC90004EE8D /* README.txt */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		BDF016E129802CC90004EE8D /* CouchBase */ = {
-			isa = PBXGroup;
-			children = (
-				BDF016E229802CC90004EE8D /* CouchbaseLite.framework */,
-			);
-			path = CouchBase;
 			sourceTree = "<group>";
 		};
 		C0AF22FB20B816B200B13D26 /* CoreData */ = {
